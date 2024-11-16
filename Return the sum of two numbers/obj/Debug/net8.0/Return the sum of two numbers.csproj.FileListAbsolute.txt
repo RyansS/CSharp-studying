@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\bin\Debug\net8.0\Return the sum of two numbers.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\bin\Debug\net8.0\Return the sum of two numbers.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\bin\Debug\net8.0\Return the sum of two numbers.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\bin\Debug\net8.0\Return the sum of two numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\bin\Debug\net8.0\Return the sum of two numbers.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\refint\Return the sum of two numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\Return the sum of two numbers.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Return the sum of two numbers\obj\Debug\net8.0\ref\Return the sum of two numbers.dll

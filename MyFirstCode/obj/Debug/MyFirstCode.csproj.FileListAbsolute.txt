@@ -1,0 +1,7 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\bin\Debug\MyFirstCode.exe.config
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\bin\Debug\MyFirstCode.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\bin\Debug\MyFirstCode.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\obj\Debug\MyFirstCode.csproj.AssemblyReference.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\obj\Debug\MyFirstCode.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\obj\Debug\MyFirstCode.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\MyFirstCode\obj\Debug\MyFirstCode.pdb

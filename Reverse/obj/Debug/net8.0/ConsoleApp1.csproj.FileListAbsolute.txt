@@ -1,0 +1,28 @@
+C:\Users\monte\source\repos\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+C:\Users\monte\source\repos\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
+C:\Users\monte\source\repos\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+C:\Users\monte\source\repos\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
+C:\Users\monte\source\repos\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\monte\source\repos\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\refint\ConsoleApp1.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll

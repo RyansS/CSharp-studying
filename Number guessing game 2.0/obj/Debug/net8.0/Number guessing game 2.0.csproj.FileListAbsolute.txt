@@ -1,0 +1,14 @@
+C:\Users\monte\source\repos\Number guessing game 2.0\bin\Debug\net8.0\Number guessing game 2.0.exe
+C:\Users\monte\source\repos\Number guessing game 2.0\bin\Debug\net8.0\Number guessing game 2.0.deps.json
+C:\Users\monte\source\repos\Number guessing game 2.0\bin\Debug\net8.0\Number guessing game 2.0.runtimeconfig.json
+C:\Users\monte\source\repos\Number guessing game 2.0\bin\Debug\net8.0\Number guessing game 2.0.dll
+C:\Users\monte\source\repos\Number guessing game 2.0\bin\Debug\net8.0\Number guessing game 2.0.pdb
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.AssemblyInfo.cs
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.dll
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\refint\Number guessing game 2.0.dll
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.pdb
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\Number guessing game 2.0.genruntimeconfig.cache
+C:\Users\monte\source\repos\Number guessing game 2.0\obj\Debug\net8.0\ref\Number guessing game 2.0.dll

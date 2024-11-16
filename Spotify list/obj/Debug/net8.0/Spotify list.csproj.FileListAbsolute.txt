@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\bin\Debug\net8.0\Spotify list.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\bin\Debug\net8.0\Spotify list.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\bin\Debug\net8.0\Spotify list.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\bin\Debug\net8.0\Spotify list.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\bin\Debug\net8.0\Spotify list.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\refint\Spotify list.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\Spotify list.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Spotify list\obj\Debug\net8.0\ref\Spotify list.dll

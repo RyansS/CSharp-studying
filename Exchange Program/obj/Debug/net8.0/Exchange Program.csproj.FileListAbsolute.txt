@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\bin\Debug\net8.0\Exchange Program.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\bin\Debug\net8.0\Exchange Program.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\bin\Debug\net8.0\Exchange Program.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\bin\Debug\net8.0\Exchange Program.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\bin\Debug\net8.0\Exchange Program.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\refint\Exchange Program.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\Exchange Program.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\Exchange Program\obj\Debug\net8.0\ref\Exchange Program.dll

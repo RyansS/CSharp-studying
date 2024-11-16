@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exchange Program", "Exchange Program.csproj", "{F25FC139-7CA7-4FBF-A909-199945654981}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F25FC139-7CA7-4FBF-A909-199945654981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25FC139-7CA7-4FBF-A909-199945654981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25FC139-7CA7-4FBF-A909-199945654981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25FC139-7CA7-4FBF-A909-199945654981}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BEA5D75-35AA-4307-9754-45E2F6E77D43}
+	EndGlobalSection
+EndGlobal

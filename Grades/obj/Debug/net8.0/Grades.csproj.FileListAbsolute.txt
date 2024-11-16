@@ -1,0 +1,14 @@
+C:\Users\monte\source\repos\Grades\bin\Debug\net8.0\Grades.exe
+C:\Users\monte\source\repos\Grades\bin\Debug\net8.0\Grades.deps.json
+C:\Users\monte\source\repos\Grades\bin\Debug\net8.0\Grades.runtimeconfig.json
+C:\Users\monte\source\repos\Grades\bin\Debug\net8.0\Grades.dll
+C:\Users\monte\source\repos\Grades\bin\Debug\net8.0\Grades.pdb
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.AssemblyInfo.cs
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.dll
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\refint\Grades.dll
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.pdb
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\Grades.genruntimeconfig.cache
+C:\Users\monte\source\repos\Grades\obj\Debug\net8.0\ref\Grades.dll

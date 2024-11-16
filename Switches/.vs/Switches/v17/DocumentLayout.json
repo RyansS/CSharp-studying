@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Switches\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B20E001B-E9F7-40D4-802A-50E4CD3EB847}|Switches.csproj|c:\\users\\monte\\onedrive\\\u00E1rea de trabalho\\programing\\c#\\c# projects\\switches\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B20E001B-E9F7-40D4-802A-50E4CD3EB847}|Switches.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Switches\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Switches\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:11:37.553Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

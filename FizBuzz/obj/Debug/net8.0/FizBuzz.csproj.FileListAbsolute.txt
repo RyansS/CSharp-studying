@@ -1,0 +1,14 @@
+C:\Users\monte\source\repos\FizBuzz\bin\Debug\net8.0\FizBuzz.exe
+C:\Users\monte\source\repos\FizBuzz\bin\Debug\net8.0\FizBuzz.deps.json
+C:\Users\monte\source\repos\FizBuzz\bin\Debug\net8.0\FizBuzz.runtimeconfig.json
+C:\Users\monte\source\repos\FizBuzz\bin\Debug\net8.0\FizBuzz.dll
+C:\Users\monte\source\repos\FizBuzz\bin\Debug\net8.0\FizBuzz.pdb
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.AssemblyInfo.cs
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.dll
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\refint\FizBuzz.dll
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.pdb
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\FizBuzz.genruntimeconfig.cache
+C:\Users\monte\source\repos\FizBuzz\obj\Debug\net8.0\ref\FizBuzz.dll
