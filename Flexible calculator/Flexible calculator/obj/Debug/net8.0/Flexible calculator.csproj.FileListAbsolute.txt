@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\bin\Debug\net8.0\Flexible calculator.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\bin\Debug\net8.0\Flexible calculator.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\bin\Debug\net8.0\Flexible calculator.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\bin\Debug\net8.0\Flexible calculator.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\bin\Debug\net8.0\Flexible calculator.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\refint\Flexible calculator.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\Flexible calculator.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Flexible calculator\Flexible calculator\obj\Debug\net8.0\ref\Flexible calculator.dll
