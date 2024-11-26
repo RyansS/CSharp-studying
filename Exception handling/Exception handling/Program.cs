@@ -4,7 +4,7 @@ int nums1 = 0;
 int nums2 = 0;
 int nums = nums1 + nums2;
 
-try
+try // the try is the block of code that indicates the possible problem
 {
         Console.Write("Write a number: ");
         nums1 = int.Parse(Console.ReadLine());
@@ -12,30 +12,28 @@ try
         Console.Write("Write a number: ");
         nums2 = int.Parse(Console.ReadLine());
 }
-catch (FormatException e)
+catch (FormatException e) // the catch takes the kind of exception and do something
+//there are different options of exceptions
 {
     Console.WriteLine("You can write only numbers");
 }
-finally
+catch (DivideByZeroException e)
 {
-    Console.WriteLine("Thanks for using");
+    Console.WriteLine("U can't divide by zero");
 }
 
 
-int total = numbs(nums);
+
+int total = calc(nums1, nums2, nums);
 
 Console.WriteLine(total);
 
 Console.ReadKey();
 
-static int numbs(params int[]  nums) // the params keyword is used to a method receive a variable number of arguments
-    // but it only can be used in methods that have the type and return something
+static int calc(int nums1, int nums2, int nums) 
+
 {
-    int total = 0;
-    foreach (int prices in nums)
-    {
-        
-        total += prices;
-    }
-    return total;
+    nums = nums1 + nums2;
+
+    return nums;
 }
