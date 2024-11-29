@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\bin\Debug\net8.0\Conditional Operators.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\bin\Debug\net8.0\Conditional Operators.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\bin\Debug\net8.0\Conditional Operators.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\bin\Debug\net8.0\Conditional Operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\bin\Debug\net8.0\Conditional Operators.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\refint\Conditional Operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\Conditional Operators.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Conditional Operators\Conditional Operators\obj\Debug\net8.0\ref\Conditional Operators.dll
