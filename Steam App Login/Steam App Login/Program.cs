@@ -1,4 +1,5 @@
 ﻿
+using Steam_App_Login;
 using System.Net;
 
 internal class Program
@@ -11,6 +12,7 @@ internal class Program
         string pass = "";
         bool again = true;
         string answer = "";
+        string game = "";
         List<string> users = new List<string>(); //list created for the usernames
         List<string> emails = new List<string>(); //list created for the emails
         List<string> passwords = new List<string>(); // and the list for the passwords
@@ -109,7 +111,7 @@ internal class Program
 
             if (users.Contains(user) && emails[users.IndexOf(user)] == email && passwords[users.IndexOf(user)] == pass) //now it's a hard part of the code
             {
-                pagamento(user, prices, cart);
+                pagamento(user, prices, cart, game);
             }
             else
             {
@@ -121,27 +123,27 @@ internal class Program
             again = false;
         }
     }
-    static void pagamento(string user, int[] prices, List<string> cart)
+    static void pagamento(string user, int[] prices, List<string> cart, string game)
     {
+        Games hollowk = new Games("Hollow Knight", 50);
+        Games sekiro = new Games("Sekiro Shadows Die Twice", 150);
+        Games darksouls = new Games("Dark Souls 3", 190);
+
         Console.WriteLine("Welcome, " + user + " to the Steam!"); //if the users have the variable user and the email in the users position is equal to email it will log in
         Console.WriteLine("Offers of the week!");
-        Console.WriteLine("Call Of Duty Black Ops 3  " + prices[0] + "$");
-        Console.WriteLine("Sekiro Shadows Die Twice  " + prices[1] + "$");
-        Console.WriteLine("Hollow Knight  " + prices[2] + "$");
+
+        hollowk.show();
+        sekiro.show();
+        darksouls.show();
+
         Console.WriteLine();
-        Console.WriteLine("If you want to add one of these games just write the name of the game that you want and it will be on the cart and if u wanna buy them, type: 'buy'");
-        cart.Add(Console.ReadLine());
+        Console.WriteLine("For choose one, type the name of the game and it will be added, if you want to buy type 'buy' ");
+        game = Console.ReadLine();
 
-        for (int i = 0; i <4; i++)
+        if (game == "Hollow Knight")
         {
-            cart.Add(Console.ReadLine());
+            
         }
-
-        if (cart.Contains("buy") || cart.Contains("Buy") || cart.Contains("BUY"))
-        {
-            cart.Remove("buy");
-            cart.Remove("Buy");
-            cart.Remove("BUY");
 
             foreach (string v in cart)
             {

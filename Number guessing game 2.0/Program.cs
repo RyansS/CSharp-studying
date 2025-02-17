@@ -13,9 +13,9 @@ internal class Program
         int guesses;
 
         
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i <= 10; i++)
             {
-            guesses = 4;
+            guesses = 9;
                     while (again)
                     {                      
                             resp = 0;
@@ -45,6 +45,8 @@ internal class Program
                                             Console.WriteLine("Guess: " + resp);
                                             Console.WriteLine("Guesses remaining: " + guesses);
                                             Console.WriteLine("Number: " + num);
+
+                    again = false;
                                 Console.WriteLine();
                             }
                                         guesses--;
@@ -60,6 +62,7 @@ internal class Program
             Console.Write("Do you wanna play again? (Y/N) ");
             string answer = Console.ReadLine();
             answer = answer.ToUpper();
+            Console.Clear();
 
             if (answer == "Y")
             {
