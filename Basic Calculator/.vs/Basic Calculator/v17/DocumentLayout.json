@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\monte\\source\\repos\\Basic Calculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20A45F1B-9BBD-45F0-9812-CB1700A232E8}|Basic Calculator\\Basic Calculator.csproj|c:\\users\\monte\\source\\repos\\basic calculator\\basic calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20A45F1B-9BBD-45F0-9812-CB1700A232E8}|Basic Calculator\\Basic Calculator.csproj|solutionrelative:basic calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\monte\\source\\repos\\Basic Calculator\\Basic Calculator\\Program.cs",
+              "RelativeDocumentMoniker": "Basic Calculator\\Program.cs",
+              "ToolTip": "C:\\Users\\monte\\source\\repos\\Basic Calculator\\Basic Calculator\\Program.cs",
+              "RelativeToolTip": "Basic Calculator\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:03:36.637Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
