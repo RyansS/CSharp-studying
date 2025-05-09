@@ -4,7 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Dog dog = new Dog("dog", "fred", 1, 20003);
+        
+
+
     }
 }
 
@@ -12,42 +14,58 @@ internal class Program
 
 class Animal
 {
-    private string type;
-
-    private string name;
-
-    private int age;
-
-    private int id;
-
-    public List<Animal> allanimals = new List<Animal>();
-
+    private static int _counter = 0; // is static because it belong to the class, so every runtime the value will increase
+    private List<Animal> allanim = new List<Animal>();
+    
     public string Type { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
     public int Id { get; set; }
+    public string Passw { get; set; }
 
-    public Animal (string type, string name, int age, int id)
+    public Animal (string type, string name, int age, int id, string passw)
     {
         this.Type = type;
         this.Name = name;
         this.Age = age;
         this.Id = id;
+        this.Passw = passw;
     }
-
-    public static Animal RegisterAnimal()
+    public static Animal RegisterAnimal(int Id, string name, string type, int age, string passw, List<Animal> allanim)
     {
-        Random randomid = new Random();
-
-        string type;
-        string name;
-        int age;
-        int id = randomid.Next(10000, 20000);
-
+        Id = _counter++;
 
         Console.WriteLine("What's your animal?");
         type = Console.ReadLine();
         type.ToLower();
+
+            if (type == "dog")
+        {
+            Dog newdog = new Dog(type, name, age, Id, passw);
+
+            return newdog;
+        }
+
+        else if (type == "cat")
+        {
+            Cat newcat = new Cat(type, name, age, Id, passw);
+
+            return newcat;
+        }
+
+        else if (type == "bird")
+        {
+            Bird newbird = new Bird(type, name, age, Id, passw);
+
+            return newbird;
+        }
+
+        else if (type == "rabbit")
+        {
+            Rabbit newrabbit = new Rabbit(type, name, age, Id, passw);
+
+            return newrabbit;
+        }
 
         Console.WriteLine("What's the name?");
         name = Console.ReadLine();
@@ -55,29 +73,13 @@ class Animal
         Console.WriteLine("What's the age?");
         age = int.Parse(Console.ReadLine());
 
-        Console.Write("Here's your id: " + id + ", use it to access the app!");
+        Console.Write("Create a password to acces the app: ");
+        passw = Console.ReadLine();
 
-        if (type == "dog")
-        {
-            return new Dog(type, name, age, id);
-        }
+        Animal newanimal = new Animal(type, name, age, Id, passw);
+        allanim.Add(newanimal);
 
-        else if (type == "cat")
-        {
-            return new Cat(type, name, age, id);
-        }
-
-        else if (type == "bird")
-        {
-            return new Bird(type, name, age, id);
-        }
-
-        else if (type == "rabbit")
-        {
-            return new Rabbit(type, name, age, id);
-        }
-
-        return new Animal(type, name, age, id);
+        return newanimal;
 
     }
 
@@ -86,16 +88,11 @@ class Animal
         Console.WriteLine("The animal is making noise");
     }
 
-    public void ShowRegister ()
-    {
-        Console.WriteLine(RegisterAnimal());
-    }
-
 }
 
 class Dog : Animal
 {
-    public Dog(string type, string name, int age, int id) : base(type, name, age, id)
+    public Dog(string type, string name, int age, int id, string passw) : base(type, name, age, id, passw)
     {
     }
 
@@ -103,11 +100,13 @@ class Dog : Animal
     {
         Console.WriteLine("The dog is barking!!");
     }
+
+
 }
 
 class Cat : Animal
 {
-    public Cat(string type, string name, int age, int id) : base(type, name, age, id)
+    public Cat(string type, string name, int age, int id, string passw) : base(type, name, age, id, passw)
     {
     }
 
@@ -119,7 +118,7 @@ class Cat : Animal
 
 class Bird : Animal
 {
-    public Bird(string type, string name, int age, int id) : base(type, name, age, id)
+    public Bird(string type, string name, int age, int id, string passw) : base(type, name, age, id, passw)
     {
     }
 
@@ -131,7 +130,7 @@ class Bird : Animal
 
 class Rabbit : Animal
 {
-    public Rabbit(string type, string name, int age, int id) : base(type, name, age, id)
+    public Rabbit(string type, string name, int age, int id, string passw) : base(type, name, age, id, passw)
     {
     }
 
