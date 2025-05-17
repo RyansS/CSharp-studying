@@ -5,7 +5,6 @@
 
 
 
-
         Console.ReadKey();
     }
 }
@@ -15,6 +14,7 @@ class Fruit
     private int _counter = 0;
     private string type;
     private int id;
+    private double price;
 
     public string Type
     {
@@ -22,8 +22,27 @@ class Fruit
         set { type = value; }
     }
 
+    public int Id
+    {
+        get { return id; }
+        set { id = value; }
+    }
+
+    public double Price
+    {
+        get { return price; }
+        set { price = value; }
+    }
+
     public Fruit ()
     {
-        this.
+        this.Type = type;
+        this.Id = id;
+        this.Price = price;
+    }
+
+    public static void BuyFruit ()
+    {
+        Console.WriteLine();
     }
 }
