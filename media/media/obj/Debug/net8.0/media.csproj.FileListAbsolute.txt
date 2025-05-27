@@ -1,0 +1,14 @@
+C:\Users\Aluno\source\repos\media\media\bin\Debug\net8.0\media.exe
+C:\Users\Aluno\source\repos\media\media\bin\Debug\net8.0\media.deps.json
+C:\Users\Aluno\source\repos\media\media\bin\Debug\net8.0\media.runtimeconfig.json
+C:\Users\Aluno\source\repos\media\media\bin\Debug\net8.0\media.dll
+C:\Users\Aluno\source\repos\media\media\bin\Debug\net8.0\media.pdb
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.AssemblyInfoInputs.cache
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.AssemblyInfo.cs
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.dll
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\refint\media.dll
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.pdb
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\media.genruntimeconfig.cache
+C:\Users\Aluno\source\repos\media\media\obj\Debug\net8.0\ref\media.dll
