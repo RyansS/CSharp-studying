@@ -8,8 +8,6 @@ namespace Library
 {
     class Book
     {
-        
-
         public string ISBN;
         public string title;
         public string author;
@@ -35,9 +33,24 @@ namespace Library
     {
         private Dictionary<string, Book> catalog = new Dictionary<string, Book>();
 
-        public void AddBook(Book newBook)
+        public Book this[string ISBN]
         {
-            catalog[newBook.ISBN] = newBook;
+            get
+            {
+                if (catalog.ContainsKey(ISBN))
+                {
+                    return catalog[ISBN];
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        public void AddBook(Book Book)
+        {
+            catalog[Book.ISBN] = Book;
         }
 
         public static Book CreateBook()
@@ -57,18 +70,48 @@ namespace Library
             int ISBNint = ISBNrandom.Next(100000, 900000);
             string ISBN = Convert.ToString(ISBNint);
 
-            Book newBook = CreateBook();
+
             return new Book(ISBN, title, author, numbOfPages);
         }
 
         public void ShowBooks()
         {
             Console.Clear();
-            Console.WriteLine($"Total of title in our catalog: {catalog.Count}");
+            Console.WriteLine($"Total of titles in our catalog: {catalog.Count}");
 
             foreach (var allbooks in catalog.Values)
             {
                 allbooks.ToString();
+            }
+        }
+
+        public void RemoveBook()
+        {
+            ShowBooks();
+            Console.WriteLine("\n");
+
+            Console.Write("Which title you'd like to remove? ");
+            var answer = Console.ReadLine();
+
+            string isbnToRemove = null;
+
+            foreach (var entry in catalog)
+            {
+                if (entry.Value.title.ToLower() == answer.ToLower())
+                {
+                    isbnToRemove = entry.Key;
+                    break;
+                }
+
+                if (isbnToRemove != null)
+                {
+                    catalog.Remove(isbnToRemove);
+                    Console.WriteLine($"Title removed!");
+                }
+                else
+                {
+                    Console.WriteLine("Book not found.");
+                }
             }
         }
     }
