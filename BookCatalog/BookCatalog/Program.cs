@@ -6,15 +6,16 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var catalog = new BookCatalog();
+        BookCatalog catalog = new BookCatalog();
 
-            Menu("Welcome to the library!");
+
+        Menu("Welcome to the library!");
 
             string choice = Console.ReadLine();
             switch (choice)
             {
                 case "1":
-                    var newBook = catalog;
+                Book newBook = BookCatalog.CreateBook();
                     catalog.AddBook(newBook);
                     catalog.ShowBooks();
                 break;

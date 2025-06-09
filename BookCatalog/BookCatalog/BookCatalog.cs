@@ -48,9 +48,9 @@ namespace Library
             }
         }
 
-        public void AddBook(Book Book)
+        public void AddBook(Book book)
         {
-            catalog[Book.ISBN] = Book;
+            catalog[book.ISBN] = book;
         }
 
         public static Book CreateBook()
@@ -114,6 +114,7 @@ namespace Library
                 }
             }
         }
+
     }
 
 }
