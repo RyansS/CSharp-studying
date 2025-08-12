@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\source\\repos\\Array of Objects\\Array of Objects\\Array of Objects.csproj",
-      "projectName": "Array of Objects",
-      "projectPath": "C:\\Users\\monte\\source\\repos\\Array of Objects\\Array of Objects\\Array of Objects.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\source\\repos\\SteamProject\\SteamProject\\SteamProject.csproj",
+      "projectName": "SteamProject",
+      "projectPath": "C:\\Users\\monte\\source\\repos\\SteamProject\\SteamProject\\SteamProject.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\source\\repos\\Array of Objects\\Array of Objects\\obj\\",
+      "outputPath": "C:\\Users\\monte\\source\\repos\\SteamProject\\SteamProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

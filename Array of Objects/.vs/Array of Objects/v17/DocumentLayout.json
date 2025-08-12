@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Array of Objects\\",
+  "WorkspaceRootPath": "C:\\Users\\monte\\source\\repos\\Array of Objects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2C06275-9F5F-4D90-8F89-4CFE8848B310}|Array of Objects\\Array of Objects.csproj|c:\\users\\monte\\onedrive\\\u00E1rea de trabalho\\programing\\c#\\c# projects\\array of objects\\array of objects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2C06275-9F5F-4D90-8F89-4CFE8848B310}|Array of Objects\\Array of Objects.csproj|c:\\users\\monte\\source\\repos\\array of objects\\array of objects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2C06275-9F5F-4D90-8F89-4CFE8848B310}|Array of Objects\\Array of Objects.csproj|solutionrelative:array of objects\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Array of Objects\\Array of Objects\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\monte\\source\\repos\\Array of Objects\\Array of Objects\\Program.cs",
               "RelativeDocumentMoniker": "Array of Objects\\Program.cs",
-              "ToolTip": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\Array of Objects\\Array of Objects\\Program.cs",
+              "ToolTip": "C:\\Users\\monte\\source\\repos\\Array of Objects\\Array of Objects\\Program.cs",
               "RelativeToolTip": "Array of Objects\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
