@@ -1,8 +1,9 @@
 ﻿
-Console.WriteLine("Welcome to steam!");
 List<Account> AccsInfo = new List<Account>();
 
-static Account Register()
+Console.WriteLine("Welcome to steam!");
+
+Account Register()
 {
         Console.Write("How we should call you? ");
         string TempUsername = Console.ReadLine();
@@ -30,7 +31,7 @@ static Account Register()
     return new Account(TempUsername, TempEmail, TempPassword);
 } 
 
-static void Login ()
+void Login ()
 {
     Console.WriteLine("Welcome to Log-in!");
     Console.WriteLine("If you're not a member yet type: 'Register'," +
@@ -50,6 +51,8 @@ static void Login ()
 
         Console.Write("\nEnter password: ");
         string tempPassword = Console.ReadLine();
+
+        var find = AccsInfo.Where(x=> x.Email == tempEmail && x.Password == tempPassword);
 
     }
 
