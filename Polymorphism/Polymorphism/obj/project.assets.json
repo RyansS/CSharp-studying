@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\monte\\.nuget\\packages\\": {},
-    "D:\\VisualStudioShared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\OneDrive\\Área de Trabalho\\Programing\\C#\\C# Projects\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\source\\repos\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
       "projectName": "Polymorphism",
-      "projectPath": "C:\\Users\\monte\\OneDrive\\Área de Trabalho\\Programing\\C#\\C# Projects\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
+      "projectPath": "C:\\Users\\monte\\source\\repos\\Polymorphism\\Polymorphism\\Polymorphism.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\OneDrive\\Área de Trabalho\\Programing\\C#\\C# Projects\\Polymorphism\\Polymorphism\\obj\\",
+      "outputPath": "C:\\Users\\monte\\source\\repos\\Polymorphism\\Polymorphism\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\VisualStudioShared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

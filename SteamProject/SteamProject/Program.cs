@@ -1,9 +1,10 @@
 ﻿
 Console.WriteLine("Welcome to steam!");
+List<string> credentials = new List<string>();
 
 static void Register ()
 {
-    bool repeat = false;
+    bool repeat = true;
 
     while (repeat)
     {
@@ -32,3 +33,41 @@ static void Register ()
         }
     }
 } 
+
+static void Login ()
+{
+    Console.WriteLine("Welcome to Log-in!");
+    Console.WriteLine("If you're not a member yet type: 'Register'," +
+    "in case you're already a member, type: 'Login'");
+
+    string option = Console.ReadLine();
+    option.ToLower();
+
+    if (option == "register")
+    {
+        Register();
+    }
+    else
+    {
+        Console.Write("Type here you're email: ");
+
+        Console.WriteLine();
+    }
+
+
+}
+
+class Account
+{
+    private string user;
+    private string email;
+    private string password;
+
+    public Account (string user, string email, string password)
+    {
+        this.user = user;
+        this.email = email;
+        this.password = password;
+    }
+
+}
