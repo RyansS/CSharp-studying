@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\PetShop Register\\",
+  "WorkspaceRootPath": "C:\\Users\\monte\\source\\repos\\PetShop Register\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1800468-131B-441A-BA20-DC2079547588}|PetShop Register\\PetShop Register.csproj|c:\\users\\monte\\onedrive\\\u00E1rea de trabalho\\programing\\c#\\c# projects\\petshop register\\petshop register\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F1800468-131B-441A-BA20-DC2079547588}|PetShop Register\\PetShop Register.csproj|c:\\users\\monte\\source\\repos\\petshop register\\petshop register\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1800468-131B-441A-BA20-DC2079547588}|PetShop Register\\PetShop Register.csproj|solutionrelative:petshop register\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\PetShop Register\\PetShop Register\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\monte\\source\\repos\\PetShop Register\\PetShop Register\\Program.cs",
               "RelativeDocumentMoniker": "PetShop Register\\Program.cs",
-              "ToolTip": "C:\\Users\\monte\\OneDrive\\\u00C1rea de Trabalho\\Programing\\C#\\C# Projects\\PetShop Register\\PetShop Register\\Program.cs",
+              "ToolTip": "C:\\Users\\monte\\source\\repos\\PetShop Register\\PetShop Register\\Program.cs",
               "RelativeToolTip": "PetShop Register\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T14:14:11.571Z",
               "EditorCaption": ""

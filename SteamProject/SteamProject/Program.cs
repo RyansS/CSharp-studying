@@ -1,37 +1,33 @@
 ﻿
 Console.WriteLine("Welcome to steam!");
-List<string> credentials = new List<string>();
+List<Account> AccsInfo = new List<Account>();
 
-static void Register ()
+static Account Register()
 {
-    bool repeat = true;
-
-    while (repeat)
-    {
-
         Console.Write("How we should call you? ");
-        string username = Console.ReadLine();
+        string TempUsername = Console.ReadLine();
 
         Console.WriteLine("Now we need some crucial informations from you ");
 
         Console.Write("What's your email? ");
-        string email = Console.ReadLine();
+        string TempEmail = Console.ReadLine();
 
         Console.Write("\nNow create a strong password: ");
-        string password = Console.ReadLine();
+        string TempPassword = Console.ReadLine();
 
-        if (username != null && email != null && password != null)
+        if (TempUsername != null && TempEmail != null && TempPassword != null)
         {
             Console.WriteLine("\nThank you to joined the Steam universe!");
-            repeat = false;
+            Login();
         }
         else
         {
             Console.WriteLine("\nPlease, keep sure that you've typed you're" +
                 " credentials properly");
-            repeat = true;
+            Register();
         }
-    }
+  
+    return new Account(TempUsername, TempEmail, TempPassword);
 } 
 
 static void Login ()
@@ -50,10 +46,12 @@ static void Login ()
     else
     {
         Console.Write("Type here you're email: ");
+        string tempEmail = Console.ReadLine();
 
-        Console.WriteLine();
+        Console.Write("\nEnter password: ");
+        string tempPassword = Console.ReadLine();
+
     }
-
 
 }
 
@@ -62,6 +60,10 @@ class Account
     private string user;
     private string email;
     private string password;
+
+    public string User { get { return user; } set { user = value; } }
+    public string Email { get { return email; } set { email = value; } }
+    public string Password { get { return password; } set { password = value; } }
 
     public Account (string user, string email, string password)
     {
