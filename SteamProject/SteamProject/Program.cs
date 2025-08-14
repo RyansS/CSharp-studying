@@ -52,8 +52,14 @@ void Login ()
         Console.Write("\nEnter password: ");
         string tempPassword = Console.ReadLine();
 
-        var find = AccsInfo.Where(x=> x.Email == tempEmail && x.Password == tempPassword);
+        var find = AccsInfo.Where(x => x.Email == tempEmail && x.Password == tempPassword);
 
+    }
+
+    void CreateTitle(string title)
+    {
+        int numberOfLetters = title.Length;
+        string symbols = string.Empty.PadLeft(numberOfLetters, '-');
     }
 
 }
