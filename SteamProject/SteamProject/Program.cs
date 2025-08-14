@@ -1,7 +1,7 @@
 ﻿
 List<Account> AccsInfo = new List<Account>();
 
-Console.WriteLine("Welcome to steam!");
+CreateTitle("Welcome to steam!");
 
 Account Register()
 {
@@ -21,7 +21,7 @@ Account Register()
             Console.WriteLine("\nThank you to joined the Steam universe!");
             Login();
         }
-        else
+        else if (TempUsername == null || TempEmail == null || TempPassword == null) 
         {
             Console.WriteLine("\nPlease, keep sure that you've typed you're" +
                 " credentials properly");
@@ -33,8 +33,8 @@ Account Register()
 
 void Login ()
 {
-    Console.WriteLine("Welcome to Log-in!");
-    Console.WriteLine("If you're not a member yet type: 'Register'," +
+    CreateTitle("Welcome to Log-in!");
+    Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
     "in case you're already a member, type: 'Login'");
 
     string option = Console.ReadLine();
@@ -56,12 +56,40 @@ void Login ()
 
     }
 
-    void CreateTitle(string title)
-    {
-        int numberOfLetters = title.Length;
-        string symbols = string.Empty.PadLeft(numberOfLetters, '-');
-    }
+}
 
+void CreateTitle(string title)
+{
+    int numberOfLetters = title.Length;
+    string symbols = string.Empty.PadLeft(numberOfLetters, '-');
+}
+
+void Menu ()
+{
+
+    CreateTitle("Welcome to the Steam homepage!");
+    Console.WriteLine("1 - See offers");
+    Console.WriteLine("2 - Go to cart");
+    Console.WriteLine("3 - Library");
+    Console.WriteLine("4 - Profile");
+
+    string option = Console.ReadLine();
+
+    switch (option)
+    {
+        case "1":
+            
+            break;
+        case "2":
+
+            break;
+        case "3":
+
+            break;
+        case "4":
+
+            break;
+    }
 }
 
 class Account
