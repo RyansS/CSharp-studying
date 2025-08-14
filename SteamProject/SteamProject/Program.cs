@@ -1,7 +1,7 @@
 ﻿
 List<Account> AccsInfo = new List<Account>();
 
-CreateTitle("Welcome to steam!");
+Games.CreateTitle("Welcome to steam!");
 
 Account Register()
 {
@@ -33,7 +33,7 @@ Account Register()
 
 void Login ()
 {
-    CreateTitle("Welcome to Log-in!");
+    Games.CreateTitle("Welcome to Log-in!");
     Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
     "in case you're already a member, type: 'Login'");
 
@@ -58,16 +58,12 @@ void Login ()
 
 }
 
-void CreateTitle(string title)
-{
-    int numberOfLetters = title.Length;
-    string symbols = string.Empty.PadLeft(numberOfLetters, '-');
-}
+
 
 void Menu ()
 {
 
-    CreateTitle("Welcome to the Steam homepage!");
+    Games.CreateTitle("Welcome to the Steam homepage!");
     Console.WriteLine("1 - See offers");
     Console.WriteLine("2 - Go to cart");
     Console.WriteLine("3 - Library");
@@ -78,7 +74,7 @@ void Menu ()
     switch (option)
     {
         case "1":
-            
+            Games.SeeOffers();
             break;
         case "2":
 
@@ -107,6 +103,47 @@ class Account
         this.user = user;
         this.email = email;
         this.password = password;
+    }
+
+}
+
+class Games
+{
+    private static int nextId = 1;
+    private string game;
+    private double price;
+    private int id;
+
+    public string Game { get { return game; } set { game = value; } }
+    public double Price { get { return price; } set { price = value; } }
+    public int Id { get { return id; } set { id = value; } }
+
+    public Games(string game, double price)
+    {
+        Game = game;
+        Price = price;
+        Id = nextId;
+    }
+
+    public override string ToString()
+    {
+        return "" + Game + " R$" + Price;
+    }
+
+    public static void SeeOffers()
+    {
+
+        Games game1 = new Games("Counter Strike 2", 0);
+
+        CreateTitle("Check out the offers of the week!");
+
+        Console.WriteLine();
+    }
+
+    public static void CreateTitle(string title)
+    {
+        int numberOfLetters = title.Length;
+        string symbols = string.Empty.PadLeft(numberOfLetters, '-');
     }
 
 }
