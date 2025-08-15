@@ -1,9 +1,9 @@
 ﻿
+using System.ComponentModel.Design;
+
 List<Account> AccsInfo = new List<Account>();
 
 Games.CreateTitle("Welcome to steam!");
-
-Games.SeeOffers();
 
 Account Register()
 {
@@ -60,36 +60,6 @@ void Login ()
 
 }
 
-
-
-void Menu ()
-{
-
-    Games.CreateTitle("Welcome to the Steam homepage!");
-    Console.WriteLine("1 - See offers");
-    Console.WriteLine("2 - Go to cart");
-    Console.WriteLine("3 - Library");
-    Console.WriteLine("4 - Profile");
-
-    string option = Console.ReadLine();
-
-    switch (option)
-    {
-        case "1":
-            Games.SeeOffers();
-            break;
-        case "2":
-
-            break;
-        case "3":
-
-            break;
-        case "4":
-
-            break;
-    }
-}
-
 class Account
 {
     private string user;
@@ -127,8 +97,37 @@ class Games
         Id = nextId;
     }
 
+    static void Menu()
+    {
+
+        Games.CreateTitle("Welcome to the Steam homepage!");
+        Console.WriteLine("1 - See offers");
+        Console.WriteLine("2 - Go to cart");
+        Console.WriteLine("3 - Library");
+        Console.WriteLine("4 - Profile");
+
+        string option = Console.ReadLine();
+
+        switch (option)
+        {
+            case "1":
+                SeeOffers();
+                break;
+            case "2":
+
+                break;
+            case "3":
+
+                break;
+            case "4":
+
+                break;
+        }
+    }
+
     public static void SeeOffers()
     {
+        bool repeat = true;
 
         Games game1 = new Games("Counter Strike 2", 0);
         Games game2 = new Games("Dark Souls 3", 119.99);
@@ -137,50 +136,91 @@ class Games
         Games game5 = new Games("Hollow Knight", 39.99);
 
         CreateTitle("Check out the offers of the week!");
-        game1.ToString();
-        game2.ToString();
-        game3.ToString();
-        game4.ToString();
-        game5.ToString();
+        Console.WriteLine(game1);
+        Console.WriteLine(game2);
+        Console.WriteLine(game3);
+        Console.WriteLine(game4);
+        Console.WriteLine(game5);
 
-        Console.WriteLine("If you want any game type the name of it and it'll be added to the cart: ");
+        Console.WriteLine("\nIf you want any game type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
-        if (nameOfTheGame == null)
+        if (nameOfTheGame == "")
         {
             Console.WriteLine("Please type the name of a game!");
-            return;
+            Console.Clear();
+            SeeOffers();
         }
-        else
+        else if  (nameOfTheGame != "")
         {
             Console.WriteLine("Do you wanna add another game? (Y/N) ");
             string answerAddGame = Console.ReadLine();
             answerAddGame.ToLower();
+            
 
-            if (answerAddGame == "Y")
+            if (answerAddGame == "y")
             {
-                return;
+                SeeOffers();
             }
-            else if (answerAddGame == "N")
+            else if (answerAddGame == "n")
             {
-                Console.WriteLine("Get back to the menu by pressing 'M' ");
+               
+                while (repeat)
+                {
+                    Console.WriteLine("Get back to the menu by pressing 'M' ");
+                    string ButtonPressed = Console.ReadLine();
+                    ButtonPressed.ToUpper();
+
+                    if (ButtonPressed == "M")
+                    {
+                        repeat = false;
+                        Console.Clear();
+                        Menu();
+                    }
+                    else if (ButtonPressed != "M")
+                    {
+                        Console.WriteLine("Please, type 'M' if you wanna get back to the menu");
+                    }
+                }
             }
         }
 
         Console.WriteLine("Get back to the menu by pressing 'M' ");
+        string ButtonPressed2 = Console.ReadLine();
+        ButtonPressed2.ToUpper();
+
+        while (repeat)
+        {
+            Console.WriteLine("Get back to the menu by pressing 'M' ");
+            string ButtonPressed = Console.ReadLine();
+            ButtonPressed.ToUpper();
+
+            if (ButtonPressed == "M")
+            {
+                repeat = false;
+                Console.Clear();
+                Menu();
+            }
+            else if (ButtonPressed != "M")
+            {
+                Console.WriteLine("Please, type 'M' if you wanna get back to the menu");
+            }
+        }
     }
 
     public override string ToString()
     {
-        return "aa" + Game + " R$" + Price;
+        return "" + Game + " R$" + Price;
     }
-
-    
 
     public static void CreateTitle(string title)
     {
         int numberOfLetters = title.Length;
         string symbols = string.Empty.PadLeft(numberOfLetters, '-');
+
+        Console.WriteLine(symbols);
+        Console.WriteLine(title);
+        Console.WriteLine(symbols);
     }
 
 }
