@@ -5,6 +5,7 @@ List<Account> AccsInfo = new List<Account>();
 
 Games.CreateTitle("Welcome to steam!");
 
+Games.SeeOffers();
 Account Register()
 {
         Console.Write("How we should call you? ");
@@ -81,6 +82,8 @@ class Account
 
 class Games
 {
+    static List<Games> AllGames = new List<Games>();
+    List<Games> GamesOnCart = new List<Games>();
     private static int nextId = 1;
     private string game;
     private double price;
@@ -125,25 +128,32 @@ class Games
         }
     }
 
+    public static void Cart ()
+    {
+
+    }
+
     public static void SeeOffers()
     {
         bool repeat = true;
 
-        Games game1 = new Games("Counter Strike 2", 0);
-        Games game2 = new Games("Dark Souls 3", 119.99);
-        Games game3 = new Games("Cyberpunk 2077", 169.99);
-        Games game4 = new Games("Red Dead Redemption 2", 199.99);
-        Games game5 = new Games("Hollow Knight", 39.99);
+        AllGames.Add(new Games("Counter Strike 2", 0));
+        AllGames.Add(new Games("Dark Souls 3", 119.99));
+        AllGames.Add(new Games("Cyberpunk 2077", 169.99));
+        AllGames.Add(new Games("Red Dead Redemption 2", 199.99));
+        AllGames.Add(new Games("Hollow Knight", 39.99));
+
 
         CreateTitle("Check out the offers of the week!");
-        Console.WriteLine(game1);
-        Console.WriteLine(game2);
-        Console.WriteLine(game3);
-        Console.WriteLine(game4);
-        Console.WriteLine(game5);
+        for (int i = 0; i < AllGames.Count; i++)
+        {
+            Console.WriteLine(AllGames[i].ToString());
+        }
 
         Console.WriteLine("\nIf you want any game type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
+
+        var findGame = nameOfTheGame;
 
         if (nameOfTheGame == "")
         {
