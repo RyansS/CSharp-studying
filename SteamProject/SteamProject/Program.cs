@@ -3,6 +3,8 @@ List<Account> AccsInfo = new List<Account>();
 
 Games.CreateTitle("Welcome to steam!");
 
+Games.SeeOffers();
+
 Account Register()
 {
         Console.Write("How we should call you? ");
@@ -125,20 +127,55 @@ class Games
         Id = nextId;
     }
 
-    public override string ToString()
-    {
-        return "" + Game + " R$" + Price;
-    }
-
     public static void SeeOffers()
     {
 
         Games game1 = new Games("Counter Strike 2", 0);
+        Games game2 = new Games("Dark Souls 3", 119.99);
+        Games game3 = new Games("Cyberpunk 2077", 169.99);
+        Games game4 = new Games("Red Dead Redemption 2", 199.99);
+        Games game5 = new Games("Hollow Knight", 39.99);
 
         CreateTitle("Check out the offers of the week!");
+        game1.ToString();
+        game2.ToString();
+        game3.ToString();
+        game4.ToString();
+        game5.ToString();
 
-        Console.WriteLine();
+        Console.WriteLine("If you want any game type the name of it and it'll be added to the cart: ");
+        string nameOfTheGame = Console.ReadLine();
+
+        if (nameOfTheGame == null)
+        {
+            Console.WriteLine("Please type the name of a game!");
+            return;
+        }
+        else
+        {
+            Console.WriteLine("Do you wanna add another game? (Y/N) ");
+            string answerAddGame = Console.ReadLine();
+            answerAddGame.ToLower();
+
+            if (answerAddGame == "Y")
+            {
+                return;
+            }
+            else if (answerAddGame == "N")
+            {
+                Console.WriteLine("Get back to the menu by pressing 'M' ");
+            }
+        }
+
+        Console.WriteLine("Get back to the menu by pressing 'M' ");
     }
+
+    public override string ToString()
+    {
+        return "aa" + Game + " R$" + Price;
+    }
+
+    
 
     public static void CreateTitle(string title)
     {
