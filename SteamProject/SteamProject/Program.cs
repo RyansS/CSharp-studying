@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.Design;
+using System.Security.Cryptography.X509Certificates;
 
 List<Account> AccsInfo = new List<Account>();
 
@@ -135,7 +136,8 @@ class Games
 
     public static void SeeOffers()
     {
-        bool repeat = true;
+
+        
 
         AllGames.Add(new Games("Counter Strike 2", 0));
         AllGames.Add(new Games("Dark Souls 3", 119.99));
@@ -174,30 +176,19 @@ class Games
             }
             else if (answerAddGame == "n")
             {
-               
-                while (repeat)
-                {
-                    Console.WriteLine("Get back to the menu by pressing 'M' ");
-                    string ButtonPressed = Console.ReadLine();
-                    ButtonPressed.ToUpper();
+                GetbackToMenu();
 
-                    if (ButtonPressed == "M")
-                    {
-                        repeat = false;
-                        Console.Clear();
-                        Menu();
-                    }
-                    else if (ButtonPressed != "M")
-                    {
-                        Console.WriteLine("Please, type 'M' if you wanna get back to the menu");
-                    }
-                }
             }
         }
 
-        Console.WriteLine("Get back to the menu by pressing 'M' ");
-        string ButtonPressed2 = Console.ReadLine();
-        ButtonPressed2.ToUpper();
+        GetbackToMenu();
+
+    }
+
+    public static void GetbackToMenu ()
+    {
+
+        bool repeat = true;
 
         while (repeat)
         {
@@ -216,6 +207,7 @@ class Games
                 Console.WriteLine("Please, type 'M' if you wanna get back to the menu");
             }
         }
+
     }
 
     public override string ToString()
