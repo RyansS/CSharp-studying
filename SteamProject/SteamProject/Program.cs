@@ -56,11 +56,18 @@ void Login ()
         Console.Write("\nEnter password: ");
         string tempPassword = Console.ReadLine();
 
-        var find = AccsInfo.Where(x => x.Email == tempEmail && x.Password == tempPassword);
+        var findLogin = AccsInfo.FirstOrDefault(x => x.Email == tempEmail && x.Password == tempPassword);
+
+        if (findLogin != null)
+        {
+            Console.WriteLine("You're logged in!");
+            Games.Menu();
+        }
 
     }
 
 }
+
 
 class Account
 {
@@ -84,7 +91,7 @@ class Account
 class Games
 {
     static List<Games> AllGames = new List<Games>();
-    List<Games> GamesOnCart = new List<Games>();
+    static List<Games> GamesOnCart = new List<Games>();
     private static int nextId = 1;
     private string game;
     private double price;
@@ -101,7 +108,7 @@ class Games
         Id = nextId;
     }
 
-    static void Menu()
+    public static void Menu()
     {
 
         Games.CreateTitle("Welcome to the Steam homepage!");
@@ -115,7 +122,7 @@ class Games
         switch (option)
         {
             case "1":
-                SeeOffers();
+                Games.SeeOffers();
                 break;
             case "2":
 
@@ -128,6 +135,8 @@ class Games
                 break;
         }
     }
+
+
 
     public static void Cart ()
     {
@@ -152,10 +161,12 @@ class Games
             Console.WriteLine(AllGames[i].ToString());
         }
 
-        Console.WriteLine("\nIf you want any game type the name of it and it'll be added to the cart: ");
+        Console.WriteLine("\nIf you want any game, type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
-        var findGame = nameOfTheGame;
+        var findGame = AllGames.Where(GameExpects => GameExpects.Game == nameOfTheGame);
+
+
 
         if (nameOfTheGame == "")
         {
