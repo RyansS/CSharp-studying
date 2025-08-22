@@ -164,7 +164,7 @@ class Games
         Console.WriteLine("\nIf you want any game, type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
-        var findGame = AllGames.Where(GameExpects => GameExpects.Game == nameOfTheGame);
+        var findGame = AllGames.FirstOrDefault(GameExpects => GameExpects.Game == nameOfTheGame);
 
 
 
@@ -193,6 +193,11 @@ class Games
         }
 
         GetbackToMenu();
+
+    }
+
+    void AddGamesToCart(string nameOfTheGame)
+    {
 
     }
 
