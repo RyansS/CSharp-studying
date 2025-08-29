@@ -160,6 +160,33 @@ class Games
             GetbackToMenu();
     }
 
+
+    public static void Cart()
+    {
+        CreateTitle("Welcome to the Cart!");
+
+        Console.WriteLine("The games on your cart:\n");
+
+        foreach (Games ShowGamesOnCart in GamesOnCart)
+        {
+            Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
+        }
+    }
+
+    public static void Library()
+    {
+        CreateTitle("Welcome to your Library");
+
+        Console.WriteLine("Here is shown all your games");
+
+        foreach (Games ShowLibraryGames in AllGames)
+        {
+            Console.WriteLine($"{ShowLibraryGames.Game} ---> PLAY");
+        }
+
+        Console.WriteLine("\nType 'PLAY' if you'd like to play");
+    }
+
     public static void AddGamesToCart(string nameOfTheGame)
     {
         var findGame = AllGames.FirstOrDefault(GameExpects => GameExpects.Game == nameOfTheGame); //it returns
@@ -186,18 +213,6 @@ class Games
             {
                 GetbackToMenu();
             }
-        }
-    }
-
-    public static void Cart()
-    {
-        CreateTitle("Welcome to the Cart!");
-
-        Console.WriteLine("The games on your cart:\n");
-
-        foreach (Games ShowGamesOnCart in GamesOnCart)
-        {
-            Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
         }
     }
 
