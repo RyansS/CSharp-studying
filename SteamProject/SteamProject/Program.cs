@@ -164,9 +164,9 @@ class Games
         Console.WriteLine("\nIf you want any game, type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
-        var findGame = AllGames.FirstOrDefault(GameExpects => GameExpects.Game == nameOfTheGame);
-
-
+        var findGame = AllGames.FirstOrDefault(GameExpects => GameExpects.Game == nameOfTheGame); //it returns
+                                                                                                  //the Game
+                                                                                                  //itself searching by name
 
         if (nameOfTheGame == "")
         {
@@ -174,12 +174,19 @@ class Games
             Console.Clear();
             SeeOffers();
         }
-        else if  (nameOfTheGame != "")
+        else if (nameOfTheGame != "" && findGame != null)
         {
             Console.WriteLine("Do you wanna add another game? (Y/N) ");
             string answerAddGame = Console.ReadLine();
             answerAddGame.ToLower();
-            
+
+            if (findGame == null)
+            {
+                Console.WriteLine("We didn't find this game...");
+                Console.Clear();
+                SeeOffers();
+            }
+
 
             if (answerAddGame == "y")
             {
