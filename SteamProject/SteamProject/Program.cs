@@ -140,13 +140,13 @@ class Games
 
     public static void Cart ()
     {
+        CreateTitle("Welcome to the Cart!");
+
 
     }
 
     public static void SeeOffers()
     {
-
-        
 
         AllGames.Add(new Games("Counter Strike 2", 0));
         AllGames.Add(new Games("Dark Souls 3", 119.99));
@@ -164,29 +164,30 @@ class Games
         Console.WriteLine("\nIf you want any game, type the name of it and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
+        AddGamesToCart(nameOfTheGame);
+
+        GetbackToMenu();
+
+    }
+
+    public static void AddGamesToCart(string nameOfTheGame)
+    {
         var findGame = AllGames.FirstOrDefault(GameExpects => GameExpects.Game == nameOfTheGame); //it returns
                                                                                                   //the Game
                                                                                                   //itself searching by name
-
-        if (nameOfTheGame == "")
+        if (nameOfTheGame == "" || findGame == null)
         {
-            Console.WriteLine("Please type the name of a game!");
+            Console.WriteLine("We didn't find this game...");
             Console.Clear();
             SeeOffers();
         }
         else if (nameOfTheGame != "" && findGame != null)
         {
+            GamesOnCart.Add(findGame);
+
             Console.WriteLine("Do you wanna add another game? (Y/N) ");
             string answerAddGame = Console.ReadLine();
             answerAddGame.ToLower();
-
-            if (findGame == null)
-            {
-                Console.WriteLine("We didn't find this game...");
-                Console.Clear();
-                SeeOffers();
-            }
-
 
             if (answerAddGame == "y")
             {
@@ -195,17 +196,8 @@ class Games
             else if (answerAddGame == "n")
             {
                 GetbackToMenu();
-
             }
         }
-
-        GetbackToMenu();
-
-    }
-
-    void AddGamesToCart(string nameOfTheGame)
-    {
-
     }
 
     public static void GetbackToMenu ()
