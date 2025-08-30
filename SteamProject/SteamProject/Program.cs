@@ -2,43 +2,43 @@
 using System.ComponentModel.Design;
 using System.Security.Cryptography.X509Certificates;
 
+Games.CreateTitle("Welcome to steam!");
 List<Account> AccsInfo = new List<Account>();
 
-Games.CreateTitle("Welcome to steam!");
+Account acc = Register();
+AccsInfo.Add(acc);
 
-Games.Menu();
-
-Console.ReadKey();
-Account Register()
+static Account Register()
 {
-        Console.Write("How we should call you? ");
-        string TempUsername = Console.ReadLine();
+    Console.Write("How we should call you? ");
+    string TempUsername = Console.ReadLine();
 
-        Console.WriteLine("Now we need some crucial informations from you ");
+    Console.WriteLine("Now we need some crucial informations from you ");
 
-        Console.Write("What's your email? ");
-        string TempEmail = Console.ReadLine();
+    Console.Write("What's your email? ");
+    string TempEmail = Console.ReadLine();
 
-        Console.Write("\nNow create a strong password: ");
-        string TempPassword = Console.ReadLine();
+    Console.Write("\nNow create a strong password: ");
+    string TempPassword = Console.ReadLine();
 
-        if (TempUsername != null && TempEmail != null && TempPassword != null)
-        {
-            Console.WriteLine("\nThank you to joined the Steam universe!");
-            Login();
-        }
-        else if (TempUsername == null || TempEmail == null || TempPassword == null) 
-        {
-            Console.WriteLine("\nPlease, keep sure that you've typed you're" +
-                " credentials properly");
-            Register();
-        }
-  
+    if (TempUsername != null && TempEmail != null && TempPassword != null)
+    {
+        Console.WriteLine("\nThank you to joined the Steam universe!");
+        Login();
+    }
+    else if (TempUsername == null || TempEmail == null || TempPassword == null)
+    {
+        Console.WriteLine("\nPlease, keep sure that you've typed you're" +
+            " credentials properly");
+        Register();
+    }
+
     return new Account(TempUsername, TempEmail, TempPassword);
-} 
+}
 
-void Login ()
+static void Login()
 {
+
     Games.CreateTitle("Welcome to Log-in!");
     Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
     "in case you're already a member, type: 'Login'");
@@ -68,6 +68,7 @@ void Login ()
     }
 }
 
+Console.ReadKey();
 
 class Account
 {
@@ -85,6 +86,8 @@ class Account
         this.email = email;
         this.password = password;
     }
+
+    
 }
 
 class Games
