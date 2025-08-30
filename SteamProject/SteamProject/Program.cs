@@ -171,8 +171,21 @@ class Games
         {
             Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
         }
-        
-        Console.WriteLine(Payment());
+
+        Console.WriteLine("Would u like to go to the payment?(Y/N)");
+        var answerGoToPay = Console.ReadLine();
+        answerGoToPay.ToUpper();
+
+        if (answerGoToPay == "Y")
+        {
+            Console.WriteLine("Total: " + Payment());
+        }
+
+        else if (answerGoToPay != "Y")
+        {
+            Console.Clear();
+            Menu();
+        }
     }
 
     public static void Library()
@@ -194,7 +207,7 @@ class Games
         Console.Clear();
         double totalSum = 0;
 
-        CreateTitle("Payment\n");
+        CreateTitle("Payment");
 
         foreach (Games ShowGamesOnCart in GamesOnCart)
         {
@@ -205,8 +218,6 @@ class Games
                 totalSum += GamesOnCart[i].Price;
             }
         }
-
-        Console.WriteLine($"Total: {totalSum}");
 
         Console.Write("Choose the payment method:\n");
         Console.WriteLine("Credit card");
