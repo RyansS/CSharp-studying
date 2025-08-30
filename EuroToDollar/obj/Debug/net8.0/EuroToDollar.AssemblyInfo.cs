@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EuroToDollar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c5d2bc45462adaa65516abbc6537c1b46b46392")]
 [assembly: System.Reflection.AssemblyProductAttribute("EuroToDollar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EuroToDollar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

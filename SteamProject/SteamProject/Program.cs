@@ -128,7 +128,7 @@ class Games
                 Cart();
                 break;
             case "3":
-
+                Library();
                 break;
             case "4":
 
@@ -152,7 +152,7 @@ class Games
             Console.WriteLine(ShowGamesOffers.ToString());
         }
 
-        Console.WriteLine("\nIf you want any game, type the name of it and it'll be added to the cart: ");
+        Console.WriteLine("\nType the name of the game and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
         AddGamesToCart(nameOfTheGame);
@@ -171,6 +171,8 @@ class Games
         {
             Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
         }
+        
+        Console.WriteLine(Payment());
     }
 
     public static void Library()
@@ -185,6 +187,33 @@ class Games
         }
 
         Console.WriteLine("\nType 'PLAY' if you'd like to play");
+    }
+
+    public static double Payment()
+    {
+        Console.Clear();
+        double totalSum = 0;
+
+        CreateTitle("Payment\n");
+
+        foreach (Games ShowGamesOnCart in GamesOnCart)
+        {
+            Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
+
+            for (int i = 0; i <= GamesOnCart.Count; i++)
+            {
+                totalSum += GamesOnCart[i].Price;
+            }
+        }
+
+        Console.WriteLine($"Total: {totalSum}");
+
+        Console.Write("Choose the payment method:\n");
+        Console.WriteLine("Credit card");
+        Console.WriteLine("Pix");
+        Console.WriteLine("Nomad");
+
+        return totalSum;
     }
 
     public static void AddGamesToCart(string nameOfTheGame)
