@@ -5,17 +5,16 @@ using System.Security.Cryptography.X509Certificates;
 Games.CreateTitle("Welcome to steam!");
 List<Account> AccsInfo = new List<Account>();
 
-Account acc = Register();
-AccsInfo.Add(acc);
+Login(AccsInfo);
 
 static Account Register()
 {
     Console.Write("How we should call you? ");
     string TempUsername = Console.ReadLine();
 
-    Console.WriteLine("Now we need some crucial informations from you ");
+    Console.WriteLine("\nNow we need some crucial informations from you ");
 
-    Console.Write("What's your email? ");
+    Console.Write("\nWhat's your email? ");
     string TempEmail = Console.ReadLine();
 
     Console.Write("\nNow create a strong password: ");
@@ -23,8 +22,9 @@ static Account Register()
 
     if (TempUsername != null && TempEmail != null && TempPassword != null)
     {
-        Console.WriteLine("\nThank you to joined the Steam universe!");
-        Login();
+        Console.Clear();
+        Console.WriteLine("Thank you to join the Steam universe!");
+
     }
     else if (TempUsername == null || TempEmail == null || TempPassword == null)
     {
@@ -36,9 +36,8 @@ static Account Register()
     return new Account(TempUsername, TempEmail, TempPassword);
 }
 
-static void Login()
+void Login(List<Account> ListOfAccounts)
 {
-
     Games.CreateTitle("Welcome to Log-in!");
     Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
     "in case you're already a member, type: 'Login'");
@@ -48,9 +47,14 @@ static void Login()
 
     if (option == "register")
     {
-        Register();
+        Account acc = Register();
+
+        if (acc.User != null && acc.Email != null && acc.Password != null)
+        {
+            AccsInfo.Add(acc);
+        }
     }
-    else
+    else if (option == "login")
     {
         Console.Write("Type here you're email: ");
         string tempEmail = Console.ReadLine();
@@ -58,15 +62,23 @@ static void Login()
         Console.Write("\nEnter password: ");
         string tempPassword = Console.ReadLine();
 
-        var findLogin = AccsInfo.FirstOrDefault(x => x.Email == tempEmail && x.Password == tempPassword);
+        var findLogin = ListOfAccounts.FirstOrDefault(InfoExpected => InfoExpected.Email == tempEmail && InfoExpected.Password == tempPassword);
 
         if (findLogin != null)
         {
             Console.WriteLine("You're logged in!");
             Games.Menu();
         }
+
+        else if (findLogin == null)
+        {
+            Console.Clear();
+            Console.WriteLine("Your credentials doesn't match...");
+            Login(AccsInfo);
+        }
     }
 }
+
 
 Console.ReadKey();
 
