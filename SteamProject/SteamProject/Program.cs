@@ -9,6 +9,11 @@ internal class Program
     {
         Games.CreateTitle("Welcome to steam!");
 
+            Games.AllGames.Add(new Games("Counter Strike 2", 0));
+                Games.AllGames.Add(new Games("Dark Souls 3", 119.99));
+                    Games.AllGames.Add(new Games("Cyberpunk 2077", 169.99));
+                        Games.AllGames.Add(new Games("Red Dead Redemption 2", 199.99));
+                            Games.AllGames.Add(new Games("Hollow Knight", 39.99));
 
         Account.Login(Account.AccsInfo);
 
@@ -51,7 +56,6 @@ class Account
         {
             Console.Clear();
             Console.WriteLine("Thank you to join the Steam universe!");
-            Login(AccsInfo);
 
         }
         else if (TempUsername == null || TempEmail == null || TempPassword == null)
@@ -68,8 +72,7 @@ class Account
     {
         Console.Clear();
         Games.CreateTitle("Welcome to Log-in!");
-        Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
-            "in case you're already a member, type: 'Login'");
+        Console.WriteLine("\nIf you're not a member yet type: 'Register', in case you're already a member, type: 'Login'");
 
         string option = Console.ReadLine();
         option.ToLower();
@@ -77,11 +80,12 @@ class Account
         if (option == "register")
         {
             Account acc = Register();
-            AccsInfo.Add(acc);
-
+            ListOfAccounts.Add(acc);
+            Login(ListOfAccounts);
         }
         else if (option == "login")
         {
+
             Console.Write("Type here you're email: ");
             string tempEmail = Console.ReadLine();
 
@@ -89,7 +93,8 @@ class Account
             string tempPassword = Console.ReadLine();
 
             var findLogin = ListOfAccounts.FirstOrDefault
-            (InfoExpected => InfoExpected.Email == tempEmail && InfoExpected.Password == tempPassword);
+            (EachItemOfList => EachItemOfList.Email == tempEmail && EachItemOfList.Password == tempPassword);
+
 
             if (findLogin != null)
             {
@@ -98,10 +103,11 @@ class Account
                 Games.Menu();
             }
 
-            else if (findLogin == null)
+            else
             {
                 Console.Clear();
                 Console.WriteLine("Your credentials doesn't match...");
+                Console.ReadLine();
                 Login(AccsInfo);
             }
         }
@@ -110,7 +116,7 @@ class Account
 
 class Games
 {
-    static List<Games> AllGames = new List<Games>();
+    public static List<Games> AllGames = new List<Games>();
         static List<Games> GamesOnCart = new List<Games>();
             private static int nextId = 1;
                 private string game;
@@ -158,11 +164,6 @@ class Games
     }
     public static void SeeOffers()
     {
-        AllGames.Add(new Games("Counter Strike 2", 0));
-            AllGames.Add(new Games("Dark Souls 3", 119.99));
-                AllGames.Add(new Games("Cyberpunk 2077", 169.99));
-                    AllGames.Add(new Games("Red Dead Redemption 2", 199.99));
-                        AllGames.Add(new Games("Hollow Knight", 39.99));
 
         Console.Clear();
 
@@ -183,6 +184,7 @@ class Games
 
     public static void Cart()
     {
+        Console.Clear();
         CreateTitle("Welcome to the Cart!");
 
         Console.WriteLine("The games on your cart:\n");
@@ -193,7 +195,7 @@ class Games
         }
 
         Console.WriteLine("Would u like to go to the payment?(Y/N)");
-        var answerGoToPay = Console.ReadLine();
+        string answerGoToPay = Console.ReadLine();
         answerGoToPay.ToUpper();
 
         if (answerGoToPay == "Y")
@@ -201,7 +203,7 @@ class Games
             Console.WriteLine("Total: " + Payment());
         }
 
-        else if (answerGoToPay != "Y")
+        else if (answerGoToPay != "y" || answerGoToPay == "")
         {
             Console.Clear();
             Menu();
@@ -210,6 +212,7 @@ class Games
 
     public static void Library()
     {
+        Console.Clear();
         CreateTitle("Welcome to your Library");
 
         Console.WriteLine("Here is shown all your games");
@@ -224,13 +227,13 @@ class Games
 
     public static void Profile (List<Account> AccountList)
     {
-        CreateTitle("Profile\n");
+        CreateTitle("Profile");
 
         Console.WriteLine("You're credentials: ");
 
             foreach (Account ShowAllInfo in AccountList)
             {
-                
+                Console.WriteLine($" Username: {ShowAllInfo.User}\n Email: {ShowAllInfo.Email}\n Password: {ShowAllInfo.Password}");
             }
     }
 
@@ -245,16 +248,14 @@ class Games
         {
             Console.WriteLine($"Name: {ShowGamesOnCart.Game}, Price: {ShowGamesOnCart.Price}");
 
-            for (int i = 0; i <= GamesOnCart.Count; i++)
-            {
-                totalSum += GamesOnCart[i].Price;
-            }
+                totalSum += ShowGamesOnCart.Price;
+
         }
 
-        Console.Write("Choose the payment method:\n");
+        Console.Write("\nChoose the payment method:\n");
         Console.WriteLine("Credit card");
         Console.WriteLine("Pix");
-        Console.WriteLine("Nomad");
+        Console.WriteLine("Nomad\n");
 
         return totalSum;
     }
