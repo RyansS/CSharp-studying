@@ -2,95 +2,30 @@
 using System.ComponentModel.Design;
 using System.Security.Cryptography.X509Certificates;
 
-Games.CreateTitle("Welcome to steam!");
-List<Account> AccsInfo = new List<Account>();
-
-Login(AccsInfo);
-
-static Account Register()
+internal class Program
 {
-    Console.Write("How we should call you? ");
-    string TempUsername = Console.ReadLine();
-
-    Console.WriteLine("\nNow we need some crucial informations from you ");
-
-    Console.Write("\nWhat's your email? ");
-    string TempEmail = Console.ReadLine();
-
-    Console.Write("\nNow create a strong password: ");
-    string TempPassword = Console.ReadLine();
-
-    if (TempUsername != null && TempEmail != null && TempPassword != null)
+    
+    private static void Main(string[] args)
     {
-        Console.Clear();
-        Console.WriteLine("Thank you to join the Steam universe!");
+        Games.CreateTitle("Welcome to steam!");
 
-    }
-    else if (TempUsername == null || TempEmail == null || TempPassword == null)
-    {
-        Console.WriteLine("\nPlease, keep sure that you've typed you're" +
-            " credentials properly");
-        Register();
-    }
 
-    return new Account(TempUsername, TempEmail, TempPassword);
-}
+        Account.Login(Account.AccsInfo);
 
-void Login(List<Account> ListOfAccounts)
-{
-    Games.CreateTitle("Welcome to Log-in!");
-    Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
-    "in case you're already a member, type: 'Login'");
-
-    string option = Console.ReadLine();
-    option.ToLower();
-
-    if (option == "register")
-    {
-        Account acc = Register();
-
-        if (acc.User != null && acc.Email != null && acc.Password != null)
-        {
-            AccsInfo.Add(acc);
-        }
-    }
-    else if (option == "login")
-    {
-        Console.Write("Type here you're email: ");
-        string tempEmail = Console.ReadLine();
-
-        Console.Write("\nEnter password: ");
-        string tempPassword = Console.ReadLine();
-
-        var findLogin = ListOfAccounts.FirstOrDefault(InfoExpected => InfoExpected.Email == tempEmail && InfoExpected.Password == tempPassword);
-
-        if (findLogin != null)
-        {
-            Console.WriteLine("You're logged in!");
-            Games.Menu();
-        }
-
-        else if (findLogin == null)
-        {
-            Console.Clear();
-            Console.WriteLine("Your credentials doesn't match...");
-            Login(AccsInfo);
-        }
+        Console.ReadKey();
     }
 }
-
-
-Console.ReadKey();
 
 class Account
 {
+    public static List<Account> AccsInfo = new List<Account>();
     private string user;
-    private string email;
-    private string password;
+        private string email;
+            private string password;
 
     public string User { get { return user; } set { user = value; } }
-    public string Email { get { return email; } set { email = value; } }
-    public string Password { get { return password; } set { password = value; } }
+        public string Email { get { return email; } set { email = value; } }
+            public string Password { get { return password; } set { password = value; } }
 
     public Account (string user, string email, string password)
     {
@@ -99,21 +34,92 @@ class Account
         this.password = password;
     }
 
-    
+    public static Account Register()
+    {
+        Console.Write("How we should call you? ");
+        string TempUsername = Console.ReadLine();
+
+        Console.WriteLine("\nNow we need some crucial informations from you ");
+
+        Console.Write("\nWhat's your email? ");
+        string TempEmail = Console.ReadLine();
+
+        Console.Write("\nNow create a strong password: ");
+        string TempPassword = Console.ReadLine();
+
+        if (TempUsername != null && TempEmail != null && TempPassword != null)
+        {
+            Console.Clear();
+            Console.WriteLine("Thank you to join the Steam universe!");
+            Login(AccsInfo);
+
+        }
+        else if (TempUsername == null || TempEmail == null || TempPassword == null)
+        {
+            Console.WriteLine("\nPlease, keep sure that you've typed you're" +
+                " credentials properly");
+            Register();
+        }
+
+        return new Account(TempUsername, TempEmail, TempPassword);
+    }
+
+    public static void Login(List<Account> ListOfAccounts)
+    {
+        Console.Clear();
+        Games.CreateTitle("Welcome to Log-in!");
+        Console.WriteLine("\nIf you're not a member yet type: 'Register'," +
+            "in case you're already a member, type: 'Login'");
+
+        string option = Console.ReadLine();
+        option.ToLower();
+
+        if (option == "register")
+        {
+            Account acc = Register();
+            AccsInfo.Add(acc);
+
+        }
+        else if (option == "login")
+        {
+            Console.Write("Type here you're email: ");
+            string tempEmail = Console.ReadLine();
+
+            Console.Write("\nEnter password: ");
+            string tempPassword = Console.ReadLine();
+
+            var findLogin = ListOfAccounts.FirstOrDefault
+            (InfoExpected => InfoExpected.Email == tempEmail && InfoExpected.Password == tempPassword);
+
+            if (findLogin != null)
+            {
+                Console.Clear();
+                Console.WriteLine("You're logged in!");
+                Games.Menu();
+            }
+
+            else if (findLogin == null)
+            {
+                Console.Clear();
+                Console.WriteLine("Your credentials doesn't match...");
+                Login(AccsInfo);
+            }
+        }
+    }
 }
 
 class Games
 {
     static List<Games> AllGames = new List<Games>();
-    static List<Games> GamesOnCart = new List<Games>();
-    private static int nextId = 1;
-    private string game;
-    private double price;
-    private int id;
+        static List<Games> GamesOnCart = new List<Games>();
+            private static int nextId = 1;
+                private string game;
+                    private double price;
+                        private int id;
 
     public string Game { get { return game; } set { game = value; } }
-    public double Price { get { return price; } set { price = value; } }
-    public int Id { get { return id; } set { id = value; } }
+        public double Price { get { return price; } set { price = value; } }
+            public int Id { get { return id; } set { id = value; } }
 
     public Games(string game, double price)
     {
@@ -127,10 +133,10 @@ class Games
     {
 
         CreateTitle("Welcome to the Steam homepage!");
-        Console.WriteLine("1 - See offers");
-        Console.WriteLine("2 - Go to cart");
-        Console.WriteLine("3 - Library");
-        Console.WriteLine("4 - Profile\n");
+            Console.WriteLine("1 - See offers");
+                Console.WriteLine("2 - Go to cart");
+                    Console.WriteLine("3 - Library");
+                        Console.WriteLine("4 - Profile\n");
 
         string option = Console.ReadLine();
 
@@ -146,35 +152,34 @@ class Games
                 Library();
                 break;
             case "4":
-
+                Profile(Account.AccsInfo);
                 break;
         }
     }
     public static void SeeOffers()
     {
         AllGames.Add(new Games("Counter Strike 2", 0));
-        AllGames.Add(new Games("Dark Souls 3", 119.99));
-        AllGames.Add(new Games("Cyberpunk 2077", 169.99));
-        AllGames.Add(new Games("Red Dead Redemption 2", 199.99));
-        AllGames.Add(new Games("Hollow Knight", 39.99));
+            AllGames.Add(new Games("Dark Souls 3", 119.99));
+                AllGames.Add(new Games("Cyberpunk 2077", 169.99));
+                    AllGames.Add(new Games("Red Dead Redemption 2", 199.99));
+                        AllGames.Add(new Games("Hollow Knight", 39.99));
 
         Console.Clear();
 
         CreateTitle("Check out the offers of the week!");
 
-        foreach (Games ShowGamesOffers in AllGames)
-        {
-            Console.WriteLine(ShowGamesOffers.ToString());
-        }
+            foreach (Games ShowGamesOffers in AllGames)
+            {
+                Console.WriteLine(ShowGamesOffers.ToString());
+            }
 
         Console.WriteLine("\nType the name of the game and it'll be added to the cart: ");
         string nameOfTheGame = Console.ReadLine();
 
         AddGamesToCart(nameOfTheGame);
 
-            GetbackToMenu();
+        GetbackToMenu();
     }
-
 
     public static void Cart()
     {
@@ -215,6 +220,18 @@ class Games
         }
 
         Console.WriteLine("\nType 'PLAY' if you'd like to play");
+    }
+
+    public static void Profile (List<Account> AccountList)
+    {
+        CreateTitle("Profile\n");
+
+        Console.WriteLine("You're credentials: ");
+
+            foreach (Account ShowAllInfo in AccountList)
+            {
+                
+            }
     }
 
     public static double Payment()
