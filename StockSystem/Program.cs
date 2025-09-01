@@ -1,16 +1,9 @@
-﻿
-using System.Data.Common;
+﻿using System.Data.Common;
 using System.Dynamic;
-
-Dictionary<int, Products> AllProducts = new Dictionary<int, Products>();
-HashSet<string> NameOfAllProducts = new HashSet<string>();
-NameOfAllProducts.Add("aaa");
-NameOfAllProducts.Add("bbb");
-NameOfAllProducts.Add("ccc");
 
 SeeAllProducts();
 
-void Menu ()
+static void Menu ()
 {
     CreateTitle("Menu");
 
@@ -18,32 +11,81 @@ void Menu ()
         int optionChosen = int.Parse(Console.ReadLine());
 
     Console.WriteLine("Option 1: Register a Product");
-    Console.WriteLine("Option 2: See all Products");
-    Console.WriteLine("Option 3: Search for a Product");
+        Console.WriteLine("Option 2: See all Products");
+            Console.WriteLine("Option 3: Search for a Product");
 
     switch (optionChosen)
     {
         case 1:
             Products storeProduct = registerProduct();
-            AllProducts.Add(storeProduct.Id, storeProduct);
-            NameOfAllProducts.Add(storeProduct.ProductName);
+                Products.AllProducts.Add(storeProduct.Id, storeProduct);
+                    Products.NameOfAllProducts.Add(storeProduct.ProductName);
             break;
         case 2:
-
+            SeeAllProducts();
             break;
         case 3:
-
+            Products storeProductFound = SearchProducts();
             break;
-            
-        
+
+
     }
 }
 
-void SeeAllProducts ()
+static Products SearchProducts ()
+{
+
+    bool repeatCode = true;
+    int IdAnswer = 0;
+
+    CreateTitle("Products Search");
+
+    while (repeatCode)
+    {
+        Products.AllProducts.Values.ToString();
+
+        Console.WriteLine("\n Choose a id: ");
+        IdAnswer = int.Parse(Console.ReadLine());
+
+        if (Products.AllProducts.ContainsKey(IdAnswer))
+        {
+            Console.WriteLine($"Product found!\n {Products.AllProducts[IdAnswer]}");
+            repeatCode = false;
+
+            GetBackToMenu();
+        }
+
+        else
+        {
+            Console.WriteLine("We didn't find this product...");
+        }
+    }
+
+    return Products.AllProducts[IdAnswer];
+
+
+
+}
+
+static void GetBackToMenu()
+{
+            Console.WriteLine("Get back to menu by pressing 'M'");
+                string answer = Console.ReadLine();
+                    answer.ToLower();
+
+            if (answer == "m")
+            {
+                Console.Clear();
+                Menu();
+            }
+}
+
+static void SeeAllProducts()
 {
     CreateTitle("All Products");
 
-    foreach (string ShowAllProductsName in NameOfAllProducts) {
+    foreach (string ShowAllProductsName in Products.NameOfAllProducts)
+    {
         Console.WriteLine(ShowAllProductsName);
     }
 }
@@ -82,6 +124,8 @@ static Products registerProduct()
 
 }
 
+
+
 static void CreateTitle (string title)
 {
     int numbOfCharacters = title.Length;
@@ -93,6 +137,8 @@ static void CreateTitle (string title)
 
 class Products
 {
+    public static HashSet<string> NameOfAllProducts = new HashSet<string>();
+    public static Dictionary<int, Products> AllProducts = new Dictionary<int, Products>();
     private string productName;
     private double price;
     private int id;
@@ -108,6 +154,11 @@ class Products
         Price = price;
         Id = nextId;
         nextId++;
+    }
+
+    public override string ToString()
+    {
+        return $"Product name {ProductName}, Id: {Id}";
     }
 
 }
