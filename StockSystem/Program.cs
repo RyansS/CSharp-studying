@@ -27,8 +27,6 @@ static void Menu ()
         case 3:
             Products storeProductFound = SearchProducts();
             break;
-
-
     }
 }
 
@@ -42,9 +40,7 @@ static Products SearchProducts ()
 
     while (repeatCode)
     {
-        Products.AllProducts.Values.ToString();
-
-        Console.WriteLine("\n Choose a id: ");
+        Console.WriteLine("\n Type a Id: ");
         IdAnswer = int.Parse(Console.ReadLine());
 
         if (Products.AllProducts.ContainsKey(IdAnswer))
@@ -63,21 +59,51 @@ static Products SearchProducts ()
 
     return Products.AllProducts[IdAnswer];
 
+}
 
+static void ManageProduct ()
+{
+    CreateTitle("Manage Product");
 
+    bool repeatCode = true;
+
+    while (repeatCode) {
+
+    Console.WriteLine("Choose a option: ");
+        Console.WriteLine("1-Delete Product");
+        Console.WriteLine("2-Change Price");
+        Console.WriteLine("3-Change Name");
+
+    int answer = int.Parse(Console.ReadLine());
+
+        switch (answer)
+        {
+            case 1:
+            
+                break;
+            case 2:
+            
+                break;
+            case 3:
+            
+                break;
+        
+        }
+    }
+    
 }
 
 static void GetBackToMenu()
 {
-            Console.WriteLine("Get back to menu by pressing 'M'");
-                string answer = Console.ReadLine();
-                    answer.ToLower();
+    Console.WriteLine("Get back to menu by pressing 'M'");
+    string answer = Console.ReadLine();
+    answer.ToLower();
 
-            if (answer == "m")
-            {
-                Console.Clear();
-                Menu();
-            }
+    if (answer == "m")
+    {
+        Console.Clear();
+        Menu();
+    }
 }
 
 static void SeeAllProducts()
@@ -128,11 +154,12 @@ static Products registerProduct()
 
 static void CreateTitle (string title)
 {
+    char symbol = '-';
     int numbOfCharacters = title.Length;
 
-    Console.WriteLine(title.PadLeft(numbOfCharacters, '-'));
+    Console.WriteLine(title.PadLeft(numbOfCharacters, symbol));
     Console.WriteLine(title);
-    Console.WriteLine(title.PadLeft(numbOfCharacters, '-'));
+    Console.WriteLine(title.PadLeft(numbOfCharacters, symbol));
 }
 
 class Products
