@@ -96,7 +96,7 @@ static void ManageProduct (Products ProductStored)
                 ChangePrice(ProductStored);
                 break;
             case 3:
-            
+                ChangeName(ProductStored);
                 break;
         
         }
@@ -120,11 +120,32 @@ static void ChangePrice(Products ProductStoredToChangePrice)
     if (PriceChange > 0 || PriceChange != null)
     {
         ProductStoredToChangePrice.Price = PriceChange;
+        Console.WriteLine($"Price Changed! New Price: {PriceChange}");
     }
 
-    else if (PriceChange < 0 || PriceChange != null)
+    else if (PriceChange < 0 || PriceChange == null)
     {
         Console.WriteLine("Please type a valid price!");
+    }
+
+}
+
+static void ChangeName(Products ProductStoredToChangeName)
+{
+    Console.WriteLine(ProductStoredToChangeName.ToString());
+
+    Console.Write("\nChange the Name:");
+    string NameChange = Console.ReadLine();
+
+    if (NameChange != null)
+    {
+        ProductStoredToChangeName.ProductName = NameChange;
+            Console.WriteLine($"Name Changed! New name: {NameChange}");
+    }
+
+    else if (NameChange == "" || NameChange == null)
+    {
+        Console.WriteLine("Please type a valid Name!");
     }
     
 }
