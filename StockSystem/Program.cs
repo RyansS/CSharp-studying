@@ -1,20 +1,22 @@
 ﻿using System.Data.Common;
 using System.Dynamic;
 
-SeeAllProducts();
+Menu();
 
-static void Menu ()
+Console.ReadKey();
+
+
+static void Menu()
 {
-    Products objectToStoreObject = new("aaa", 2.2);
-        CreateTitle("Menu");
-
-    Console.Write("\nChoose a option: ");
-        int optionChosen = int.Parse(Console.ReadLine());
+    CreateTitle("Menu");
 
     Console.WriteLine("Option 1: Register a Product");
-        Console.WriteLine("Option 2: See all Products");
-            Console.WriteLine("Option 3: Search for a Product");
-                Console.WriteLine("Option 4: Manage Products");
+    Console.WriteLine("Option 2: See all Products");
+    Console.WriteLine("Option 3: Search for a Product");
+    Console.WriteLine("Option 4: Manage Products");
+
+    Console.Write("\nChoose a option: ");
+    int optionChosen = int.Parse(Console.ReadLine());
 
 
     switch (optionChosen)
@@ -24,57 +26,17 @@ static void Menu ()
             Products storeProduct = registerProduct();
                 Products.AllProducts.Add(storeProduct.Id, storeProduct);
                     Products.NameOfAllProducts.Add(storeProduct.ProductName);
+                        GetBackToMenu();
             break;
         case 2:
             SeeAllProducts();
             break;
         case 3:
             Products storeProductFound = SearchProducts();
-                objectToStoreObject = storeProductFound;
             break;
         case 4:
-            ManageProduct(objectToStoreObject);
+            ManageProduct();
             break;
-    }
-}
-
-static Products SearchProducts ()
-{
-
-    bool repeatCode = true;
-        int IdAnswer = 0;
-
-    CreateTitle("Products Search");
-
-    while (repeatCode)
-    {
-        Console.WriteLine("\n Type a Id: ");
-            IdAnswer = int.Parse(Console.ReadLine());
-
-        if (Products.AllProducts.ContainsKey(IdAnswer))
-        {
-            Console.WriteLine($"Product found!\n {Products.AllProducts[IdAnswer]}");
-                repeatCode = false;
-
-            GetBackToMenu();
-        }
-
-        else
-        {
-            Console.WriteLine("We didn't find this product...");
-        }
-    }
-
-    return Products.AllProducts[IdAnswer];
-}
-
-static void SeeAllProducts()
-{
-    CreateTitle("All Products");
-
-    foreach (string ShowAllProductsName in Products.NameOfAllProducts)
-    {
-        Console.WriteLine(ShowAllProductsName);
     }
 }
 
@@ -98,7 +60,7 @@ static Products registerProduct()
         if (tempNameProduct != null && tempPriceProduct != null)
         {
             Console.Clear();
-                Console.WriteLine("Product succeedfuly registred!");
+                Console.WriteLine("Product succeesfully registred!");
                     repeatCode = false;
         }
 
@@ -109,46 +71,95 @@ static Products registerProduct()
     }
 
     return new Products(tempNameProduct, tempPriceProduct);
-
+    
 }
 
-static void ManageProduct (Products ProductStored)
+
+
+static void SeeAllProducts()
 {
+    CreateTitle("All Products");
+
+    foreach (string ShowAllProductsName in Products.NameOfAllProducts)
+    {
+        Console.WriteLine(ShowAllProductsName);
+    }
+
+    GetBackToMenu();
+}
+
+static Products SearchProducts()
+{
+
+    bool repeatCode = true;
+    int IdAnswer = 0;
+
+    CreateTitle("Products Search");
+
+    while (repeatCode)
+    {
+        Console.Write("\nType a Id: ");
+        IdAnswer = int.Parse(Console.ReadLine());
+
+        if (Products.AllProducts.ContainsKey(IdAnswer))
+        {
+            Console.WriteLine($"Product found!\n{Products.AllProducts[IdAnswer]}");
+            repeatCode = false;
+
+            GetBackToMenu();
+        }
+
+        else if (Products.AllProducts.ContainsKey(IdAnswer) != true) 
+        {
+            Console.WriteLine("We didn't find this product...");
+            GetBackToMenu();
+        }
+    }
+
+    return Products.AllProducts[IdAnswer];
+}
+
+
+
+static void ManageProduct()
+{
+    Console.Clear();
     CreateTitle("Manage Product");
 
-        bool repeatCode = true;
+    bool repeatCode = true;
 
-    while (repeatCode) {
-
-    Console.WriteLine(ProductStored.ToString() + "\n");
-
-    Console.WriteLine("Choose a option: ");
+    while (repeatCode)
+    {
+        Console.WriteLine("Choose a option: ");
         Console.WriteLine("1-Delete Product");
-            Console.WriteLine("2-Change Price");
-                Console.WriteLine("3-Change Name");
-                    Console.WriteLine("0-Go back to menu");
+        Console.WriteLine("2-Change Price");
+        Console.WriteLine("3-Change Name");
+        Console.WriteLine("0-Go back to menu");
 
-    int answer = int.Parse(Console.ReadLine());
+        int answer = int.Parse(Console.ReadLine());
 
         switch (answer)
         {
             case 0:
                 GetBackToMenu();
-                    repeatCode = false;
+                repeatCode = false;
                 break;
             case 1:
-                DeleteProduct(ProductStored);
+                repeatCode = false;
+                DeleteProduct(Products);
                 break;
             case 2:
-                ChangePrice(ProductStored);
+                repeatCode = false;
+                ChangePrice(Product);
                 break;
             case 3:
-                ChangeName(ProductStored);
+                repeatCode = false;
+                ChangeName(Product);
                 break;
-        
+
         }
     }
-    
+
 }
 
 
@@ -208,27 +219,42 @@ static void ChangeName(Products ProductStoredToChangeName)
 
 static void GetBackToMenu()
 {
-    Console.WriteLine("Get back to menu by pressing 'M'");
-        string answer = Console.ReadLine();
-            answer.ToLower();
+    bool repeatCode = true;
 
-    if (answer == "m")
+    while (repeatCode)
     {
-        Console.Clear();
-        Menu();
+
+        Console.WriteLine("\n" + "Get back to menu by pressing 'M'");
+            string answer = Console.ReadLine();
+                answer.ToLower();
+
+        if (answer == "m" || answer == "M")
+        {
+            Console.Clear();
+                Menu();
+                    repeatCode = false;
+        }
+
+        else
+        {
+            Console.Clear();
+            Console.WriteLine("Please type correctly!");
+        }
+    
     }
+    
 }
 
 
 
 static void CreateTitle(string title)
 {
-    char symbol = '-';
-        int numbOfCharacters = title.Length;
+    int numbOfCharacters = title.Length;
+        string symbols = string.Empty.PadLeft(numbOfCharacters, '-');
 
-    Console.WriteLine(title.PadLeft(numbOfCharacters, symbol));
+    Console.WriteLine(symbols);
         Console.WriteLine(title);
-            Console.WriteLine(title.PadLeft(numbOfCharacters, symbol));
+            Console.WriteLine(symbols);
 }
 
 
@@ -245,7 +271,8 @@ class Products
             private string productName;
                 private double price;
                     private int id;
-                        private int nextId = 0;
+                        private static int nextId = 1;
+                            public bool repeatCode = true;
 
     public string ProductName { get { return productName; } set { productName = value; } }
         public double Price { get { return price; } set { price = value; } }
