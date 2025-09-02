@@ -18,14 +18,18 @@ static void Menu ()
     {
         case 1:
             Products storeProduct = registerProduct();
-                Products.AllProducts.Add(storeProduct.Id, storeProduct);
-                    Products.NameOfAllProducts.Add(storeProduct.ProductName);
+            Products.AllProducts.Add(storeProduct.Id, storeProduct);
+            Products.NameOfAllProducts.Add(storeProduct.ProductName);
             break;
         case 2:
             SeeAllProducts();
             break;
         case 3:
             Products storeProductFound = SearchProducts();
+            break;
+
+        case 4:
+
             break;
     }
 }
@@ -61,7 +65,7 @@ static Products SearchProducts ()
 
 }
 
-static void ManageProduct ()
+static void ManageProduct (Products ProductStored)
 {
     CreateTitle("Manage Product");
 
@@ -69,20 +73,27 @@ static void ManageProduct ()
 
     while (repeatCode) {
 
+    Console.WriteLine(ProductStored.ToString() + "\n");
+
     Console.WriteLine("Choose a option: ");
         Console.WriteLine("1-Delete Product");
         Console.WriteLine("2-Change Price");
         Console.WriteLine("3-Change Name");
+        Console.WriteLine("0-Go back to menu");
 
     int answer = int.Parse(Console.ReadLine());
 
         switch (answer)
         {
+            case 0:
+                GetBackToMenu();
+                    repeatCode = false;
+                break;
             case 1:
-            
+                DeleteProduct(ProductStored);
                 break;
             case 2:
-            
+                ChangePrice(ProductStored);
                 break;
             case 3:
             
@@ -93,17 +104,29 @@ static void ManageProduct ()
     
 }
 
-static void GetBackToMenu()
+static void DeleteProduct(Products ProductStoredToDelete)
 {
-    Console.WriteLine("Get back to menu by pressing 'M'");
-    string answer = Console.ReadLine();
-    answer.ToLower();
+    Products.AllProducts.Remove(ProductStoredToDelete.Id);
+    Console.WriteLine("\nProduct Succefully Removed!");
+}
 
-    if (answer == "m")
+static void ChangePrice(Products ProductStoredToChangePrice)
+{
+    Console.WriteLine(ProductStoredToChangePrice.ToString());
+
+    Console.Write("\nChange the Price:");
+    double PriceChange = double.Parse(Console.ReadLine());
+
+    if (PriceChange > 0 || PriceChange != null)
     {
-        Console.Clear();
-        Menu();
+        ProductStoredToChangePrice.Price = PriceChange;
     }
+
+    else if (PriceChange < 0 || PriceChange != null)
+    {
+        Console.WriteLine("Please type a valid price!");
+    }
+    
 }
 
 static void SeeAllProducts()
@@ -150,9 +173,22 @@ static Products registerProduct()
 
 }
 
+static void GetBackToMenu()
+{
+    Console.WriteLine("Get back to menu by pressing 'M'");
+    string answer = Console.ReadLine();
+    answer.ToLower();
+
+    if (answer == "m")
+    {
+        Console.Clear();
+        Menu();
+    }
+}
 
 
-static void CreateTitle (string title)
+
+static void CreateTitle(string title)
 {
     char symbol = '-';
     int numbOfCharacters = title.Length;
