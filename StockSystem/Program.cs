@@ -12,12 +12,12 @@ static void Menu()
     CreateTitle("Menu");
 
     Console.WriteLine("Option 1: Register a Product");
-    Console.WriteLine("Option 2: See all Products");
-    Console.WriteLine("Option 3: Search for a Product");
-    Console.WriteLine("Option 4: Manage Products");
+        Console.WriteLine("Option 2: See all Products");
+            Console.WriteLine("Option 3: Search for a Product");
+                Console.WriteLine("Option 4: Manage Products");
 
     Console.Write("\nChoose a option: ");
-    int optionChosen = int.Parse(Console.ReadLine());
+        int optionChosen = int.Parse(Console.ReadLine());
 
 
     switch (optionChosen)
@@ -36,8 +36,17 @@ static void Menu()
                 GetBackToMenu();
             break;
         case 4:
-            ManageProduct(Products.containFoundObject[0]);
-            Products.containFoundObject.Remove(Products.containFoundObject[0]);
+            if (Products.containFoundObject[0] == null)
+            {
+                Console.Clear();
+                    Console.WriteLine("Please, select a product before managing a product!\n");
+                        Menu();
+            }
+
+            else if (Products.containFoundObject[0] != null)
+            {
+                ManageProduct(Products.containFoundObject[0]);
+            }
             break;
     }
 }
@@ -127,7 +136,7 @@ static void ManageProduct(Products ProductSelected)
     Console.Clear();
     CreateTitle("Manage Product");
 
-       bool repeatCode = true;
+    bool repeatCode = true;
 
     while (repeatCode)
     {
@@ -135,34 +144,31 @@ static void ManageProduct(Products ProductSelected)
         Console.WriteLine("1-Delete Product");
         Console.WriteLine("2-Change Price");
         Console.WriteLine("3-Change Name");
-        Console.WriteLine("0-Go back to menu");
-
+        Console.WriteLine("0-Go back to menu\n");
+        Console.WriteLine(ProductSelected.ToString());
+        Console.WriteLine("");
         int answer = int.Parse(Console.ReadLine());
 
         switch (answer)
         {
             case 0:
                 repeatCode = false;
-                GetBackToMenu();
                 break;
             case 1:
-                repeatCode = false;
                 DeleteProduct(ProductSelected);
-                GetBackToMenu();
                 break;
             case 2:
-                repeatCode = false;
                 ChangePrice(ProductSelected);
-                GetBackToMenu();
                 break;
             case 3:
-                repeatCode = false;
                 ChangeName(ProductSelected);
-                GetBackToMenu();
                 break;
         }
     }
 
+    Products.containFoundObject.Remove(Products.containFoundObject[0]);
+        Console.Clear();
+            Menu();
 }
 
 
@@ -184,16 +190,16 @@ static void ChangePrice(Products ProductStoredToChangePrice)
 {
     Console.WriteLine(ProductStoredToChangePrice.ToString());
 
-    Console.Write("\nChange the Price:");
+    Console.Write("\nChange the Price: ");
         double PriceChange = double.Parse(Console.ReadLine());
 
-    if (PriceChange > 0 || PriceChange != null && PriceChange < 1000)
+    if (PriceChange > 0 && PriceChange < 1000)
     {
         ProductStoredToChangePrice.Price = PriceChange;
-            Console.WriteLine($"Price Changed! New Price: {PriceChange}");
+            Console.WriteLine($"\nPrice Changed! New Price: {PriceChange}\n");
     }
 
-    else if (PriceChange < 0 || PriceChange == null && PriceChange > 1000)
+    else if (PriceChange < 0 || PriceChange > 1000)
     {
         Console.WriteLine("Please type a valid price!");
     }
@@ -290,7 +296,7 @@ class Products
 
     public override string ToString()
     {
-        return $"Product name {ProductName}, Price: {Price}, Id: {Id}";
+        return $"Product Name: {ProductName}, Price: {Price}$, Id: {Id}";
     }
 
 }
