@@ -3,6 +3,7 @@ using System.Dynamic;
 
 Menu();
 
+
 Console.ReadKey();
 
 
@@ -21,7 +22,6 @@ static void Menu()
 
     switch (optionChosen)
     {
-
         case 1:
             Products storeProduct = registerProduct();
                 Products.AllProducts.Add(storeProduct.Id, storeProduct);
@@ -33,9 +33,11 @@ static void Menu()
             break;
         case 3:
             Products storeProductFound = SearchProducts();
+                GetBackToMenu();
             break;
         case 4:
-            ManageProduct();
+            ManageProduct(Products.containFoundObject[0]);
+            Products.containFoundObject.Remove(Products.containFoundObject[0]);
             break;
     }
 }
@@ -105,11 +107,10 @@ static Products SearchProducts()
         {
             Console.WriteLine($"Product found!\n{Products.AllProducts[IdAnswer]}");
             repeatCode = false;
-
-            GetBackToMenu();
+            Products.containFoundObject.Add(Products.AllProducts[IdAnswer]);
         }
 
-        else if (Products.AllProducts.ContainsKey(IdAnswer) != true) 
+        else if (Products.AllProducts.ContainsKey(IdAnswer) != true)
         {
             Console.WriteLine("We didn't find this product...");
             GetBackToMenu();
@@ -121,12 +122,12 @@ static Products SearchProducts()
 
 
 
-static void ManageProduct()
+static void ManageProduct(Products ProductSelected)
 {
     Console.Clear();
     CreateTitle("Manage Product");
 
-    bool repeatCode = true;
+       bool repeatCode = true;
 
     while (repeatCode)
     {
@@ -141,22 +142,24 @@ static void ManageProduct()
         switch (answer)
         {
             case 0:
-                GetBackToMenu();
                 repeatCode = false;
+                GetBackToMenu();
                 break;
             case 1:
                 repeatCode = false;
-                DeleteProduct(Products);
+                DeleteProduct(ProductSelected);
+                GetBackToMenu();
                 break;
             case 2:
                 repeatCode = false;
-                ChangePrice(Product);
+                ChangePrice(ProductSelected);
+                GetBackToMenu();
                 break;
             case 3:
                 repeatCode = false;
-                ChangeName(Product);
+                ChangeName(ProductSelected);
+                GetBackToMenu();
                 break;
-
         }
     }
 
@@ -184,13 +187,13 @@ static void ChangePrice(Products ProductStoredToChangePrice)
     Console.Write("\nChange the Price:");
         double PriceChange = double.Parse(Console.ReadLine());
 
-    if (PriceChange > 0 || PriceChange != null)
+    if (PriceChange > 0 || PriceChange != null && PriceChange < 1000)
     {
         ProductStoredToChangePrice.Price = PriceChange;
             Console.WriteLine($"Price Changed! New Price: {PriceChange}");
     }
 
-    else if (PriceChange < 0 || PriceChange == null)
+    else if (PriceChange < 0 || PriceChange == null && PriceChange > 1000)
     {
         Console.WriteLine("Please type a valid price!");
     }
@@ -272,8 +275,7 @@ class Products
                 private double price;
                     private int id;
                         private static int nextId = 1;
-                            public bool repeatCode = true;
-
+                            public static List<Products> containFoundObject = new List<Products>();
     public string ProductName { get { return productName; } set { productName = value; } }
         public double Price { get { return price; } set { price = value; } }
             public int Id { get { return id; } set { id = value; } }
@@ -288,7 +290,7 @@ class Products
 
     public override string ToString()
     {
-        return $"Product name {ProductName}, Id: {Id}";
+        return $"Product name {ProductName}, Price: {Price}, Id: {Id}";
     }
 
 }
