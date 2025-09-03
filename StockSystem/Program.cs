@@ -9,7 +9,8 @@ Console.ReadKey();
 
 static void Menu()
 {
-    CreateTitle("Menu");
+    Console.Clear();
+        CreateTitle("Menu");
 
     Console.WriteLine("Option 1: Register a Product");
         Console.WriteLine("Option 2: See all Products");
@@ -25,7 +26,6 @@ static void Menu()
         case 1:
             Products storeProduct = registerProduct();
                 Products.AllProducts.Add(storeProduct.Id, storeProduct);
-                    Products.NameOfAllProducts.Add(storeProduct.ProductName);
                         GetBackToMenu();
             break;
         case 2:
@@ -36,16 +36,17 @@ static void Menu()
                 GetBackToMenu();
             break;
         case 4:
-            if (Products.containFoundObject[0] == null)
+            if (Products.containFoundObject.Count > 0)
+            {
+                ManageProduct(Products.containFoundObject[0]);
+            }
+
+            else if (Products.containFoundObject.Count <= 0)
             {
                 Console.Clear();
                     Console.WriteLine("Please, select a product before managing a product!\n");
-                        Menu();
-            }
-
-            else if (Products.containFoundObject[0] != null)
-            {
-                ManageProduct(Products.containFoundObject[0]);
+                        Console.ReadLine();
+                            Menu();
             }
             break;
     }
@@ -53,9 +54,10 @@ static void Menu()
 
 static Products registerProduct()
 {
-    bool repeatCode = true;
-        string tempNameProduct = "";
-            double tempPriceProduct = 0;
+    Console.Clear();
+        bool repeatCode = true;
+            string tempNameProduct = "";
+                double tempPriceProduct = 0;
 
     CreateTitle("Product Register");
 
@@ -89,11 +91,14 @@ static Products registerProduct()
 
 static void SeeAllProducts()
 {
-    CreateTitle("All Products");
+    Console.Clear();
+        CreateTitle("All Products");
 
-    foreach (string ShowAllProductsName in Products.NameOfAllProducts)
+    Console.WriteLine("Products:");
+
+    foreach (var ShowAllProductsName in Products.AllProducts)
     {
-        Console.WriteLine(ShowAllProductsName);
+        Console.WriteLine($" {ShowAllProductsName.ToString()}");
     }
 
     GetBackToMenu();
@@ -182,21 +187,27 @@ static void ManageProduct(Products ProductSelected)
 
 static void DeleteProduct(Products ProductStoredToDelete)
 {
-    Products.AllProducts.Remove(ProductStoredToDelete.Id);
-        Console.WriteLine("\nProduct Succefully Removed!");
+    Console.Clear();
+        Products.AllProducts.Remove(ProductStoredToDelete.Id);
+            Console.WriteLine("\nProduct Succefully Removed!");
+                Console.ReadLine();
+                    Products.containFoundObject.Remove(Products.containFoundObject[0]);
+                        Menu();
 }
 
 static void ChangePrice(Products ProductStoredToChangePrice)
 {
-    Console.WriteLine(ProductStoredToChangePrice.ToString());
+    Console.Clear();
+        Console.WriteLine(ProductStoredToChangePrice.ToString());
 
     Console.Write("\nChange the Price: ");
         double PriceChange = double.Parse(Console.ReadLine());
 
     if (PriceChange > 0 && PriceChange < 1000)
     {
-        ProductStoredToChangePrice.Price = PriceChange;
+        Products.AllProducts[ProductStoredToChangePrice.Id].Price = PriceChange;
             Console.WriteLine($"\nPrice Changed! New Price: {PriceChange}\n");
+                Console.ReadLine();
     }
 
     else if (PriceChange < 0 || PriceChange > 1000)
@@ -208,6 +219,7 @@ static void ChangePrice(Products ProductStoredToChangePrice)
 
 static void ChangeName(Products ProductStoredToChangeName)
 {
+    Console.Clear();
     Console.WriteLine(ProductStoredToChangeName.ToString());
 
     Console.Write("\nChange the Name:");
@@ -215,8 +227,9 @@ static void ChangeName(Products ProductStoredToChangeName)
 
     if (NameChange != null)
     {
-        ProductStoredToChangeName.ProductName = NameChange;
+        Products.AllProducts[ProductStoredToChangeName.Id].ProductName = NameChange;
             Console.WriteLine($"Name Changed! New name: {NameChange}");
+                Console.ReadLine();
     }
 
     else if (NameChange == "" || NameChange == null)
@@ -275,7 +288,6 @@ static void CreateTitle(string title)
 
 class Products
 {
-    public static HashSet<string> NameOfAllProducts = new HashSet<string>();
         public static Dictionary<int, Products> AllProducts = new Dictionary<int, Products>();
             private string productName;
                 private double price;
