@@ -1,38 +1,37 @@
 ﻿using System.Data.Common;
 using System.Dynamic;
 
-Menu();
+Menu(); // executes the Menu
 
 
 Console.ReadKey();
 
 
-static void Menu()
+static void Menu() //menu function
 {
     Console.Clear();
-        CreateTitle("Menu");
+        CreateTitle("Menu"); 
 
-    Console.WriteLine("Option 1: Register a Product");
-        Console.WriteLine("Option 2: See all Products");
-            Console.WriteLine("Option 3: Search for a Product");
-                Console.WriteLine("Option 4: Manage Products");
+    Console.WriteLine("Option 1: Register a Product");  //all the options to do with the system
+        Console.WriteLine("Option 2: See all Products"); // List all the products
+            Console.WriteLine("Option 3: Search and select a Product"); // Search a product and select it
+                Console.WriteLine("Option 4: Manage Products"); // Manage the product selected
 
     Console.Write("\nChoose a option: ");
         int optionChosen = int.Parse(Console.ReadLine());
 
-
-    switch (optionChosen)
+    switch (optionChosen) // switch to manage the answers passed
     {
         case 1:
-            Products storeProduct = registerProduct();
-                Products.AllProducts.Add(storeProduct.Id, storeProduct);
-                        GetBackToMenu();
+            Products storeProduct = registerProduct(); // the object returned from the register product function is stored on that variable
+                Products.AllProducts.Add(storeProduct.Id, storeProduct); // add the product stored values in the dictionary
+                        GetBackToMenu(); // go back to the menu
             break;
         case 2:
-            SeeAllProducts();
+            SeeAllProducts(); // call the see all products function by pressing 2
             break;
         case 3:
-            Products storeProductFound = SearchProducts();
+            Products storeProductFound = SearchProducts(); //store the 
                 GetBackToMenu();
             break;
         case 4:
