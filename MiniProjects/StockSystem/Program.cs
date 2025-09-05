@@ -294,9 +294,6 @@ static void CreateTitle(string title) //expects to receive a string
 
 
 
-
-
-
 class Products
 {
         public static Dictionary<int, Products> AllProducts = new Dictionary<int, Products>();
