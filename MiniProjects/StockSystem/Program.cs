@@ -54,7 +54,7 @@ static void Menu() //menu function
     }
 }
 
-static Products registerProduct()
+static Products registerProduct() // return a object of the class Products
 {
     Console.Clear();
         bool repeatCode = true; // variable to repeat a block of code until get at some point
@@ -94,49 +94,54 @@ static Products registerProduct()
 
 
 
-static void SeeAllProducts()
+static void SeeAllProducts() // return nothing
 {
     Console.Clear();
         CreateTitle("All Products");
 
     Console.WriteLine("Products:");
 
-    foreach (var ShowAllProductsName in Products.AllProducts)
+    foreach (var ShowAllProductsName in Products.AllProducts) //show all products including: name, price and ID
     {
-        Console.WriteLine($" {ShowAllProductsName.ToString()}");
+        Console.WriteLine($" {ShowAllProductsName.ToString()}"); //use the ToString overloaded method to show a string representation
+        //of our object but including what we wanna show
     }
 
-    GetBackToMenu();
+    GetBackToMenu(); // go back to menu
 }
 
-static Products SearchProducts()
+static Products SearchProducts() // it's gonna return a object of the class Products
 {
 
-    bool repeatCode = true;
-    int IdAnswer = 0;
+    bool repeatCode = true; 
+    int IdAnswer = 0; //local variable to store which id you typed
 
     CreateTitle("Products Search");
 
-    while (repeatCode)
+    while (repeatCode) // repeat the block of code
     {
-        Console.Write("\nType a Id: ");
-        IdAnswer = int.Parse(Console.ReadLine());
+        Console.Write("\nType a Id: "); //insert an id in the variable
+        IdAnswer = int.Parse(Console.ReadLine()); 
 
-        if (Products.AllProducts.ContainsKey(IdAnswer))
+        if (Products.AllProducts.ContainsKey(IdAnswer)) // in case the dictionary AllProducts has the key that we typed (IdAnswer)
         {
-            Console.WriteLine($"Product found!\n{Products.AllProducts[IdAnswer]}");
+            Console.WriteLine($"Product found!\n{Products.AllProducts[IdAnswer]}"); //It'll show a message that we found the product
+            // and show it
             repeatCode = false;
-            Products.containFoundObject.Add(Products.AllProducts[IdAnswer]);
+            Products.containFoundObject.Add(Products.AllProducts[IdAnswer]); // add this object to another array that always stays in 
+            // the first position
+            
         }
 
-        else if (Products.AllProducts.ContainsKey(IdAnswer) != true)
+        else if (Products.AllProducts.ContainsKey(IdAnswer) != true) //the containskey return false or true, so 
+        //if it's different from true it show a message that we didnt find this product and go back to the menu
         {
             Console.WriteLine("We didn't find this product...");
             GetBackToMenu();
         }
     }
 
-    return Products.AllProducts[IdAnswer];
+    return Products.AllProducts[IdAnswer]; // return the object selected
 }
 
 
