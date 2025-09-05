@@ -146,23 +146,23 @@ static Products SearchProducts() // it's gonna return a object of the class Prod
 
 
 
-static void ManageProduct(Products ProductSelected)
+static void ManageProduct(Products ProductSelected) //expects to receive a object of the class Products
 {
     Console.Clear();
     CreateTitle("Manage Product");
 
     bool repeatCode = true;
 
-    while (repeatCode)
+    while (repeatCode) //repeat the block of code
     {
         Console.WriteLine("Choose a option: ");
-        Console.WriteLine("1-Delete Product");
-        Console.WriteLine("2-Change Price");
-        Console.WriteLine("3-Change Name");
-        Console.WriteLine("0-Go back to menu\n");
-        Console.WriteLine(ProductSelected.ToString());
+            Console.WriteLine("1-Delete Product");
+                Console.WriteLine("2-Change Price");
+                    Console.WriteLine("3-Change Name");
+                        Console.WriteLine("0-Go back to menu\n");
+                            Console.WriteLine(ProductSelected.ToString());
         Console.WriteLine("");
-        int answer = int.Parse(Console.ReadLine());
+            int answer = int.Parse(Console.ReadLine()); //depending on the answer it'll fit into the switch
 
         switch (answer)
         {
@@ -181,7 +181,8 @@ static void ManageProduct(Products ProductSelected)
         }
     }
 
-    Products.containFoundObject.Remove(Products.containFoundObject[0]);
+    Products.containFoundObject.Remove(Products.containFoundObject[0]); //always remove the object selected after executing
+    // the manageProduct
         Console.Clear();
             Menu();
 }
@@ -195,14 +196,13 @@ static void ManageProduct(Products ProductSelected)
 
 
 
-static void DeleteProduct(Products ProductStoredToDelete)
+static void DeleteProduct(Products ProductStoredToDelete) //delete the product received by the manage product function
 {
     Console.Clear();
-        Products.AllProducts.Remove(ProductStoredToDelete.Id);
+        Products.AllProducts.Remove(ProductStoredToDelete.Id); //remove from the AllProducts the object, but using the id of
+        //  the product received
             Console.WriteLine("\nProduct Succefully Removed!");
                 Console.ReadLine();
-                    Products.containFoundObject.Remove(Products.containFoundObject[0]);
-                        Menu();
 }
 
 static void ChangePrice(Products ProductStoredToChangePrice)
