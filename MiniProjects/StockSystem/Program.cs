@@ -31,13 +31,16 @@ static void Menu() //menu function
             SeeAllProducts(); // call the see all products function by pressing 2
             break;
         case 3:
-            Products storeProductFound = SearchProducts(); //store the 
+            Products storeProductFound = SearchProducts(); //store the product found on the search product function
                 GetBackToMenu();
             break;
         case 4:
-            if (Products.containFoundObject.Count > 0)
+            if (Products.containFoundObject.Count > 0) //Created a list to store the selected product always in the first position
+            // and if it find a element inside of it, it's gonna call the function manage product
+            // passing the object in the first position of this array through the function.
+        
             {
-                ManageProduct(Products.containFoundObject[0]);
+                ManageProduct(Products.containFoundObject[0]);  
             }
 
             else if (Products.containFoundObject.Count <= 0)
