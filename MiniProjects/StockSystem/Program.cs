@@ -205,17 +205,18 @@ static void DeleteProduct(Products ProductStoredToDelete) //delete the product r
                 Console.ReadLine();
 }
 
-static void ChangePrice(Products ProductStoredToChangePrice)
+static void ChangePrice(Products ProductStoredToChangePrice) //change the price of the object sent
 {
     Console.Clear();
-        Console.WriteLine(ProductStoredToChangePrice.ToString());
+        Console.WriteLine(ProductStoredToChangePrice.ToString());//show the product
 
-    Console.Write("\nChange the Price: ");
+    Console.Write("\nChange the Price: "); //type the price
         double PriceChange = double.Parse(Console.ReadLine());
 
     if (PriceChange > 0 && PriceChange < 1000)
     {
-        Products.AllProducts[ProductStoredToChangePrice.Id].Price = PriceChange;
+        Products.AllProducts[ProductStoredToChangePrice.Id].Price = PriceChange; //in the allproducts dictionary using the product id
+        //the id is gonna always match the position of the object product and change the price of it
             Console.WriteLine($"\nPrice Changed! New Price: {PriceChange}\n");
                 Console.ReadLine();
     }
@@ -227,7 +228,7 @@ static void ChangePrice(Products ProductStoredToChangePrice)
 
 }
 
-static void ChangeName(Products ProductStoredToChangeName)
+static void ChangeName(Products ProductStoredToChangeName) // same logic of the ChangePrice
 {
     Console.Clear();
     Console.WriteLine(ProductStoredToChangeName.ToString());
@@ -253,14 +254,14 @@ static void GetBackToMenu()
 {
     bool repeatCode = true;
 
-    while (repeatCode)
+    while (repeatCode) //repeat block of the code
     {
 
         Console.WriteLine("\n" + "Get back to menu by pressing 'M'");
             string answer = Console.ReadLine();
                 answer.ToLower();
 
-        if (answer == "m" || answer == "M")
+        if (answer == "m" || answer == "M") // depending of the answer, it get back to the menu
         {
             Console.Clear();
                 Menu();
@@ -279,14 +280,14 @@ static void GetBackToMenu()
 
 
 
-static void CreateTitle(string title)
+static void CreateTitle(string title) //expects to receive a string
 {
-    int numbOfCharacters = title.Length;
-        string symbols = string.Empty.PadLeft(numbOfCharacters, '-');
+    int numbOfCharacters = title.Length; //calculates the number of characters of the title
+        string symbols = string.Empty.PadLeft(numbOfCharacters, '-'); // create the symbols
 
-    Console.WriteLine(symbols);
-        Console.WriteLine(title);
-            Console.WriteLine(symbols);
+    Console.WriteLine(symbols); //symbol on the top
+        Console.WriteLine(title); // title
+            Console.WriteLine(symbols); //symbol
 }
 
 
@@ -302,7 +303,7 @@ class Products
             private string productName;
                 private double price;
                     private int id;
-                        private static int nextId = 1;
+                        private static int nextId = 0;
                             public static List<Products> containFoundObject = new List<Products>();
     public string ProductName { get { return productName; } set { productName = value; } }
         public double Price { get { return price; } set { price = value; } }
