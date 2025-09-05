@@ -40,10 +40,10 @@ static void Menu() //menu function
             // passing the object in the first position of this array through the function.
         
             {
-                ManageProduct(Products.containFoundObject[0]);  
+                ManageProduct(Products.containFoundObject[0]);  //call the function manage product passing a object in the first position of an array
             }
 
-            else if (Products.containFoundObject.Count <= 0)
+            else if (Products.containFoundObject.Count <= 0) // if there aren't any elements in the array it's gonna give a alert and go to the menu.
             {
                 Console.Clear();
                     Console.WriteLine("Please, select a product before managing a product!\n");
@@ -57,35 +57,38 @@ static void Menu() //menu function
 static Products registerProduct()
 {
     Console.Clear();
-        bool repeatCode = true;
-            string tempNameProduct = "";
-                double tempPriceProduct = 0;
+        bool repeatCode = true; // variable to repeat a block of code until get at some point
+            string tempNameProduct = ""; //temporary variable to return the object
+                double tempPriceProduct = 0; //temporary variable to return the object
 
     CreateTitle("Product Register");
 
-    while (repeatCode)
+    while (repeatCode)  // it's gonna repeat until repeatCode is false.
     {
 
-        Console.WriteLine("Name of your product: ");
+        Console.WriteLine("Name of your product: "); //registering name inside the variable
             tempNameProduct = Console.ReadLine();
 
-        Console.WriteLine("Price of your product: ");
+        Console.WriteLine("Price of your product: "); //registering price inside the variable
             tempPriceProduct = double.Parse(Console.ReadLine());
 
-        if (tempNameProduct != null && tempPriceProduct != null)
+        if (tempNameProduct != null && tempPriceProduct != null) // if the two temporary variables aren't null
+        // the block of code is not gonna repeat anymore and it'll show a message
         {
             Console.Clear();
                 Console.WriteLine("Product succeesfully registred!");
                     repeatCode = false;
         }
 
-        else if (tempNameProduct == null || tempPriceProduct == null)
+        else if (tempNameProduct == null || tempPriceProduct == null) //otherwise, it'll show a message and repeat the block
         {
+            Console.Clear();
             Console.WriteLine("Please fill all the camps!");
         }
     }
 
-    return new Products(tempNameProduct, tempPriceProduct);
+    return new Products(tempNameProduct, tempPriceProduct); //when the repeatCode begins to value false, the code flow is come back to normal and execute the return
+    // we're gonna return a new object of the class Products using as parameters our temporary variables.
     
 }
 
