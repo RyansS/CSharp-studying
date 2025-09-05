@@ -35,8 +35,8 @@ class Account
     public Account (string user, string email, string password)
     {
         this.user = user;
-        this.email = email;
-        this.password = password;
+            this.email = email;
+                this.password = password;
     }
 
     public static Account Register()
