@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\bin\Debug\net9.0\SteamProjectW.exe
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\bin\Debug\net9.0\SteamProjectW.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\bin\Debug\net9.0\SteamProjectW.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\bin\Debug\net9.0\SteamProjectW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\bin\Debug\net9.0\SteamProjectW.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\refint\SteamProjectW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\SteamProjectW.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SteamProjectW\obj\Debug\net9.0\ref\SteamProjectW.dll
