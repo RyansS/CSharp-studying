@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\bin\Debug\net9.0\TestingVsCodeRun.exe
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\bin\Debug\net9.0\TestingVsCodeRun.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\bin\Debug\net9.0\TestingVsCodeRun.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\bin\Debug\net9.0\TestingVsCodeRun.dll
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\bin\Debug\net9.0\TestingVsCodeRun.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.dll
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\refint\TestingVsCodeRun.dll
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\TestingVsCodeRun.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\TestingVsCodeRun\obj\Debug\net9.0\ref\TestingVsCodeRun.dll

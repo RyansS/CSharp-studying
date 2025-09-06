@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\bin\Debug\net9.0\StockSystemW.exe
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\bin\Debug\net9.0\StockSystemW.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\bin\Debug\net9.0\StockSystemW.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\bin\Debug\net9.0\StockSystemW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\bin\Debug\net9.0\StockSystemW.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\refint\StockSystemW.dll
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\StockSystemW.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\StockSystemW\obj\Debug\net9.0\ref\StockSystemW.dll
