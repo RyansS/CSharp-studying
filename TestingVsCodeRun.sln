@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockSystemW", "StockSystem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamProjectW", "SteamProjectW\SteamProjectW.csproj", "{837B39DD-27AB-43AD-8281-748166C0F3C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesSystem", "SalesSystem\SalesSystem.csproj", "{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{837B39DD-27AB-43AD-8281-748166C0F3C9}.Release|x64.Build.0 = Release|Any CPU
 		{837B39DD-27AB-43AD-8281-748166C0F3C9}.Release|x86.ActiveCfg = Release|Any CPU
 		{837B39DD-27AB-43AD-8281-748166C0F3C9}.Release|x86.Build.0 = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|x64.Build.0 = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC44D575-B97A-4448-B3AA-CE74A0F6F6F5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
