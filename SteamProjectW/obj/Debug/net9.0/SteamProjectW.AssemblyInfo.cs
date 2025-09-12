@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SteamProjectW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b56cac9524466c5c5264ec8039892bee9ccbf33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8164fb7fffdd50aef1875a90d2c4e4ea934c054")]
 [assembly: System.Reflection.AssemblyProductAttribute("SteamProjectW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SteamProjectW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

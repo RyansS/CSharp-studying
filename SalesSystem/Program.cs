@@ -10,48 +10,112 @@ internal class Program
             string RequestAnswer = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
             List<Product> ProductsInfo = JsonSerializer.Deserialize<List<Product>>(RequestAnswer)!;
 
-            Client testclient = new Client("Henrique", 19, "davibrito@gmail.com", "h19brito");
+            string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
+            List<Client> ClientsInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
 
-            Menu(ProductsInfo);
+            Menu(ProductsInfo, ClientsInfo);
         }
 
         Console.ReadKey();
 
     }
-    
-    class UtilityMethods
-        {
-            public static void CreateTitle(string title)
-            {
-                int numbOfLetters = title.Length;
-                string symbol = string.Empty.PadLeft(numbOfLetters, '-');
 
-                Console.WriteLine(symbol);
-                Console.WriteLine(title);
-                Console.WriteLine(symbol);
+    class UtilityMethods
+    {
+        public static void CreateTitle(string title)
+        {
+            int numbOfLetters = title.Length;
+            string symbol = string.Empty.PadLeft(numbOfLetters, '-');
+            Console.Clear();
+            Console.WriteLine(symbol);
+            Console.WriteLine(title);
+            Console.WriteLine(symbol);
+        }
+    }
+
+    class Client
+    {
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+
+        [JsonPropertyName("username")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
+
+        [JsonPropertyName("password")]
+        public string Password { get; set; }
+
+
+
+        public static void SeeAndSearchClients(List<Client> ClientApi)
+        {
+            UtilityMethods.CreateTitle("Manage Clients");
+
+            Console.WriteLine("1- See all Clients");
+            Console.WriteLine("2= Manage Clients");
+
+            int optionChosen = int.Parse(Console.ReadLine());
+
+            if (optionChosen == 1)
+            {
+                Console.WriteLine();
+                foreach (var inEachClient in ClientApi)
+                {
+                    Console.WriteLine($"Username: {inEachClient.Name}, Email: {inEachClient.Email}," +
+                    $" Password: {inEachClient.Password}, Id: {inEachClient.Id}");
+                }
+            }
+
+            else if (optionChosen == 2)
+            {
+                try
+                {
+
+                    Console.WriteLine("Type a client id to manage it: ");
+                    int idAnswer = int.Parse(Console.ReadLine());
+
+                    var findClientById = ClientApi.Where(ClientExpect => ClientExpect.Id == idAnswer);
+
+                    if (findClientById != null)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(findClientById.ToString());
+
+                        Console.WriteLine("\n1- Delete Client");
+                        Console.WriteLine("2- Edit Client");
+                        int option = int.Parse(Console.ReadLine());
+
+                        switch (option)
+                        {
+                            case 1:
+                                Console.Clear();
+                                ClientApi.Remove();
+
+                                break;
+                            case 2:
+                            
+                                break;
+                        }
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"There was a problem... {ex}");
+                }
+
             }
         }
 
-class Client
-    {
-        private string name;
-        private int age;
-        private string email;
-        private string password;
 
-        public string Name { get { return name; } set { name = value; } }
-        public int Age { get { return age; } set { age = value; } }
-        public string Email { get { return email; } set { email = value; } }
-        public string Password { get { return password; } set { password = value; } }
 
-        public Client(string name, int age, string email, string password)
+        public override string ToString()
         {
-            Name = name;
-            Age = age;
-            Email = email;
-            Password = password;
+            return $"Username: {Name}, Email: {Email}," +
+                    $" Password: {Password}, Id: {Id} ";
         }
-
 
     }
 
@@ -60,17 +124,17 @@ class Client
         [JsonPropertyName("title")]
         public string Title { get; set; }
 
-            [JsonPropertyName("normalPrice")]
-            public double Price { get; set; }
+        [JsonPropertyName("normalPrice")]
+        public double Price { get; set; }
 
-                [JsonPropertyName("gameID")]
-                public int GameId { get; set; }
+        [JsonPropertyName("gameID")]
+        public int GameId { get; set; }
 
-                    [JsonPropertyName("internalName")]
-                    public string InternalName { get; set; }
+        [JsonPropertyName("internalName")]
+        public string InternalName { get; set; }
 
-                        [JsonPropertyName("steamRatingCount")]
-                            public int? NumberOfSells { get; set; }
+        [JsonPropertyName("steamRatingCount")]
+        public int? NumberOfSells { get; set; }
 
 
         public static void SeeAllProducts(List<Product> listFromAPI)
@@ -83,65 +147,62 @@ class Client
             }
         }
 
-
-        class FilterProducts
+        public static void SearchProducts(List<Product> ProductsInfo)
         {
-            public static void SearchProducts(List<Product> ProductsInfo)
+            UtilityMethods.CreateTitle("Search a Product");
+
+            Console.WriteLine("1- Search");
+            int optionChosen = int.Parse(Console.ReadLine());
+
+            if (optionChosen == 1)
             {
-                UtilityMethods.CreateTitle("Search a Product");
 
-                Console.WriteLine("1- Search");
-                int optionChosen = int.Parse(Console.ReadLine());
+                Console.WriteLine("-1 Search games by id: ");
+                Console.WriteLine("-2 Search games by title: ");
+                int idOrTitleTyped = int.Parse(Console.ReadLine());
 
-                if (optionChosen == 1)
+                if (idOrTitleTyped == 1)
                 {
-
-                    Console.WriteLine("-1 Search games by id: ");
-                    Console.WriteLine("-2 Search games by title: ");
-                    int idOrTitleTyped = int.Parse(Console.ReadLine());
-
-                    if (idOrTitleTyped == 1)
+                    try
                     {
-                        try
-                        {
-                            Console.Clear();
-                            Console.Write("Enter an ID: ");
-                            int idTyped = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                        Console.Write("Enter an ID: ");
+                        int idTyped = int.Parse(Console.ReadLine());
 
-                            var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault();
+                        var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault();
 
-                        }
-
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"There was a problem...\n{ex}");
-                        }
                     }
 
-                    else if (idOrTitleTyped == 2) {
-                        try
-                        {
-                            Console.Clear();
-                                Console.Write("Search a Title: ");
-                                    string titleTyped = Console.ReadLine();
-                                        string formatedInput = titleTyped.Replace(" ", "").ToUpper();
-
-                            var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == titleTyped).FirstOrDefault();
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"There was a problem...\n{ex}");
-                        }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"There was a problem...\n{ex}");
                     }
-
                 }
+
+                else if (idOrTitleTyped == 2) {
+                    try
+                    {
+                        Console.Clear();
+                        Console.Write("Search a Title: ");
+                        string titleTyped = Console.ReadLine();
+                        string formatedInput = titleTyped.Replace(" ", "").ToUpper();
+
+                        var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == titleTyped).FirstOrDefault();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"There was a problem...\n{ex}");
+                    }
+                }
+
             }
-        }
+        } 
     }
 
 
 
-    static void Menu(List<Product> ProductsInfo)
+
+    static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo)
     {
         UtilityMethods.CreateTitle("Sales System");
         Console.WriteLine("1- See All Products");
@@ -157,10 +218,10 @@ class Client
                 Product.SeeAllProducts(ProductsInfo);
                 break;
             case 2:
-                FilterProducts.SearchProducts(ProductsInfo);
+                Product.SearchProducts(ProductsInfo);
                 break;
             case 3:
-
+                Client.SeeAndSearchClients(ClientsInfo);
                 break;
             case 4:
 
