@@ -14,6 +14,7 @@ internal class Program
             List<Client> ClientsInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
 
             Menu(ProductsInfo, ClientsInfo);
+            
         }
 
         Console.ReadKey();
@@ -30,6 +31,18 @@ internal class Program
             Console.WriteLine(symbol);
             Console.WriteLine(title);
             Console.WriteLine(symbol);
+        }
+
+        public static void GetBackToMenu()
+        {
+            Console.WriteLine("Get back to menu by pressing 'M': ");
+            string answer = Console.ReadLine();
+
+            if (answer == "M" || answer == "m")
+            {
+                Menu();
+            }
+            
         }
     }
 
@@ -72,7 +85,6 @@ internal class Program
             {
                 try
                 {
-
                     Console.WriteLine("Type a client id to manage it: ");
                     int idAnswer = int.Parse(Console.ReadLine());
 
@@ -91,12 +103,96 @@ internal class Program
                         {
                             case 1:
                                 Console.Clear();
-                                ClientApi.Remove();
+                                ClientApi.Remove(ClientApi[idAnswer - 1]);
+                                Console.WriteLine("Client succesfully removed!");
+                                Console.ReadLine();
+
 
                                 break;
                             case 2:
-                            
-                                break;
+                                Console.Clear();
+                                Console.WriteLine("1- Edit Name");
+                                Console.WriteLine("2- Edit Password");
+                                Console.WriteLine("3- Edit Id");
+                                int answerEdit = int.Parse(Console.ReadLine());
+
+                                switch (answerEdit)
+                                {
+                                    case 1:
+
+                                        bool repeatCode = true;
+
+                                        while (repeatCode) {
+                                            Console.Clear();
+                                                Console.WriteLine($"{findClientById.ToString()}");
+                                                    Console.Write("\nChange the name: ");
+                                        string nameChanged = Console.ReadLine()!;
+
+                                            if (nameChanged != "")
+                                            {
+                                                ClientApi[idAnswer - 1].Name = nameChanged!;
+                                                repeatCode = false;
+                                            }
+                                            else if (nameChanged == "")
+                                            {
+                                                Console.WriteLine("Please, keep sure that you have fill the camp!");
+                                            }
+                                        }
+                                        
+                                        break;
+                                    case 2:
+
+                                        bool repeatCode2 = true;
+
+                                        while (repeatCode2) {
+                                            Console.Clear();
+                                                Console.WriteLine($"{findClientById.ToString()}");
+                                                    Console.Write("\nChange the name: ");
+                                        string passwordChanged = Console.ReadLine()!;
+
+                                            if (passwordChanged != "")
+                                            {
+                                                ClientApi[idAnswer - 1].Password = passwordChanged!;
+                                                repeatCode = false;
+                                            }
+                                            else if (passwordChanged == "")
+                                            {
+                                                Console.WriteLine("Please, keep sure that you have fill the camp!");
+                                            }
+                                        }
+
+                                        break;
+                                    case 3:
+
+                                        bool repeatCode3 = true;
+                                         while (repeatCode3)
+                                        {
+                                            Console.Clear();
+
+                                            foreach (var inEachClient in ClientApi)
+                                            {
+                                                Console.WriteLine($"{findClientById.ToString()}");
+                                                Console.Write("\nChange the name: ");
+                                                int idChanged = int.Parse(Console.ReadLine())!;
+
+                                                if (idChanged != null && idChanged != inEachClient.Id)
+                                                {
+                                                    ClientApi[idAnswer - 1].Id = idChanged!;
+                                                    repeatCode = false;
+                                                }
+                                                
+                                                else if (idChanged == null)
+                                                {
+                                                    Console.WriteLine("Please, keep sure that you have fill the camp!");
+                                                }
+                                            }
+
+                                            
+                                        }
+
+                                    break;
+                                }
+                            break;
                         }
                     }
                 }
