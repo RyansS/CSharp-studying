@@ -1,28 +1,47 @@
 ﻿
+using System.Formats.Tar;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 internal class Program
 {
     private static async Task Main(string[] args)
     {
-        using (HttpClient client = new HttpClient())
-        {
-            string RequestAnswer = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
-            List<Product> ProductsInfo = JsonSerializer.Deserialize<List<Product>>(RequestAnswer)!;
+        List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi();
+        List<Client> ClientsInfo = await UtilityMethods.GetInfoFromUserApi();
 
-            string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
-            List<Client> ClientsInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
-
-            Menu(ProductsInfo, ClientsInfo);
-            
-        }
-
-        Console.ReadKey();
-
+        UtilityMethods.Menu(ProductsInfo, ClientsInfo);
     }
 
     class UtilityMethods
     {
+        public static async Task<List<Product>> GetInfoFromProductApi()
+    {
+        using (HttpClient client = new HttpClient())
+        {
+            string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
+
+            var productsInfo = JsonSerializer.Deserialize<List<Product>>(receiveProducts)!;
+
+            return productsInfo;
+
+        }
+
+    }
+
+    public static async Task<List<Client>> GetInfoFromUserApi()
+    {
+        using (HttpClient client = new HttpClient())
+        {
+            string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
+
+            var usersInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
+
+            return usersInfo;
+
+        }
+
+    }
+
         public static void CreateTitle(string title)
         {
             int numbOfLetters = title.Length;
@@ -33,18 +52,46 @@ internal class Program
             Console.WriteLine(symbol);
         }
 
-        public static void GetBackToMenu()
-        {
-            Console.WriteLine("Get back to menu by pressing 'M': ");
-            string answer = Console.ReadLine();
+        public static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo)
+    {
+        UtilityMethods.CreateTitle("Sales System");
+        Console.WriteLine("1- See All Products");
+        Console.WriteLine("2- Search Products");
+        Console.WriteLine("3- See and search clients");
+        Console.WriteLine("4- Calculate biling");
 
-            if (answer == "M" || answer == "m")
-            {
-                Menu();
-            }
-            
+        int optionChosen = int.Parse(Console.ReadLine());
+
+        switch (optionChosen)
+        {
+            case 1:
+                Product.SeeAllProducts(ProductsInfo);
+                break;
+            case 2:
+                Product.SearchProducts(ProductsInfo);
+                break;
+            case 3:
+                Client.SeeAndSearchClients(ClientsInfo);
+                break;
+            case 4:
+
+                break;
         }
     }
+    
+
+        public static void GetBackToMenu()
+    {
+        Console.WriteLine("Get back to menu by pressing 'M': ");
+        string answer = Console.ReadLine();
+
+        if (answer == "M" || answer == "m")
+        {
+            Menu(ProductsInfo, ClientsInfo);
+        }
+
+    }
+}
 
     class Client
     {
@@ -122,11 +169,12 @@ internal class Program
 
                                         bool repeatCode = true;
 
-                                        while (repeatCode) {
+                                        while (repeatCode)
+                                        {
                                             Console.Clear();
-                                                Console.WriteLine($"{findClientById.ToString()}");
-                                                    Console.Write("\nChange the name: ");
-                                        string nameChanged = Console.ReadLine()!;
+                                            Console.WriteLine($"{findClientById.ToString()}");
+                                            Console.Write("\nChange the name: ");
+                                            string nameChanged = Console.ReadLine()!;
 
                                             if (nameChanged != "")
                                             {
@@ -138,17 +186,18 @@ internal class Program
                                                 Console.WriteLine("Please, keep sure that you have fill the camp!");
                                             }
                                         }
-                                        
+
                                         break;
                                     case 2:
 
                                         bool repeatCode2 = true;
 
-                                        while (repeatCode2) {
+                                        while (repeatCode2)
+                                        {
                                             Console.Clear();
-                                                Console.WriteLine($"{findClientById.ToString()}");
-                                                    Console.Write("\nChange the name: ");
-                                        string passwordChanged = Console.ReadLine()!;
+                                            Console.WriteLine($"{findClientById.ToString()}");
+                                            Console.Write("\nChange the name: ");
+                                            string passwordChanged = Console.ReadLine()!;
 
                                             if (passwordChanged != "")
                                             {
@@ -165,7 +214,7 @@ internal class Program
                                     case 3:
 
                                         bool repeatCode3 = true;
-                                         while (repeatCode3)
+                                        while (repeatCode3)
                                         {
                                             Console.Clear();
 
@@ -180,19 +229,19 @@ internal class Program
                                                     ClientApi[idAnswer - 1].Id = idChanged!;
                                                     repeatCode = false;
                                                 }
-                                                
+
                                                 else if (idChanged == null)
                                                 {
                                                     Console.WriteLine("Please, keep sure that you have fill the camp!");
                                                 }
                                             }
 
-                                            
+
                                         }
 
-                                    break;
+                                        break;
                                 }
-                            break;
+                                break;
                         }
                     }
                 }
@@ -275,7 +324,9 @@ internal class Program
                     }
                 }
 
-                else if (idOrTitleTyped == 2) {
+                else if (idOrTitleTyped == 2)
+                {
+
                     try
                     {
                         Console.Clear();
@@ -289,41 +340,12 @@ internal class Program
                     {
                         Console.WriteLine($"There was a problem...\n{ex}");
                     }
+                    
                 }
 
             }
         } 
-    }
-
-
-
-
-    static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo)
-    {
-        UtilityMethods.CreateTitle("Sales System");
-        Console.WriteLine("1- See All Products");
-        Console.WriteLine("2- Search Products");
-        Console.WriteLine("3- See and search clients");
-        Console.WriteLine("4- Calculate biling");
-
-        int optionChosen = int.Parse(Console.ReadLine());
-
-        switch (optionChosen)
-        {
-            case 1:
-                Product.SeeAllProducts(ProductsInfo);
-                break;
-            case 2:
-                Product.SearchProducts(ProductsInfo);
-                break;
-            case 3:
-                Client.SeeAndSearchClients(ClientsInfo);
-                break;
-            case 4:
-
-                break;
-        }
-    }
+    }  
 }
 
     
