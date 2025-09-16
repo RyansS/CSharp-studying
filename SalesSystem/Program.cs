@@ -371,10 +371,10 @@ internal class Program
                             UserBoughtsById(ProductInfo, ClientInfo);
                             break;
                         case 2:
-
+                            TotalBiling(ProductInfo);
                             break;
                         case 3:
-
+                            SpecificGameBoughts(ProductInfo);
                             break;
 
                     }
@@ -412,11 +412,36 @@ internal class Program
         {
             UtilityMethods.CreateTitle("Total Biling");
 
-            foreach (var inEachProduct in ProductInfo) {
+            foreach (var inEachProduct in ProductInfo)
+            {
 
                 double totalbiling = inEachProduct.Price * inEachProduct.NumberOfSells;
                 Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}");
             }
+        }
+
+        public static void SpecificGameBoughts(List<Product> ProductInfo)
+        {
+            UtilityMethods.CreateTitle("Game Boughts");
+
+            Console.WriteLine("Search By Typing a Title: ");
+            string titleWritten = Console.ReadLine()!;
+
+            if (titleWritten != "")
+            {
+                titleWritten = titleWritten.Replace(" ", "").ToUpper();
+            }
+
+            else if (titleWritten == "")
+            {
+                Console.WriteLine("We didn't find your game...");
+            }
+
+
+            var findIdUsingTheTitle = ProductInfo.Where(GameExpect => GameExpect.InternalName == titleWritten).FirstOrDefault();
+
+            Console.WriteLine($"{findIdUsingTheTitle.Title} Boughts: {findIdUsingTheTitle.NumberOfSells}");
+ 
         }
     }  
 }
