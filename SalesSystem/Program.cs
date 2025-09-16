@@ -1,5 +1,4 @@
 ﻿
-using System.Formats.Tar;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 internal class Program
@@ -9,38 +8,42 @@ internal class Program
         List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi();
         List<Client> ClientsInfo = await UtilityMethods.GetInfoFromUserApi();
 
-        UtilityMethods.Menu(ProductsInfo, ClientsInfo);
+        while (UtilityMethods.repeatMenu) {
+             UtilityMethods.Menu(ProductsInfo, ClientsInfo);
+        }
     }
 
     class UtilityMethods
     {
+        public static bool repeatMenu = true;
+
         public static async Task<List<Product>> GetInfoFromProductApi()
-    {
-        using (HttpClient client = new HttpClient())
         {
-            string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
+            using (HttpClient client = new HttpClient())
+            {
+                string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
 
-            var productsInfo = JsonSerializer.Deserialize<List<Product>>(receiveProducts)!;
+                var productsInfo = JsonSerializer.Deserialize<List<Product>>(receiveProducts)!;
 
-            return productsInfo;
+                return productsInfo;
+
+            }
 
         }
 
-    }
-
-    public static async Task<List<Client>> GetInfoFromUserApi()
-    {
-        using (HttpClient client = new HttpClient())
+        public static async Task<List<Client>> GetInfoFromUserApi()
         {
-            string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
+            using (HttpClient client = new HttpClient())
+            {
+                string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
 
-            var usersInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
+                var usersInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
 
-            return usersInfo;
+                return usersInfo;
+
+            }
 
         }
-
-    }
 
         public static void CreateTitle(string title)
         {
@@ -53,44 +56,36 @@ internal class Program
         }
 
         public static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo)
-    {
-        UtilityMethods.CreateTitle("Sales System");
-        Console.WriteLine("1- See All Products");
-        Console.WriteLine("2- Search Products");
-        Console.WriteLine("3- See and search clients");
-        Console.WriteLine("4- Calculate biling");
-
-        int optionChosen = int.Parse(Console.ReadLine());
-
-        switch (optionChosen)
         {
-            case 1:
-                Product.SeeAllProducts(ProductsInfo);
-                break;
-            case 2:
-                Product.SearchProducts(ProductsInfo);
-                break;
-            case 3:
-                Client.SeeAndSearchClients(ClientsInfo);
-                break;
-            case 4:
+            CreateTitle("Sales System");
+            Console.WriteLine("1- See All Products");
+            Console.WriteLine("2- Search Products");
+            Console.WriteLine("3- See and search clients");
+            Console.WriteLine("4- Calculate biling");
+            Console.WriteLine("0- Exit");
 
-                break;
+            int optionChosen = int.Parse(Console.ReadLine());
+
+            switch (optionChosen)
+            {
+                case 0:
+                    repeatMenu = false;
+                    break;
+                case 1:
+                    Product.SeeAllProducts(ProductsInfo);
+                    break;
+                case 2:
+                    Product.SearchProducts(ProductsInfo);
+                    break;
+                case 3:
+                    Client.SeeAndSearchClients(ClientsInfo);
+                    break;
+                case 4:
+                    Product.CalculateBiling(ProductsInfo, ClientsInfo);
+                    break;
+            }
         }
-    }
     
-
-        public static void GetBackToMenu()
-    {
-        Console.WriteLine("Get back to menu by pressing 'M': ");
-        string answer = Console.ReadLine();
-
-        if (answer == "M" || answer == "m")
-        {
-            Menu(ProductsInfo, ClientsInfo);
-        }
-
-    }
 }
 
     class Client
@@ -285,6 +280,7 @@ internal class Program
         public static void SeeAllProducts(List<Product> listFromAPI)
         {
             UtilityMethods.CreateTitle("All Products");
+            Console.WriteLine("");
 
             foreach (var product in listFromAPI)
             {
@@ -316,6 +312,8 @@ internal class Program
 
                         var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault();
 
+                        Console.WriteLine(findGameById.ToString());
+
                     }
 
                     catch (Exception ex)
@@ -335,17 +333,79 @@ internal class Program
                         string formatedInput = titleTyped.Replace(" ", "").ToUpper();
 
                         var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == titleTyped).FirstOrDefault();
+
+                        Console.WriteLine(findGameByTitle.ToString());
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"There was a problem...\n{ex}");
                     }
-                    
+
                 }
 
             }
-        } 
+        }
+
+        public static void CalculateBiling(List<Product> ProductInfo, List<Client> ClientInfo)
+        {
+
+            bool repeatCode = true;
+
+            while (repeatCode)
+            {
+
+                UtilityMethods.CreateTitle("Biling Calculator");
+
+                Console.WriteLine("1- Show User Boughts by ID");
+                Console.WriteLine("2- Show Total Biling");
+                Console.WriteLine("3- Show Specific Game Boughts");
+
+                int optionChosen = int.Parse(Console.ReadLine());
+
+                if (optionChosen == 1 || optionChosen == 2 || optionChosen == 3)
+                {
+
+                    switch (optionChosen)
+                    {
+                        case 1:
+
+                            break;
+                        case 2:
+
+                            break;
+                        case 3:
+
+                            break;
+
+                    }
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Please be sure that you've typed the correct option!");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
+            }
+        }
+
+        public static void UserBoughtsById(List<Product> ProductInfo, List<Client> ClientInfo)
+        {
+            Random randomNumber = new Random();
+            int random = randomNumber.Next(1, 100000);
+
+            UtilityMethods.CreateTitle("User Boughts");
+
+            Console.Write("Type a id: ");
+            int idAnswer = int.Parse(Console.ReadLine());
+
+            var findClientById = ClientInfo.Where(ClientExpect => ClientExpect.Id == idAnswer).FirstOrDefault();
+
+            string nameOfTheClient = ClientInfo[idAnswer - 1].Name; // pay attention because I think it can be null
+
+            Console.WriteLine($"Customer: {nameOfTheClient}, Boughts: {ProductInfo[random].NumberOfSells}");
+            Console.ReadLine();
+        }
     }  
 }
-
-    
