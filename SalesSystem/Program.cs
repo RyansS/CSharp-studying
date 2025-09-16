@@ -23,9 +23,8 @@ internal class Program
             {
                 string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
 
-                var productsInfo = JsonSerializer.Deserialize<List<Product>>(receiveProducts)!;
 
-                return productsInfo;
+                return JsonSerializer.Deserialize<List<Product>>(receiveProducts);
 
             }
 
@@ -37,9 +36,9 @@ internal class Program
             {
                 string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
 
-                var usersInfo = JsonSerializer.Deserialize<List<Client>>(receiveUsers)!;
+                
 
-                return usersInfo;
+                return JsonSerializer.Deserialize<List<Client>>(receiveUsers);
 
             }
 
@@ -230,13 +229,10 @@ internal class Program
                                                     Console.WriteLine("Please, keep sure that you have fill the camp!");
                                                 }
                                             }
-
-
                                         }
-
-                                        break;
+                                    break;
                                 }
-                                break;
+                            break;
                         }
                     }
                 }
@@ -265,10 +261,10 @@ internal class Program
         public string Title { get; set; }
 
         [JsonPropertyName("normalPrice")]
-        public double Price { get; set; }
+        public int Price { get; set; }
 
         [JsonPropertyName("gameID")]
-        public int GameId { get; set; }
+        public string GameId { get; set; }
 
         [JsonPropertyName("internalName")]
         public string InternalName { get; set; }
@@ -308,7 +304,7 @@ internal class Program
                     {
                         Console.Clear();
                         Console.Write("Enter an ID: ");
-                        int idTyped = int.Parse(Console.ReadLine());
+                        string idTyped = Console.ReadLine();
 
                         var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault();
 
@@ -376,7 +372,6 @@ internal class Program
                         case 3:
                             SpecificGameBoughts(ProductInfo);
                             break;
-
                     }
 
                 }
