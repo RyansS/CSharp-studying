@@ -274,7 +274,7 @@ internal class Program
         public string InternalName { get; set; }
 
         [JsonPropertyName("steamRatingCount")]
-        public int? NumberOfSells { get; set; }
+        public int NumberOfSells { get; set; }
 
 
         public static void SeeAllProducts(List<Product> listFromAPI)
@@ -368,7 +368,7 @@ internal class Program
                     switch (optionChosen)
                     {
                         case 1:
-
+                            UserBoughtsById(ProductInfo, ClientInfo);
                             break;
                         case 2:
 
@@ -406,6 +406,17 @@ internal class Program
 
             Console.WriteLine($"Customer: {nameOfTheClient}, Boughts: {ProductInfo[random].NumberOfSells}");
             Console.ReadLine();
+        }
+
+        public static void TotalBiling(List<Product> ProductInfo)
+        {
+            UtilityMethods.CreateTitle("Total Biling");
+
+            foreach (var inEachProduct in ProductInfo) {
+
+                double totalbiling = inEachProduct.Price * inEachProduct.NumberOfSells;
+                Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}");
+            }
         }
     }  
 }
