@@ -286,7 +286,7 @@ internal class Program
 
             foreach (var product in listFromAPI)
             {
-                Console.WriteLine($"Title: {product.Title}");
+                Console.WriteLine($"Title: {product.Title}, Price: {product.Price}, ID: {product.GameId}");
             }
             Console.ReadLine();
         }
