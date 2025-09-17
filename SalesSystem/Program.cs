@@ -6,7 +6,7 @@ internal class Program
     private static async Task Main(string[] args)
     {
         List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi();
-        List<Client> ClientsInfo = await UtilityMethods.GetInfoFromUserApi();
+        List<Client> ClientsInfo = await UtilityMethods.UserRequest.GetInfoFromUserApi();
 
         while (UtilityMethods.repeatMenu) {
              UtilityMethods.Menu(ProductsInfo, ClientsInfo);
@@ -30,19 +30,25 @@ internal class Program
 
         }
 
-        public static async Task<List<Client>> GetInfoFromUserApi()
+        public class UserRequest
+        {
+            [JsonPropertyName("users")]
+            public List<Client> Users { get; set; }
+        
+                public static async Task<List<Client>> GetInfoFromUserApi()
         {
             using (HttpClient client = new HttpClient())
             {
                 string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
+                var ApiResponse = JsonSerializer.Deserialize<UserRequest>(receiveUsers);
 
-                
-
-                return JsonSerializer.Deserialize<List<Client>>(receiveUsers);
+                return ApiResponse.Users;
 
             }
 
         }
+    }
+
 
         public static void CreateTitle(string title)
         {
@@ -84,8 +90,8 @@ internal class Program
                     break;
             }
         }
-    
-}
+
+    }
 
     class Client
     {
@@ -261,7 +267,7 @@ internal class Program
         public string Title { get; set; }
 
         [JsonPropertyName("normalPrice")]
-        public int Price { get; set; }
+        public string Price { get; set; }
 
         [JsonPropertyName("gameID")]
         public string GameId { get; set; }
@@ -270,7 +276,7 @@ internal class Program
         public string InternalName { get; set; }
 
         [JsonPropertyName("steamRatingCount")]
-        public int NumberOfSells { get; set; }
+        public string NumberOfSells { get; set; }
 
 
         public static void SeeAllProducts(List<Product> listFromAPI)
@@ -280,19 +286,14 @@ internal class Program
 
             foreach (var product in listFromAPI)
             {
-                Console.WriteLine($"Title: {product.Title}, Price: {product.Price}, ID: {product.GameId}");
+                Console.WriteLine($"Title: {product.Title}");
             }
+            Console.ReadLine();
         }
 
         public static void SearchProducts(List<Product> ProductsInfo)
         {
             UtilityMethods.CreateTitle("Search a Product");
-
-            Console.WriteLine("1- Search");
-            int optionChosen = int.Parse(Console.ReadLine());
-
-            if (optionChosen == 1)
-            {
 
                 Console.WriteLine("-1 Search games by id: ");
                 Console.WriteLine("-2 Search games by title: ");
@@ -339,7 +340,7 @@ internal class Program
 
                 }
 
-            }
+            
         }
 
         public static void CalculateBiling(List<Product> ProductInfo, List<Client> ClientInfo)
@@ -409,8 +410,8 @@ internal class Program
 
             foreach (var inEachProduct in ProductInfo)
             {
-
-                double totalbiling = inEachProduct.Price * inEachProduct.NumberOfSells;
+                
+                decimal totalbiling = decimal.Parse(inEachProduct.Price) * int.Parse(inEachProduct.NumberOfSells);
                 Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}");
             }
         }
