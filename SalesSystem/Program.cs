@@ -127,8 +127,10 @@ internal class Program
                 foreach (var inEachClient in ClientApi)
                 {
                     Console.WriteLine($"Username: {inEachClient.Name}, Email: {inEachClient.Email}," +
-                    $" Password: {inEachClient.Password}, Id: {inEachClient.Id}");
+                    $" Password: {inEachClient.Password}, Id: {inEachClient.Id}\n");
                 }
+                
+                 Console.ReadLine();
             }
 
             else if (optionChosen == 2) // manage in general the clients having many options to do
@@ -171,7 +173,7 @@ internal class Program
                                 {
                                     case 1:
 
-                                        
+
 
                                         while (UtilityMethods.repeatCode)
                                         {
@@ -194,7 +196,7 @@ internal class Program
                                         break;
                                     case 2:
 
-                                        
+
 
                                         while (UtilityMethods.repeatCode) //SAME LOGIC ON ALL OF THE THREE METHODS
                                         {
@@ -217,7 +219,7 @@ internal class Program
                                         break;
                                     case 3:
 
-                                       
+
                                         while (UtilityMethods.repeatCode)
                                         {
                                             Console.Clear();
@@ -240,9 +242,9 @@ internal class Program
                                                 }
                                             }
                                         }
-                                    break;
+                                        break;
                                 }
-                            break;
+                                break;
                         }
                     }
                 }
@@ -305,42 +307,37 @@ internal class Program
 
                 if (idOrTitleTyped == 1)
                 {
-                    try
-                    {
-                        Console.Clear();
-                        Console.Write("Enter an ID: ");
-                        string idTyped = Console.ReadLine();
+                try
+                {
+                    Console.Clear();
+                    Console.Write("Enter an ID: ");
+                    string idTyped = Console.ReadLine();
 
-                        var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault(); //it's the same logic from the clients
+                    var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault(); //it's the same logic from the clients
 
-                        Console.WriteLine(findGameById.ToString());
+                    Console.WriteLine($"Name: {findGameById.Title}, Price: {findGameById.Price}");
+                    Console.ReadLine();
 
                     }
 
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"There was a problem...\n{ex}");
-                    }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"There was a problem...\n{ex}");
+                }
                 }
 
                 else if (idOrTitleTyped == 2)
                 {
 
-                    try
-                    {
-                        Console.Clear();
-                        Console.Write("Search a Title: "); //here's a little bit different, we'll use the internal name of the game, so we dont have to write the name of the game 100% correctly
-                        string titleTyped = Console.ReadLine(); //store the titletyped
-                        string formatedInput = titleTyped.Replace(" ", "").ToUpper(); // create a variable to store the name of the title formated, without spaces and in uppercase (same as the internal)
+                    Console.Clear();
+                    Console.Write("Search a Title: "); //here's a little bit different, we'll use the internal name of the game, so we dont have to write the name of the game 100% correctly
+                    string titleTyped = Console.ReadLine(); //store the titletyped
+                    string formatedInput = titleTyped.Replace(" ", "").ToUpper(); // create a variable to store the name of the title formated, without spaces and in uppercase (same as the internal)
 
-                        var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == titleTyped).FirstOrDefault();
+                    var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == formatedInput).FirstOrDefault();
 
-                        Console.WriteLine(findGameByTitle.ToString());
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"There was a problem...\n{ex}");
-                    }
+                    Console.WriteLine($"Name: {findGameByTitle.Title}, Price: {findGameByTitle.Price}");
+                    Console.ReadLine();
 
                 }
 
@@ -396,7 +393,7 @@ internal class Program
 
             UtilityMethods.CreateTitle("User Boughts");
 
-            Console.Write("Type a id: ");
+            Console.Write("Type a user id: ");
             int idAnswer = int.Parse(Console.ReadLine());
 
             var findClientById = ClientInfo.Where(ClientExpect => ClientExpect.Id == idAnswer).FirstOrDefault(); //search for the id
@@ -410,13 +407,19 @@ internal class Program
         public static void TotalBiling(List<Product> ProductInfo)
         {
             UtilityMethods.CreateTitle("Total Biling");
+            
+            decimal totalBiling = 0;
+            int totalSells = 0;
 
-            foreach (var inEachProduct in ProductInfo) //foreach the list of products and calculate all the prices multiplied by the number of sells
+            foreach (var inEachProduct in ProductInfo)
             {
-                
-                decimal totalbiling = decimal.Parse(inEachProduct.Price) * int.Parse(inEachProduct.NumberOfSells);
-                Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}"); // show it here
+                totalBiling = totalBiling + decimal.Parse(inEachProduct.Price) * int.Parse(inEachProduct.NumberOfSells);
+                totalSells = totalSells + int.Parse(inEachProduct.NumberOfSells);
             }
+
+            Console.WriteLine($"\nNumber of total sells: {totalSells}, Total Biling: {totalBiling}\n"); // show it here
+
+            Console.ReadLine();
         }
 
         public static void SpecificGameBoughts(List<Product> ProductInfo)
@@ -439,7 +442,10 @@ internal class Program
 
             var findIdUsingTheTitle = ProductInfo.Where(GameExpect => GameExpect.InternalName == titleWritten).FirstOrDefault();
 
-            Console.WriteLine($"{findIdUsingTheTitle.Title} Boughts: {findIdUsingTheTitle.NumberOfSells}"); //just show the game boughts using the variable findIdUsingtheTitle
+            decimal total = int.Parse(findIdUsingTheTitle.NumberOfSells) * decimal.Parse(findIdUsingTheTitle.Price);
+
+            Console.WriteLine($"{findIdUsingTheTitle.Title} Boughts: {findIdUsingTheTitle.NumberOfSells}, Total Biling of {findIdUsingTheTitle.Title}: ${total}: "); //just show the game boughts using the variable findIdUsingtheTitle
+            Console.ReadLine();
  
         }
     }  
