@@ -8,14 +8,17 @@ internal class Program
         List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi(); // receive the deserialized api using the function GetInfoFromApi from the class UtilityMethods
         List<Client> ClientsInfo = await UtilityMethods.UserRequest.GetInfoFromUserApi(); //receive the deserialized api using the function GetInfoFromApi from the class UtilityMethods
 
-        while (UtilityMethods.repeatMenu) {
-             UtilityMethods.Menu(ProductsInfo, ClientsInfo); //repeat the menu until it's false and passes the both lists in the menu
+
+        while (UtilityMethods.repeatMenu = true)
+        {
+            UtilityMethods.Menu(ProductsInfo, ClientsInfo); //repeat the menu until it's false and passes the both lists in the menu
         }
     }
 
     class UtilityMethods
     {
-        public static bool repeatMenu = true; // variable created to repeat
+        public static bool repeatMenu = true; // variable created to repeat the menu
+        public static bool repeatCode = true;
 
         public static async Task<List<Product>> GetInfoFromProductApi() //functions to deserialize the api
         {
@@ -118,7 +121,7 @@ internal class Program
 
             int optionChosen = int.Parse(Console.ReadLine());
 
-            if (optionChosen == 1)
+            if (optionChosen == 1) // Show all the clients and their information using a foreach
             {
                 Console.WriteLine();
                 foreach (var inEachClient in ClientApi)
@@ -128,16 +131,16 @@ internal class Program
                 }
             }
 
-            else if (optionChosen == 2)
+            else if (optionChosen == 2) // manage in general the clients having many options to do
             {
                 try
                 {
                     Console.WriteLine("Type a client id to manage it: ");
                     int idAnswer = int.Parse(Console.ReadLine());
 
-                    var findClientById = ClientApi.Where(ClientExpect => ClientExpect.Id == idAnswer);
+                    var findClientById = ClientApi.Where(ClientExpect => ClientExpect.Id == idAnswer).FirstOrDefault(); //Search in the ClientApi a client that it's Id is the same of the Id typed by the user
 
-                    if (findClientById != null)
+                    if (findClientById != null) //if the findClientbyId returns something it will show the client information and sugest options to do with the client
                     {
                         Console.Clear();
                         Console.WriteLine(findClientById.ToString());
@@ -150,7 +153,8 @@ internal class Program
                         {
                             case 1:
                                 Console.Clear();
-                                ClientApi.Remove(ClientApi[idAnswer - 1]);
+                                ClientApi.Remove(ClientApi[idAnswer - 1]); //this part of the code will use the .Remove function in the ClientApi. In the ClientApi position of the id answer -1
+                                // the function will remove the object refered
                                 Console.WriteLine("Client succesfully removed!");
                                 Console.ReadLine();
 
@@ -167,19 +171,19 @@ internal class Program
                                 {
                                     case 1:
 
-                                        bool repeatCode = true;
+                                        
 
-                                        while (repeatCode)
+                                        while (UtilityMethods.repeatCode)
                                         {
                                             Console.Clear();
-                                            Console.WriteLine($"{findClientById.ToString()}");
-                                            Console.Write("\nChange the name: ");
-                                            string nameChanged = Console.ReadLine()!;
+                                            Console.WriteLine($"{findClientById.ToString()}"); //based on the client found, show it
+                                            Console.Write("\nChange the name: "); //type the name 
+                                            string nameChanged = Console.ReadLine()!; //stores the answer
 
                                             if (nameChanged != "")
                                             {
-                                                ClientApi[idAnswer - 1].Name = nameChanged!;
-                                                repeatCode = false;
+                                                ClientApi[idAnswer - 1].Name = nameChanged!; //on the client api position of the answer of the id - 1 and name of it will be equals to the name changed
+                                                UtilityMethods.repeatCode = false;
                                             }
                                             else if (nameChanged == "")
                                             {
@@ -190,9 +194,9 @@ internal class Program
                                         break;
                                     case 2:
 
-                                        bool repeatCode2 = true;
+                                        
 
-                                        while (repeatCode2)
+                                        while (UtilityMethods.repeatCode) //SAME LOGIC ON ALL OF THE THREE METHODS
                                         {
                                             Console.Clear();
                                             Console.WriteLine($"{findClientById.ToString()}");
@@ -202,7 +206,7 @@ internal class Program
                                             if (passwordChanged != "")
                                             {
                                                 ClientApi[idAnswer - 1].Password = passwordChanged!;
-                                                repeatCode = false;
+                                                UtilityMethods.repeatCode = false;
                                             }
                                             else if (passwordChanged == "")
                                             {
@@ -213,8 +217,8 @@ internal class Program
                                         break;
                                     case 3:
 
-                                        bool repeatCode3 = true;
-                                        while (repeatCode3)
+                                       
+                                        while (UtilityMethods.repeatCode)
                                         {
                                             Console.Clear();
 
@@ -227,7 +231,7 @@ internal class Program
                                                 if (idChanged != null && idChanged != inEachClient.Id)
                                                 {
                                                     ClientApi[idAnswer - 1].Id = idChanged!;
-                                                    repeatCode = false;
+                                                    UtilityMethods.repeatCode = false;
                                                 }
 
                                                 else if (idChanged == null)
@@ -253,7 +257,7 @@ internal class Program
 
 
 
-        public override string ToString()
+        public override string ToString() // overrided tostring method
         {
             return $"Username: {Name}, Email: {Email}," +
                     $" Password: {Password}, Id: {Id} ";
@@ -281,7 +285,7 @@ internal class Program
 
         public static void SeeAllProducts(List<Product> listFromAPI)
         {
-            UtilityMethods.CreateTitle("All Products");
+            UtilityMethods.CreateTitle("All Products"); // just used a foreach to see all the products
             Console.WriteLine("");
 
             foreach (var product in listFromAPI)
@@ -293,7 +297,7 @@ internal class Program
 
         public static void SearchProducts(List<Product> ProductsInfo)
         {
-            UtilityMethods.CreateTitle("Search a Product");
+            UtilityMethods.CreateTitle("Search a Product"); //here you have the option to search the game by id or by title
 
                 Console.WriteLine("- 1 Search games by id: ");
                 Console.WriteLine("- 2 Search games by title: \n");
@@ -307,7 +311,7 @@ internal class Program
                         Console.Write("Enter an ID: ");
                         string idTyped = Console.ReadLine();
 
-                        var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault();
+                        var findGameById = ProductsInfo.Where(gameExpect => gameExpect.GameId == idTyped).FirstOrDefault(); //it's the same logic from the clients
 
                         Console.WriteLine(findGameById.ToString());
 
@@ -325,9 +329,9 @@ internal class Program
                     try
                     {
                         Console.Clear();
-                        Console.Write("Search a Title: ");
-                        string titleTyped = Console.ReadLine();
-                        string formatedInput = titleTyped.Replace(" ", "").ToUpper();
+                        Console.Write("Search a Title: "); //here's a little bit different, we'll use the internal name of the game, so we dont have to write the name of the game 100% correctly
+                        string titleTyped = Console.ReadLine(); //store the titletyped
+                        string formatedInput = titleTyped.Replace(" ", "").ToUpper(); // create a variable to store the name of the title formated, without spaces and in uppercase (same as the internal)
 
                         var findGameByTitle = ProductsInfo.Where(gameExpect => gameExpect.InternalName == titleTyped).FirstOrDefault();
 
@@ -343,12 +347,11 @@ internal class Program
             
         }
 
-        public static void CalculateBiling(List<Product> ProductInfo, List<Client> ClientInfo)
+        public static void CalculateBiling(List<Product> ProductInfo, List<Client> ClientInfo) // here we will just calculate the billing of our products
         {
 
-            bool repeatCode = true;
 
-            while (repeatCode)
+            while (UtilityMethods.repeatCode)
             {
 
                 UtilityMethods.CreateTitle("Biling Calculator");
@@ -359,7 +362,7 @@ internal class Program
 
                 int optionChosen = int.Parse(Console.ReadLine());
 
-                if (optionChosen == 1 || optionChosen == 2 || optionChosen == 3)
+                if (optionChosen == 1 || optionChosen == 2 || optionChosen == 3) //idk why but I didn't use a switch here
                 {
 
                     switch (optionChosen)
@@ -389,18 +392,18 @@ internal class Program
         public static void UserBoughtsById(List<Product> ProductInfo, List<Client> ClientInfo)
         {
             Random randomNumber = new Random();
-            int random = randomNumber.Next(1, 100000);
+            int random = randomNumber.Next(1, 1000);
 
             UtilityMethods.CreateTitle("User Boughts");
 
             Console.Write("Type a id: ");
             int idAnswer = int.Parse(Console.ReadLine());
 
-            var findClientById = ClientInfo.Where(ClientExpect => ClientExpect.Id == idAnswer).FirstOrDefault();
+            var findClientById = ClientInfo.Where(ClientExpect => ClientExpect.Id == idAnswer).FirstOrDefault(); //search for the id
 
-            string nameOfTheClient = ClientInfo[idAnswer - 1].Name; // pay attention because I think it can be null
+            string nameOfTheClient = ClientInfo[idAnswer - 1].Name; // the name of the client will be searched in the postion of it
 
-            Console.WriteLine($"Customer: {nameOfTheClient}, Boughts: {ProductInfo[random].NumberOfSells}");
+            Console.WriteLine($"Customer: {nameOfTheClient}, Boughts: {ProductInfo[random].NumberOfSells}"); // here it will just give us a imaginary number of boughts using the random number
             Console.ReadLine();
         }
 
