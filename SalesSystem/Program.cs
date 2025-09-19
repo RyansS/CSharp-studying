@@ -411,24 +411,24 @@ internal class Program
         {
             UtilityMethods.CreateTitle("Total Biling");
 
-            foreach (var inEachProduct in ProductInfo)
+            foreach (var inEachProduct in ProductInfo) //foreach the list of products and calculate all the prices multiplied by the number of sells
             {
                 
                 decimal totalbiling = decimal.Parse(inEachProduct.Price) * int.Parse(inEachProduct.NumberOfSells);
-                Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}");
+                Console.WriteLine($"\nNumber of total sells: {inEachProduct.NumberOfSells}, Total Biling: {totalbiling}"); // show it here
             }
         }
 
         public static void SpecificGameBoughts(List<Product> ProductInfo)
         {
-            UtilityMethods.CreateTitle("Game Boughts");
+            UtilityMethods.CreateTitle("Game Boughts"); // here it will do what the name of the function says
 
             Console.WriteLine("Search By Typing a Title: ");
             string titleWritten = Console.ReadLine()!;
 
             if (titleWritten != "")
             {
-                titleWritten = titleWritten.Replace(" ", "").ToUpper();
+                titleWritten = titleWritten.Replace(" ", "").ToUpper(); //formate it
             }
 
             else if (titleWritten == "")
@@ -439,7 +439,7 @@ internal class Program
 
             var findIdUsingTheTitle = ProductInfo.Where(GameExpect => GameExpect.InternalName == titleWritten).FirstOrDefault();
 
-            Console.WriteLine($"{findIdUsingTheTitle.Title} Boughts: {findIdUsingTheTitle.NumberOfSells}");
+            Console.WriteLine($"{findIdUsingTheTitle.Title} Boughts: {findIdUsingTheTitle.NumberOfSells}"); //just show the game boughts using the variable findIdUsingtheTitle
  
         }
     }  
