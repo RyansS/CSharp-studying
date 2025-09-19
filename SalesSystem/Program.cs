@@ -5,44 +5,44 @@ internal class Program
 {
     private static async Task Main(string[] args)
     {
-        List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi();
-        List<Client> ClientsInfo = await UtilityMethods.UserRequest.GetInfoFromUserApi();
+        List<Product> ProductsInfo = await UtilityMethods.GetInfoFromProductApi(); // receive the deserialized api using the function GetInfoFromApi from the class UtilityMethods
+        List<Client> ClientsInfo = await UtilityMethods.UserRequest.GetInfoFromUserApi(); //receive the deserialized api using the function GetInfoFromApi from the class UtilityMethods
 
         while (UtilityMethods.repeatMenu) {
-             UtilityMethods.Menu(ProductsInfo, ClientsInfo);
+             UtilityMethods.Menu(ProductsInfo, ClientsInfo); //repeat the menu until it's false and passes the both lists in the menu
         }
     }
 
     class UtilityMethods
     {
-        public static bool repeatMenu = true;
+        public static bool repeatMenu = true; // variable created to repeat
 
-        public static async Task<List<Product>> GetInfoFromProductApi()
+        public static async Task<List<Product>> GetInfoFromProductApi() //functions to deserialize the api
         {
-            using (HttpClient client = new HttpClient())
+            using (HttpClient client = new HttpClient()) //creates a new object from the class HttpClient
             {
-                string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
+                string receiveProducts = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals"); // receive the data in String, using the function by the object
 
 
-                return JsonSerializer.Deserialize<List<Product>>(receiveProducts);
+                return JsonSerializer.Deserialize<List<Product>>(receiveProducts); //It will return the receiveProducts but Deserialized in a List of the class Product
 
             }
 
         }
 
-        public class UserRequest
+        public class UserRequest //I had to create this class to solve a problem with my client API, It doesn't return a list of users, it returns a object that has a propertie called "users"
         {
-            [JsonPropertyName("users")]
+            [JsonPropertyName("users")] //I created a propertie to store the return of my function
             public List<Client> Users { get; set; }
         
-                public static async Task<List<Client>> GetInfoFromUserApi()
+            public static async Task<List<Client>> GetInfoFromUserApi()
         {
             using (HttpClient client = new HttpClient())
             {
-                string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users");
-                var ApiResponse = JsonSerializer.Deserialize<UserRequest>(receiveUsers);
+                string receiveUsers = await client.GetStringAsync("https://dummyjson.com/users"); //get the api
+                var ApiResponse = JsonSerializer.Deserialize<UserRequest>(receiveUsers); // this variable will store the Deserialized data creating objects of the type UserRequest
 
-                return ApiResponse.Users;
+                return ApiResponse.Users; //return the propertie
 
             }
 
@@ -50,19 +50,19 @@ internal class Program
     }
 
 
-        public static void CreateTitle(string title)
+        public static void CreateTitle(string title) // function to create better titles
         {
-            int numbOfLetters = title.Length;
-            string symbol = string.Empty.PadLeft(numbOfLetters, '-');
+            int numbOfLetters = title.Length; // Catch the number of characters of the string
+            string symbol = string.Empty.PadLeft(numbOfLetters, '-'); // variable to put the symbols based on the number of letters
             Console.Clear();
             Console.WriteLine(symbol);
             Console.WriteLine(title);
             Console.WriteLine(symbol);
         }
 
-        public static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo)
+        public static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo) // Function Menu, the heart of the system
         {
-            CreateTitle("Sales System");
+            CreateTitle("Sales System"); //the Options for the user
             Console.WriteLine("1- See All Products");
             Console.WriteLine("2- Search Products");
             Console.WriteLine("3- See and search clients");
@@ -93,7 +93,7 @@ internal class Program
 
     }
 
-    class Client
+    class Client //class to manage the clients and its functions
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
@@ -109,7 +109,7 @@ internal class Program
 
 
 
-        public static void SeeAndSearchClients(List<Client> ClientApi)
+        public static void SeeAndSearchClients(List<Client> ClientApi) // expects to receive the list of ClientApi
         {
             UtilityMethods.CreateTitle("Manage Clients");
 
@@ -295,8 +295,8 @@ internal class Program
         {
             UtilityMethods.CreateTitle("Search a Product");
 
-                Console.WriteLine("-1 Search games by id: ");
-                Console.WriteLine("-2 Search games by title: ");
+                Console.WriteLine("- 1 Search games by id: ");
+                Console.WriteLine("- 2 Search games by title: \n");
                 int idOrTitleTyped = int.Parse(Console.ReadLine());
 
                 if (idOrTitleTyped == 1)
