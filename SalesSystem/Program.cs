@@ -65,6 +65,7 @@ internal class Program
 
         public static void Menu(List<Product> ProductsInfo, List<Client> ClientsInfo) // Function Menu, the heart of the system
         {
+            repeatCode = true;
             CreateTitle("Sales System"); //the Options for the user
             Console.WriteLine("1- See All Products");
             Console.WriteLine("2- Search Products");
@@ -159,21 +160,17 @@ internal class Program
                                 // the function will remove the object refered
                                 Console.WriteLine("Client succesfully removed!");
                                 Console.ReadLine();
-
-
                                 break;
+
                             case 2:
                                 Console.Clear();
                                 Console.WriteLine("1- Edit Name");
                                 Console.WriteLine("2- Edit Password");
-                                Console.WriteLine("3- Edit Id");
                                 int answerEdit = int.Parse(Console.ReadLine());
 
                                 switch (answerEdit)
                                 {
                                     case 1:
-
-
 
                                         while (UtilityMethods.repeatCode)
                                         {
@@ -198,11 +195,11 @@ internal class Program
 
 
 
-                                        while (UtilityMethods.repeatCode) //SAME LOGIC ON ALL OF THE THREE METHODS
+                                        while (UtilityMethods.repeatCode) //SAME LOGIC ON ALL OF THE TWO METHODS
                                         {
                                             Console.Clear();
                                             Console.WriteLine($"{findClientById.ToString()}");
-                                            Console.Write("\nChange the name: ");
+                                            Console.Write("\nChange the password: ");
                                             string passwordChanged = Console.ReadLine()!;
 
                                             if (passwordChanged != "")
@@ -216,32 +213,6 @@ internal class Program
                                             }
                                         }
 
-                                        break;
-                                    case 3:
-
-
-                                        while (UtilityMethods.repeatCode)
-                                        {
-                                            Console.Clear();
-
-                                            foreach (var inEachClient in ClientApi)
-                                            {
-                                                Console.WriteLine($"{findClientById.ToString()}");
-                                                Console.Write("\nChange the name: ");
-                                                int idChanged = int.Parse(Console.ReadLine())!;
-
-                                                if (idChanged != null && idChanged != inEachClient.Id)
-                                                {
-                                                    ClientApi[idAnswer - 1].Id = idChanged!;
-                                                    UtilityMethods.repeatCode = false;
-                                                }
-
-                                                else if (idChanged == null)
-                                                {
-                                                    Console.WriteLine("Please, keep sure that you have fill the camp!");
-                                                }
-                                            }
-                                        }
                                         break;
                                 }
                                 break;
