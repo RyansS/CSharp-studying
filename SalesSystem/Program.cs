@@ -71,8 +71,11 @@ internal class Program
             Console.WriteLine("2- Search Products");
             Console.WriteLine("3- See and search clients");
             Console.WriteLine("4- Calculate biling");
+           
             Console.WriteLine("0- Exit");
-
+             Console.WriteLine("");
+            
+            
             int optionChosen = int.Parse(Console.ReadLine());
 
             switch (optionChosen)
