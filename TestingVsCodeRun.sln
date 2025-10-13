@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesSystem", "SalesSystem\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReinforcingInheritance", "ReinforcingInheritance\ReinforcingInheritance.csproj", "{77957C33-349F-43A4-8585-7AFB36F0B9AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinforcing Encapsulation", "Reinforcing Encapsulation\Reinforcing Encapsulation.csproj", "{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{77957C33-349F-43A4-8585-7AFB36F0B9AB}.Release|x64.Build.0 = Release|Any CPU
 		{77957C33-349F-43A4-8585-7AFB36F0B9AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{77957C33-349F-43A4-8585-7AFB36F0B9AB}.Release|x86.Build.0 = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|x64.Build.0 = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Debug|x86.Build.0 = Debug|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|x64.ActiveCfg = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|x64.Build.0 = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|x86.ActiveCfg = Release|Any CPU
+		{215C5C94-AC4F-4E47-B5AB-FEFBEB96ADBF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
