@@ -2,8 +2,12 @@
 {
     private static void Main(string[] args)
     {
-        
-
+        Product Sponge = new Product("Sponge", 3.2m, 0);
+        Product Orange = new Product("Orange", 0.3m, 0);
+        Product Banana = new Product("Banana", 0.4m, 0);
+        Product.AllItems.Add(Sponge);
+        Product.AllItems.Add(Orange);
+        Product.AllItems.Add(Banana);
         
     }
 }
@@ -13,6 +17,7 @@ class Product
     private string name;
     private decimal price;
     private int quantity;
+    public static List<Product> AllItems = new List<Product>();
 
     public string Name { get; }
     public decimal Price { get; private set; }
@@ -37,15 +42,15 @@ class Product
                 break;
 
             case 1:
-                
+                ShowProductDescription();
                 break;
 
             case 2:
-
+                ChangePrice(AllItems);
                 break;
 
             case 3:
-
+                ManageStock(AllItems);
                 break;
         }
     }
@@ -72,23 +77,23 @@ class Product
         Console.WriteLine($"Name: {Name}, Price: {Price}, Stock: {Quantity}");
     }
 
-    public void ChangePrice(Product item)
+    public void ChangePrice(List<Product> items)
     {
         Console.Write("Change the price: ");
         decimal NewPrice = decimal.Parse(Console.ReadLine());
 
-        item.Price = NewPrice;
+        items[0].Price = NewPrice;
 
         Console.WriteLine("The price has changed!");
         Console.ReadLine();
     }
 
-    public void ManageStock(Product item)
+    public void ManageStock(List<Product> items)
     {
         Console.Write("Write the quantity of the item: ");
         int NewQuantity = int.Parse(Console.ReadLine());
 
-        item.Quantity = NewQuantity;
+        items[0].Quantity = NewQuantity;
 
         Console.WriteLine("The stock was succesfully changed!");
         Console.ReadLine();
