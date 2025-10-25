@@ -33,6 +33,15 @@ class GamesInfo
     public string Name { get; private set; }
     private string InternalName {  get; set; }
     public decimal Price { get; private set; }
-    private int GameId {  get; set; }
+    private int Gameid {  get; set; }
     public double Rating { get; private set; }
+
+    public GamesInfo (string name, string internalName, decimal price, int gameid, double rating)
+    {
+        Name = name;
+        InternalName = internalname;
+        Price = price;
+        Gameid = gameid;
+        Rating = rating;
+    }
 }
