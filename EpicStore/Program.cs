@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 internal class Program
 {
@@ -14,7 +15,21 @@ internal class Program
 
 class GamesInfo
 {
+    [JsonPropertyName("title")]
+    private string name;
+
+    [JsonPropertyName("internalName")]
+    private string internalname;
     
+    [JsonPropertyName("normalPrice")]
+    private decimal price;
+
+    [JsonPropertyName("gameID")]
+    private int gameid;
+
+    [JsonPropertyName("dealRating")]
+    private double rating;
+
     public string Name { get; private set; }
     private string InternalName {  get; set; }
     public decimal Price { get; private set; }
