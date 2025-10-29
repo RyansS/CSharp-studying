@@ -8,7 +8,7 @@ internal class Program
         using (HttpClient client = new HttpClient())
         {
             string apiRequest = await client.GetStringAsync("https://www.cheapshark.com/api/1.0/deals");
-            var apiData = JsonSerializer.Deserialize <List<GamesInfo>>(apiRequest);
+            var apiData = JsonSerializer.Deserialize<List<GamesInfo>>(apiRequest);
         }
     }
 }
