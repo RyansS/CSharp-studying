@@ -13,6 +13,20 @@ internal class Program
     }
 }
 
+class UtilityMethods
+{
+    public void CreateTitle(string title)
+    {
+        int numbCharacters = title.Length;
+        string symbol = string.Empty.PadLeft(numbCharacters, '*');
+
+        Console.WriteLine(symbol);
+        Console.WriteLine(title);
+        Console.WriteLine(symbol);
+        
+    }
+}
+
 class GamesInfo
 {
     [JsonPropertyName("title")]
@@ -20,7 +34,7 @@ class GamesInfo
 
     [JsonPropertyName("internalName")]
     private string internalname;
-    
+
     [JsonPropertyName("normalPrice")]
     private decimal price;
 
@@ -31,12 +45,12 @@ class GamesInfo
     private double rating;
 
     public string Name { get; private set; }
-    private string InternalName {  get; set; }
+    private string InternalName { get; set; }
     public decimal Price { get; private set; }
-    private int Gameid {  get; set; }
+    private int Gameid { get; set; }
     public double Rating { get; private set; }
 
-    public GamesInfo (string name, string internalName, decimal price, int gameid, double rating)
+    public GamesInfo(string name, string internalname, decimal price, int gameid, double rating)
     {
         Name = name;
         InternalName = internalname;
