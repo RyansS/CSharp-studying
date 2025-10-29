@@ -15,6 +15,7 @@ internal class Program
 
 class UtilityMethods
 {
+
     public void CreateTitle(string title)
     {
         int numbCharacters = title.Length;
@@ -23,7 +24,7 @@ class UtilityMethods
         Console.WriteLine(symbol);
         Console.WriteLine(title);
         Console.WriteLine(symbol);
-        
+
     }
 }
 
@@ -57,5 +58,33 @@ class GamesInfo
         Price = price;
         Gameid = gameid;
         Rating = rating;
+    }
+}
+
+class User
+{
+    private string nickname;
+    private decimal balance;
+    private string email;
+    private string password;
+    private int userid = 0;
+
+    public string Nickname { get; private set; }
+
+    public decimal Balance { get; private set; }
+
+    private string Email { get; set; }
+
+    private string Password { get; set; }
+
+    private int Userid { get; set; }
+
+    public User (string nickname, decimal balance, string email, string password)
+    {
+        Nickname = nickname;
+        Balance = balance;
+        Email = email;
+        Password = password;
+        userid += 1;
     }
 }
