@@ -15,8 +15,8 @@ internal class Program
 
 class UtilityMethods
 {
-
-    public void CreateTitle(string title)
+    public static bool repeatCode;
+    public static void CreateTitle(string title)
     {
         int numbCharacters = title.Length;
         string symbol = string.Empty.PadLeft(numbCharacters, '*');
@@ -30,25 +30,20 @@ class UtilityMethods
 
 class GamesInfo
 {
+
     [JsonPropertyName("title")]
-    private string name;
+    public string Name { get; private set; }
 
     [JsonPropertyName("internalName")]
-    private string internalname;
+    private string InternalName { get; set; }
 
     [JsonPropertyName("normalPrice")]
-    private decimal price;
+    public decimal Price { get; private set; }
 
     [JsonPropertyName("gameID")]
-    private int gameid;
+    private int Gameid { get; set; }
 
     [JsonPropertyName("dealRating")]
-    private double rating;
-
-    public string Name { get; private set; }
-    private string InternalName { get; set; }
-    public decimal Price { get; private set; }
-    private int Gameid { get; set; }
     public double Rating { get; private set; }
 
     public GamesInfo(string name, string internalname, decimal price, int gameid, double rating)
@@ -63,11 +58,6 @@ class GamesInfo
 
 class User
 {
-    private string nickname;
-    private decimal balance;
-    private string email;
-    private string password;
-    private int userid = 0;
 
     public string Nickname { get; private set; }
 
@@ -79,12 +69,35 @@ class User
 
     private int Userid { get; set; }
 
-    public User (string nickname, decimal balance, string email, string password)
+    public User(string nickname, decimal balance, string email, string password)
     {
         Nickname = nickname;
         Balance = balance;
         Email = email;
         Password = password;
-        userid += 1;
+        Userid += 1;
+    }
+    
+    public static User SignUp ()
+    {
+        while (UtilityMethods.repeatCode)
+        {
+            UtilityMethods.CreateTitle("Sign up");
+
+            Console.WriteLine("Username: ");
+            string usernick = Console.ReadLine();
+
+            Console.WriteLine("Email: ");
+            string email = Console.ReadLine();
+
+            Console.WriteLine("Password: ");
+            string password = Console.ReadLine();
+
+            if (usernick != "" && email != "" && password != "")
+            {
+                Console.WriteLine("You're signed up!");
+            }
+        }
+        
     }
 }
