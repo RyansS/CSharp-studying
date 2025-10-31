@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignUpToJson")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bd8702cf9cf8af565e942801d4bee240760f5f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbe4ac0ae7b0641eab0c671dc6778c630fb37059")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignUpToJson")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignUpToJson")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

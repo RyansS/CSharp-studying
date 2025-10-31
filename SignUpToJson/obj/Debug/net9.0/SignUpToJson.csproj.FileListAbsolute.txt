@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\bin\Debug\net9.0\SignUpToJson.exe
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\bin\Debug\net9.0\SignUpToJson.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\bin\Debug\net9.0\SignUpToJson.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\bin\Debug\net9.0\SignUpToJson.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\bin\Debug\net9.0\SignUpToJson.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\refint\SignUpToJson.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\SignUpToJson.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SignUpToJson\obj\Debug\net9.0\ref\SignUpToJson.dll

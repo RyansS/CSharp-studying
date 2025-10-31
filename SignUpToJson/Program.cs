@@ -9,6 +9,8 @@ internal class Program
         UtilityMethod.Users.Add(SignUp.SignUpMethod());
         SelectedUsers.GenerateJson();
 
+        
+
         Console.ReadKey();
     }
 }
@@ -69,7 +71,9 @@ class SelectedUsers
 
         File.WriteAllText("users-archive-info.json", FileValue);
 
-        Console.WriteLine("The Json file was created successfully!");
+        Console.WriteLine($"The Json file was created successfully! {Path.GetFullPath("users-archive-info.json")}");
+
+        
     }
     
 }
