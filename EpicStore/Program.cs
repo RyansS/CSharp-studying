@@ -69,10 +69,9 @@ class User
 
     private int Userid { get; set; }
 
-    public User(string nickname, decimal balance, string email, string password)
+    public User(string nickname, string email, string password)
     {
         Nickname = nickname;
-        Balance = balance;
         Email = email;
         Password = password;
         Userid += 1;
@@ -80,24 +79,29 @@ class User
     
     public static User SignUp ()
     {
+        string usernick = "";
+        string email = "";
+        string password = "";
+
+
         while (UtilityMethods.repeatCode)
         {
             UtilityMethods.CreateTitle("Sign up");
 
             Console.WriteLine("Username: ");
-            string usernick = Console.ReadLine();
+            usernick = Console.ReadLine();
 
             Console.WriteLine("Email: ");
-            string email = Console.ReadLine();
+            email = Console.ReadLine();
 
             Console.WriteLine("Password: ");
-            string password = Console.ReadLine();
+            password = Console.ReadLine();
 
             if (usernick != "" && email != "" && password != "")
             {
                 Console.WriteLine("You're signed up!");
             }
         }
-        
+        return new User(usernick,email,password);
     }
 }
