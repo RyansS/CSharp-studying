@@ -15,7 +15,7 @@ internal class Program
 
 class UtilityMethods
 {
-    public static bool repeatCode;
+    public static bool repeatCode = true;
     public static void CreateTitle(string title)
     {
         int numbCharacters = title.Length;
@@ -76,8 +76,8 @@ class User
         Password = password;
         Userid += 1;
     }
-    
-    public static User SignUp ()
+
+    public static User SignUp()
     {
         string usernick = "";
         string email = "";
@@ -87,7 +87,8 @@ class User
         while (UtilityMethods.repeatCode)
         {
             UtilityMethods.CreateTitle("Sign up");
-
+            
+            Console.WriteLine();
             Console.WriteLine("Username: ");
             usernick = Console.ReadLine();
 
@@ -100,8 +101,17 @@ class User
             if (usernick != "" && email != "" && password != "")
             {
                 Console.WriteLine("You're signed up!");
+                UtilityMethods.repeatCode = false;
             }
         }
-        return new User(usernick,email,password);
+        return new User(usernick, email, password);
+    }
+    
+    public static bool SignIn ()
+    {
+        UtilityMethods.CreateTitle("Sign In");
+
+        Console.WriteLine();
+        Console.WriteLine("Username or Email: ");
     }
 }
