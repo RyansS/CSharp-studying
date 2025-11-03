@@ -28,6 +28,26 @@ class UtilityMethods
     }
 }
 
+class Store
+{
+    public static void Menu () {
+        UtilityMethods.CreateTitle("Menu");
+
+        Console.WriteLine("-Options-\n");
+        Console.WriteLine("1- On Sale");
+        Console.WriteLine("2- Catalog");
+        Console.WriteLine("3- Cart");
+        Console.WriteLine("4- Profile");
+
+        int optionChosen = int.Parse(Console.ReadLine());
+
+        switch (optionChosen)
+        {
+            
+        }
+    }
+}
+
 class GamesInfo
 {
 
@@ -112,6 +132,15 @@ class User
         UtilityMethods.CreateTitle("Sign In");
 
         Console.WriteLine();
-        Console.WriteLine("Username or Email: ");
+
+        Console.Write("- Username or Email: ");
+        string storeUserOrEmail = Console.ReadLine();
+
+        Console.WriteLine();
+
+        Console.Write("- Password: ");
+        string storePassword = Console.ReadLine();
+
+        
     }
 }
