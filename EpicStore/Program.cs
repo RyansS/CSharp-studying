@@ -44,7 +44,7 @@ class Store
         }
         else if (LoginAnswer == "signup")
         {
-            User.SignUp();
+            User.UsersInfo.Add(User.SignUp());
         }
     }
     public static void Menu () {
@@ -101,6 +101,7 @@ class GamesInfo
 
 class User
 {
+    public static List<User> UsersInfo = new List<User>();
 
     public string Nickname { get; private set; }
 
@@ -166,8 +167,25 @@ class User
         Console.Write("- Password: ");
         string storePassword = Console.ReadLine();
 
+        var findLogin = UsersInfo.Where(EachInfoFromUser =>
+        EachInfoFromUser.Nickname == storeUserOrEmail ||
+        EachInfoFromUser.Email == storeUserOrEmail &&
+        EachInfoFromUser.Password == storePassword).FirstOrDefault();
 
-        var findLogin = 
-        
+        if (findLogin != null)
+        {
+            Console.WriteLine("\nYou're Logged In!");
+            Console.ReadLine();
+            Console.Clear();
+
+            return true;
+        }
+
+        else if (findLogin == null)
+        {
+            Console.WriteLine("Please, check your credentials...");
+            return false;
+        }
+        return true;
     }
 }
