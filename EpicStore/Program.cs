@@ -30,6 +30,23 @@ class UtilityMethods
 
 class Store
 {
+     public static void LoginMenu ()
+    {
+        UtilityMethods.CreateTitle("Welcome to Epic Games!");
+
+        Console.Write("Sign In - Sign Up");
+        string LoginAnswer = Console.ReadLine();
+        LoginAnswer = LoginAnswer.Replace(" ", "").ToLower();
+
+        if (LoginAnswer == "signin")
+        {
+            User.SignIn();
+        }
+        else if (LoginAnswer == "signup")
+        {
+            User.SignUp();
+        }
+    }
     public static void Menu () {
         UtilityMethods.CreateTitle("Menu");
 
@@ -43,7 +60,13 @@ class Store
 
         switch (optionChosen)
         {
-            
+            case 1: break;
+
+            case 2: break;
+
+            case 3: break;
+
+            case 4: break;
         }
     }
 }
@@ -106,6 +129,7 @@ class User
 
         while (UtilityMethods.repeatCode)
         {
+            Console.Clear();
             UtilityMethods.CreateTitle("Sign up");
             
             Console.WriteLine();
@@ -129,6 +153,7 @@ class User
     
     public static bool SignIn ()
     {
+        Console.Clear();
         UtilityMethods.CreateTitle("Sign In");
 
         Console.WriteLine();
@@ -141,6 +166,8 @@ class User
         Console.Write("- Password: ");
         string storePassword = Console.ReadLine();
 
+
+        var findLogin = 
         
     }
 }
