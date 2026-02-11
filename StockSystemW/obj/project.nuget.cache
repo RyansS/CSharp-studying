@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+AgrtZ+JO/c=",
+  "dgSpecHash": "VNdjr0syl5k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\monte\\Desktop\\Programming\\C# Studying\\StockSystemW\\StockSystemW.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\monte\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.13\\microsoft.netcore.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\monte\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.13\\microsoft.windowsdesktop.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\monte\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.13\\microsoft.aspnetcore.app.ref.9.0.13.nupkg.sha512",
+    "C:\\Users\\monte\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.13\\microsoft.netcore.app.host.win-x64.9.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
