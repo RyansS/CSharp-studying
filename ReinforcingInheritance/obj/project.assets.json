@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\ReinforcingInheritance\\ReinforcingInheritance.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\ReinforcingInheritance\\ReinforcingInheritance.csproj",
       "projectName": "ReinforcingInheritance",
-      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\ReinforcingInheritance\\ReinforcingInheritance.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\ReinforcingInheritance\\ReinforcingInheritance.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\ReinforcingInheritance\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\ReinforcingInheritance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

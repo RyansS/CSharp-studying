@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pyKlh4p8MSU=",
+  "dgSpecHash": "nAlhyXgUxw8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\Fighters.csproj",
+  "projectFilePath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\Fighters.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\monte\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.13\\microsoft.netcore.app.ref.9.0.13.nupkg.sha512",
     "C:\\Users\\monte\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.13\\microsoft.windowsdesktop.app.ref.9.0.13.nupkg.sha512",

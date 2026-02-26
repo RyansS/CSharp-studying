@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj",
       "projectName": "StockSystemW",
-      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"
