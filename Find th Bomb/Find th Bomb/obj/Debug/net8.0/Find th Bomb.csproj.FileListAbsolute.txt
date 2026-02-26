@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\bin\Debug\net8.0\Find th Bomb.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\bin\Debug\net8.0\Find th Bomb.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\bin\Debug\net8.0\Find th Bomb.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\bin\Debug\net8.0\Find th Bomb.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\bin\Debug\net8.0\Find th Bomb.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\refint\Find th Bomb.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\Find th Bomb.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Find th Bomb\Find th Bomb\obj\Debug\net8.0\ref\Find th Bomb.dll

@@ -1,0 +1,15 @@
+C:\Users\monte\source\repos\Guid\Guid\bin\Debug\net8.0\Guid.exe
+C:\Users\monte\source\repos\Guid\Guid\bin\Debug\net8.0\Guid.deps.json
+C:\Users\monte\source\repos\Guid\Guid\bin\Debug\net8.0\Guid.runtimeconfig.json
+C:\Users\monte\source\repos\Guid\Guid\bin\Debug\net8.0\Guid.dll
+C:\Users\monte\source\repos\Guid\Guid\bin\Debug\net8.0\Guid.pdb
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.AssemblyInfo.cs
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.sourcelink.json
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.dll
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\refint\Guid.dll
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.pdb
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\Guid.genruntimeconfig.cache
+C:\Users\monte\source\repos\Guid\Guid\obj\Debug\net8.0\ref\Guid.dll

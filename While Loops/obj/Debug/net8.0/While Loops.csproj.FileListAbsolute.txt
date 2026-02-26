@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\bin\Debug\net8.0\While Loops.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\bin\Debug\net8.0\While Loops.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\bin\Debug\net8.0\While Loops.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\bin\Debug\net8.0\While Loops.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\bin\Debug\net8.0\While Loops.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\refint\While Loops.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\While Loops.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\While Loops\obj\Debug\net8.0\ref\While Loops.dll

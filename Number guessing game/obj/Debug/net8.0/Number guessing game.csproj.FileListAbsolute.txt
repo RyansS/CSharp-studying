@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\bin\Debug\net8.0\Number guessing game.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\bin\Debug\net8.0\Number guessing game.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\bin\Debug\net8.0\Number guessing game.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\bin\Debug\net8.0\Number guessing game.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\bin\Debug\net8.0\Number guessing game.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\refint\Number guessing game.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\Number guessing game.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Number guessing game\obj\Debug\net8.0\ref\Number guessing game.dll

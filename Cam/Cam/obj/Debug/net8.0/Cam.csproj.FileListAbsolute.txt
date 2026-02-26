@@ -1,0 +1,15 @@
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.AssemblyInfo.cs
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.sourcelink.json
+C:\Users\monte\source\repos\Cam\Cam\bin\Debug\net8.0\Cam.exe
+C:\Users\monte\source\repos\Cam\Cam\bin\Debug\net8.0\Cam.deps.json
+C:\Users\monte\source\repos\Cam\Cam\bin\Debug\net8.0\Cam.runtimeconfig.json
+C:\Users\monte\source\repos\Cam\Cam\bin\Debug\net8.0\Cam.dll
+C:\Users\monte\source\repos\Cam\Cam\bin\Debug\net8.0\Cam.pdb
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.dll
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\refint\Cam.dll
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.pdb
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\Cam.genruntimeconfig.cache
+C:\Users\monte\source\repos\Cam\Cam\obj\Debug\net8.0\ref\Cam.dll

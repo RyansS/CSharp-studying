@@ -1,0 +1,28 @@
+C:\Users\monte\source\repos\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.exe
+C:\Users\monte\source\repos\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.deps.json
+C:\Users\monte\source\repos\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.runtimeconfig.json
+C:\Users\monte\source\repos\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.dll
+C:\Users\monte\source\repos\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.pdb
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.AssemblyInfo.cs
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.dll
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\refint\Rock Paper Scissors.dll
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.pdb
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.genruntimeconfig.cache
+C:\Users\monte\source\repos\Rock Paper Scissors\obj\Debug\net8.0\ref\Rock Paper Scissors.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\bin\Debug\net8.0\Rock Paper Scissors.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\refint\Rock Paper Scissors.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\Rock Paper Scissors.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rock Paper Scissors\obj\Debug\net8.0\ref\Rock Paper Scissors.dll

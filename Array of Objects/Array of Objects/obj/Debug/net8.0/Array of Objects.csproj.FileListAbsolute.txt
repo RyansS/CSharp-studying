@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\bin\Debug\net8.0\Array of Objects.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\bin\Debug\net8.0\Array of Objects.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\bin\Debug\net8.0\Array of Objects.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\bin\Debug\net8.0\Array of Objects.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\bin\Debug\net8.0\Array of Objects.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\refint\Array of Objects.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\Array of Objects.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Array of Objects\Array of Objects\obj\Debug\net8.0\ref\Array of Objects.dll

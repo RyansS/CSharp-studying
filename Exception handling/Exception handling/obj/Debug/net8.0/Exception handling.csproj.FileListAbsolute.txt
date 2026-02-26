@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\bin\Debug\net8.0\Exception handling.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\bin\Debug\net8.0\Exception handling.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\bin\Debug\net8.0\Exception handling.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\bin\Debug\net8.0\Exception handling.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\bin\Debug\net8.0\Exception handling.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\refint\Exception handling.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\Exception handling.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Exception handling\Exception handling\obj\Debug\net8.0\ref\Exception handling.dll

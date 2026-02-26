@@ -1,0 +1,15 @@
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\bin\Debug\net8.0\EvenOrOddLINQ.exe
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\bin\Debug\net8.0\EvenOrOddLINQ.deps.json
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\bin\Debug\net8.0\EvenOrOddLINQ.runtimeconfig.json
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\bin\Debug\net8.0\EvenOrOddLINQ.dll
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\bin\Debug\net8.0\EvenOrOddLINQ.pdb
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.AssemblyInfoInputs.cache
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.AssemblyInfo.cs
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.csproj.CoreCompileInputs.cache
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.sourcelink.json
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.dll
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\refint\EvenOrOddLINQ.dll
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.pdb
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\EvenOrOddLINQ.genruntimeconfig.cache
+C:\Users\monte\source\repos\EvenOrOddLINQ\EvenOrOddLINQ\obj\Debug\net8.0\ref\EvenOrOddLINQ.dll

@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\bin\Debug\net8.0\Abstract Classes.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\bin\Debug\net8.0\Abstract Classes.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\bin\Debug\net8.0\Abstract Classes.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\bin\Debug\net8.0\Abstract Classes.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\bin\Debug\net8.0\Abstract Classes.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\refint\Abstract Classes.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\Abstract Classes.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Abstract Classes\Abstract Classes\obj\Debug\net8.0\ref\Abstract Classes.dll

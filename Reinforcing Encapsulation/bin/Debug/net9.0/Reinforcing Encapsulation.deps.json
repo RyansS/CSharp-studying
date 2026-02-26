@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Reinforcing Encapsulation/1.0.0": {
+        "runtime": {
+          "Reinforcing Encapsulation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reinforcing Encapsulation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

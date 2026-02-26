@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\bin\Debug\net8.0\Random array numbers.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\bin\Debug\net8.0\Random array numbers.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\bin\Debug\net8.0\Random array numbers.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\bin\Debug\net8.0\Random array numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\bin\Debug\net8.0\Random array numbers.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\refint\Random array numbers.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\Random array numbers.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Random array numbers\obj\Debug\net8.0\ref\Random array numbers.dll

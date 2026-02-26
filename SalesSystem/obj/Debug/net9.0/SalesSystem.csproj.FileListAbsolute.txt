@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\bin\Debug\net9.0\SalesSystem.exe
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\bin\Debug\net9.0\SalesSystem.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\bin\Debug\net9.0\SalesSystem.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\bin\Debug\net9.0\SalesSystem.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\bin\Debug\net9.0\SalesSystem.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\refint\SalesSystem.dll
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\SalesSystem.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\SalesSystem\obj\Debug\net9.0\ref\SalesSystem.dll

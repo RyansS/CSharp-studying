@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\bin\Debug\net8.0\Rectangle Triangle.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\bin\Debug\net8.0\Rectangle Triangle.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\bin\Debug\net8.0\Rectangle Triangle.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\bin\Debug\net8.0\Rectangle Triangle.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\bin\Debug\net8.0\Rectangle Triangle.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\refint\Rectangle Triangle.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\Rectangle Triangle.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Rectangle Triangle\Rectangle Triangle\obj\Debug\net8.0\ref\Rectangle Triangle.dll

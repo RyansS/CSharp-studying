@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\bin\Debug\net8.0\String Interpolation.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\bin\Debug\net8.0\String Interpolation.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\bin\Debug\net8.0\String Interpolation.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\bin\Debug\net8.0\String Interpolation.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\bin\Debug\net8.0\String Interpolation.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\refint\String Interpolation.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\String Interpolation.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\String Interpolation\String Interpolation\obj\Debug\net8.0\ref\String Interpolation.dll

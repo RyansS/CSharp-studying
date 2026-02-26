@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\bin\Debug\net8.0\Logical operators.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\bin\Debug\net8.0\Logical operators.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\bin\Debug\net8.0\Logical operators.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\bin\Debug\net8.0\Logical operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\bin\Debug\net8.0\Logical operators.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\refint\Logical operators.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\Logical operators.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# Projects\Logical operators\obj\Debug\net8.0\ref\Logical operators.dll

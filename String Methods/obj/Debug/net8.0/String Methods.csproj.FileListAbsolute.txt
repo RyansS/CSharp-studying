@@ -1,0 +1,14 @@
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.AssemblyInfoInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.AssemblyInfo.cs
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.csproj.CoreCompileInputs.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\bin\Debug\net8.0\String Methods.exe
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\bin\Debug\net8.0\String Methods.deps.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\bin\Debug\net8.0\String Methods.runtimeconfig.json
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\bin\Debug\net8.0\String Methods.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\bin\Debug\net8.0\String Methods.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\refint\String Methods.dll
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.pdb
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\String Methods.genruntimeconfig.cache
+C:\Users\monte\OneDrive\Área de Trabalho\Programing\C#\C# projects\String Methods\obj\Debug\net8.0\ref\String Methods.dll

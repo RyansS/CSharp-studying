@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\bin\Debug\net9.0\ReinforcingInheritance.exe
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\bin\Debug\net9.0\ReinforcingInheritance.deps.json
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\bin\Debug\net9.0\ReinforcingInheritance.runtimeconfig.json
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\bin\Debug\net9.0\ReinforcingInheritance.dll
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\bin\Debug\net9.0\ReinforcingInheritance.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.AssemblyInfo.cs
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.sourcelink.json
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.dll
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\refint\ReinforcingInheritance.dll
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.pdb
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ReinforcingInheritance.genruntimeconfig.cache
+C:\Users\monte\Desktop\Programming\C# Studying\ReinforcingInheritance\obj\Debug\net9.0\ref\ReinforcingInheritance.dll

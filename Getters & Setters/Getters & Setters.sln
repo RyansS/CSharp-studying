@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getters & Setters", "Getters & Setters\Getters & Setters.csproj", "{D7F7CA4B-21C7-4088-A0C4-607828696B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7F7CA4B-21C7-4088-A0C4-607828696B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F7CA4B-21C7-4088-A0C4-607828696B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F7CA4B-21C7-4088-A0C4-607828696B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F7CA4B-21C7-4088-A0C4-607828696B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46ED750D-DF24-4FFB-A297-B2CACA3052E4}
+	EndGlobalSection
+EndGlobal
