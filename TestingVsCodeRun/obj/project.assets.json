@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\TestingVsCodeRun\\TestingVsCodeRun.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\TestingVsCodeRun\\TestingVsCodeRun.csproj",
       "projectName": "TestingVsCodeRun",
-      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\TestingVsCodeRun\\TestingVsCodeRun.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\TestingVsCodeRun\\TestingVsCodeRun.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\TestingVsCodeRun\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\TestingVsCodeRun\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

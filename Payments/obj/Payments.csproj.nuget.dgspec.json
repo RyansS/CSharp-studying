@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Payments\\Payments.csproj": {}
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Payments\\Payments.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Payments\\Payments.csproj": {
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Payments\\Payments.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Payments\\Payments.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Payments\\Payments.csproj",
         "projectName": "Payments",
-        "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Payments\\Payments.csproj",
+        "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Payments\\Payments.csproj",
         "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Payments\\obj\\",
+        "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Payments\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

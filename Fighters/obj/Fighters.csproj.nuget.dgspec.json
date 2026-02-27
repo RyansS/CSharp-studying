@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\Fighters.csproj": {}
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\Fighters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\Fighters.csproj": {
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\Fighters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\Fighters.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\Fighters.csproj",
         "projectName": "Fighters",
-        "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\Fighters.csproj",
+        "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\Fighters.csproj",
         "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Fighters\\obj\\",
+        "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Fighters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

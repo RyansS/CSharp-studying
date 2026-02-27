@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SignUpToJson\\SignUpToJson.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SignUpToJson\\SignUpToJson.csproj",
       "projectName": "SignUpToJson",
-      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SignUpToJson\\SignUpToJson.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SignUpToJson\\SignUpToJson.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SignUpToJson\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SignUpToJson\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SteamProjectW\\SteamProjectW.csproj": {}
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SteamProjectW\\SteamProjectW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SteamProjectW\\SteamProjectW.csproj": {
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SteamProjectW\\SteamProjectW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SteamProjectW\\SteamProjectW.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SteamProjectW\\SteamProjectW.csproj",
         "projectName": "SteamProjectW",
-        "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SteamProjectW\\SteamProjectW.csproj",
+        "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SteamProjectW\\SteamProjectW.csproj",
         "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SteamProjectW\\obj\\",
+        "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SteamProjectW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

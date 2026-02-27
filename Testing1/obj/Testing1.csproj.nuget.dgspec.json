@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Testing1\\Testing1.csproj": {}
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Testing1\\Testing1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Testing1\\Testing1.csproj": {
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Testing1\\Testing1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Testing1\\Testing1.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Testing1\\Testing1.csproj",
         "projectName": "Testing1",
-        "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Testing1\\Testing1.csproj",
+        "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Testing1\\Testing1.csproj",
         "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\Testing1\\obj\\",
+        "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\Testing1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

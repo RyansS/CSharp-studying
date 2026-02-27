@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\Api\bin\Debug\net10.0\Api.exe
+C:\Users\monte\Desktop\CSharp-studying-main\Api\bin\Debug\net10.0\Api.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\Api\bin\Debug\net10.0\Api.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\Api\bin\Debug\net10.0\Api.dll
+C:\Users\monte\Desktop\CSharp-studying-main\Api\bin\Debug\net10.0\Api.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.dll
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\refint\Api.dll
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\Api.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\Api\obj\Debug\net10.0\ref\Api.dll

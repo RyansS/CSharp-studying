@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj": {}
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj": {
+    "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj",
+        "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj",
         "projectName": "StockSystemW",
-        "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\StockSystemW.csproj",
+        "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\StockSystemW.csproj",
         "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\StockSystemW\\obj\\",
+        "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\StockSystemW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SalesSystem\\SalesSystem.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SalesSystem\\SalesSystem.csproj",
       "projectName": "SalesSystem",
-      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SalesSystem\\SalesSystem.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SalesSystem\\SalesSystem.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\SalesSystem\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\SalesSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"

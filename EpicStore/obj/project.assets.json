@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\EpicStore\\EpicStore.csproj",
+      "projectUniqueName": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\EpicStore\\EpicStore.csproj",
       "projectName": "EpicStore",
-      "projectPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\EpicStore\\EpicStore.csproj",
+      "projectPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\EpicStore\\EpicStore.csproj",
       "packagesPath": "C:\\Users\\monte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monte\\Desktop\\Programming\\CSharp-studying\\EpicStore\\obj\\",
+      "outputPath": "C:\\Users\\monte\\Desktop\\CSharp-studying-main\\EpicStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\monte\\AppData\\Roaming\\NuGet\\NuGet.Config"
