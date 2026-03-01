@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQstudying", "LINQstudyin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{5249759C-FEE6-4011-8160-29A4E7BFD86B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cities", "Cities\Cities.csproj", "{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -223,6 +225,18 @@ Global
 		{5249759C-FEE6-4011-8160-29A4E7BFD86B}.Release|x64.Build.0 = Release|Any CPU
 		{5249759C-FEE6-4011-8160-29A4E7BFD86B}.Release|x86.ActiveCfg = Release|Any CPU
 		{5249759C-FEE6-4011-8160-29A4E7BFD86B}.Release|x86.Build.0 = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|x64.Build.0 = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|x64.ActiveCfg = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|x64.Build.0 = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F4AEFF1D-9126-4245-AA7D-13CAEDC3CC1B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
