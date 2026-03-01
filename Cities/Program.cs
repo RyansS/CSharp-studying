@@ -1,4 +1,12 @@
-﻿Console.WriteLine("Best cities to visit in the world!!");
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Best cities to visit in the world!!");
+
+        City.Menu(City.Cities);
+    }
+}
 
 class City
 {
@@ -13,7 +21,7 @@ class City
         Mayor = mayor;
     }
 
-    Dictionary<string, string> Cities = new Dictionary<string, string>
+    public static Dictionary<string, string> Cities = new Dictionary<string, string>
     {
         {"USA", "Washington"},
         {"IE", "Dublin"},
