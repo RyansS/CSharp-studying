@@ -7,19 +7,80 @@
 
     class BankAccount
     {
+        private static int iduserincrement = 1;
         public string Username {get; private set;}
 
         public decimal Balance {get; private set;}
 
         private int IdUser {get; set;}
 
+        private string Email {get; set;}
+
+        private string Password {get; set;}
+
         List <BankAccount> AllBankAccounts = new List<BankAccount>();
 
-        public BankAccount (string username, decimal balance, int iduser)
+        public BankAccount (string username, string email, string password)
         {
+
             Username = username;
-            Balance = balance;
-            IdUser = iduser;
+            IdUser += iduserincrement;
+            Email = email;
+            Password = password;
+        }
+
+        public void CreateAccount ()
+        {
+            bool repeat = false;
+
+            do
+            {
+            Console.Write("- Tell us your full name: ");
+            string fullname = Console.ReadLine();
+
+            Console.Write("- Give us your email: ");
+            string email = Console.ReadLine();
+
+            Console.Write("- Create a strong password: ");
+            string password = Console.ReadLine();
+
+            if (fullname.Length <10 || email.Length <10 || password.Length < 8)
+                {
+                    Console.Clear();
+                    repeat = true;
+                }
+                else
+                {
+                    BankAccount account = new BankAccount(fullname, email, password);
+
+                    Console.WriteLine("Account created!!");
+                }
+
+            }
+
+            while (repeat);
+            {
+                Console.Write("- Tell us your full name: ");
+            string fullname = Console.ReadLine();
+
+            Console.Write("- Give us your email: ");
+            string email = Console.ReadLine();
+
+            Console.Write("- Create a strong password: ");
+            string password = Console.ReadLine();
+
+            if (fullname.Length <10 || email.Length <10 || password.Length < 8)
+                {
+                    Console.Clear();
+                }
+                else
+                {
+                    BankAccount account = new BankAccount(fullname, email, password);
+                    Console.WriteLine("Account created!!");
+                    repeat = false;
+                }
+            }
+            
         }
 
         public void Withdraw () {
