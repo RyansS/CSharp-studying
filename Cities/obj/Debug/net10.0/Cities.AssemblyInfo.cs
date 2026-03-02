@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c6a44d1f112f39b1dd31f6f4d88cf0864c56dc6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d0700bc1368c4c68480fb1e2849fa89fa3afa28")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
