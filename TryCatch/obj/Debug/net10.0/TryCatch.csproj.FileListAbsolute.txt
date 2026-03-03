@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\bin\Debug\net10.0\TryCatch.exe
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\bin\Debug\net10.0\TryCatch.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\bin\Debug\net10.0\TryCatch.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\bin\Debug\net10.0\TryCatch.dll
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\bin\Debug\net10.0\TryCatch.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.dll
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\refint\TryCatch.dll
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\TryCatch.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\TryCatch\obj\Debug\net10.0\ref\TryCatch.dll
