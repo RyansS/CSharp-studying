@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\bin\Debug\net10.0\RegisterFileRead.exe
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\bin\Debug\net10.0\RegisterFileRead.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\bin\Debug\net10.0\RegisterFileRead.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\bin\Debug\net10.0\RegisterFileRead.dll
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\bin\Debug\net10.0\RegisterFileRead.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.dll
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\refint\RegisterFileRead.dll
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\RegisterFileRead.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\RegisterFileRead\obj\Debug\net10.0\ref\RegisterFileRead.dll

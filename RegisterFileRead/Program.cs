@@ -1,4 +1,13 @@
-﻿Console.WriteLine("- Welcome to Steam -");
+﻿using System.Text.Json;
+
+Console.WriteLine("- Welcome to Steam -");
+
+User UserReturned = User.Register();
+User.UsersCreated.Add(UserReturned);
+
+string json = JsonSerializer.Serialize(UserReturned);
+File.WriteAllText(@"C:\Users\monte\Desktop\tghd\Users.txt", json);
+
 
 class User
 {
@@ -10,6 +19,7 @@ class User
 
     public int Age {get; set;}
 
+    internal static List<User> UsersCreated = new List<User>();
 
     public User (string username, string email, string password, int age)
     {
@@ -19,7 +29,7 @@ class User
         Age = age;
     }
 
-    public User Register () {
+    public static User Register () {
         int AgeInput;
         string UserInput;
         string EmailInput;
