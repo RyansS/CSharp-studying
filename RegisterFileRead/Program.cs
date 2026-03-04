@@ -2,12 +2,13 @@
 
 Console.WriteLine("- Welcome to Steam -");
 
-User UserReturned = User.Register();
-User.UsersCreated.Add(UserReturned);
+// User UserReturned = User.Register();
+// User.UsersCreated.Add(UserReturned);
 
-string json = JsonSerializer.Serialize(UserReturned);
-File.WriteAllText(@"C:\Users\monte\Desktop\tghd\Users.txt", json);
+// string json = JsonSerializer.Serialize(UserReturned);
+// File.WriteAllText(@"C:\Users\monte\Desktop\tghd\Users.txt", json);
 
+User.ReadJsonFile();
 
 class User
 {
@@ -65,5 +66,22 @@ class User
 
     public void Login () {
 
+    }
+
+    public static void ReadJsonFile () {
+        string path = @"C:\Users\monte\Desktop\tghd\Users.txt";
+
+        if (File.Exists(path))
+        {
+            string JsonFile = File.ReadAllText(path);
+
+            User loadedUser = JsonSerializer.Deserialize<User>(JsonFile);
+
+            Console.WriteLine($"The user {loadedUser.Username} is back!");
+        }
+        else
+        {
+            Console.WriteLine("We didn't find the user...");
+        }
     }
 }
