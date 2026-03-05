@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\bin\Debug\net10.0\ReadFiles.exe
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\bin\Debug\net10.0\ReadFiles.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\bin\Debug\net10.0\ReadFiles.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\bin\Debug\net10.0\ReadFiles.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\bin\Debug\net10.0\ReadFiles.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\refint\ReadFiles.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ReadFiles.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ReadFiles\obj\Debug\net10.0\ref\ReadFiles.dll
