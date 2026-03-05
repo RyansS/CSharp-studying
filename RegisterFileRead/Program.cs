@@ -4,13 +4,13 @@ Console.WriteLine("- Welcome to Steam -");
 
 User.Menu();
 
-// User UserReturned = User.Register();
-// User.UsersCreated.Add(UserReturned);
+User UserReturned = User.Register();
+User.UsersCreated.Add(UserReturned);
 
-// string json = JsonSerializer.Serialize(UserReturned);
-// File.WriteAllText(@"C:\Users\monte\Desktop\tghd\Users.txt", json);
+string json = JsonSerializer.Serialize(UserReturned);
+File.WriteAllText(@"C:\Users\monte\Desktop\tghd\Users.txt", json);
 
-// User.ReadJsonFile();
+User.ReadJsonFile();
 
 class User
 {

@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\bin\Debug\net10.0\ValidNumber.exe
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\bin\Debug\net10.0\ValidNumber.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\bin\Debug\net10.0\ValidNumber.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\bin\Debug\net10.0\ValidNumber.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\bin\Debug\net10.0\ValidNumber.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\refint\ValidNumber.dll
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ValidNumber.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\ValidNumber\obj\Debug\net10.0\ref\ValidNumber.dll
