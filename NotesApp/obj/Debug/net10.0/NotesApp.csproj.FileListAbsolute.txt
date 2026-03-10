@@ -1,0 +1,15 @@
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\bin\Debug\net10.0\NotesApp.exe
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\bin\Debug\net10.0\NotesApp.deps.json
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\bin\Debug\net10.0\NotesApp.runtimeconfig.json
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\bin\Debug\net10.0\NotesApp.dll
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\bin\Debug\net10.0\NotesApp.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.AssemblyInfoInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.AssemblyInfo.cs
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.csproj.CoreCompileInputs.cache
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.sourcelink.json
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.dll
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\refint\NotesApp.dll
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.pdb
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\NotesApp.genruntimeconfig.cache
+C:\Users\monte\Desktop\CSharp-studying-main\NotesApp\obj\Debug\net10.0\ref\NotesApp.dll

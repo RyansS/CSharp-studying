@@ -1,5 +1,5 @@
 ﻿
-
+Users.RegisterAndLogin();
 class Users
 {
     public string Username {get; private set;}
@@ -16,7 +16,7 @@ class Users
         Email = email;
         Password = password;
     }
-    public static void RegisterLogin ()
+    public static void RegisterAndLogin ()
     {
         UtilityMethods.TitleCreator("Welcome to DearNote");
 
@@ -32,29 +32,73 @@ class Users
             {
                 case 1:
 
+                    string UsernameInput;
+                    string EmailInput;
+                    string PasswordInput;
+
                     UtilityMethods.TitleCreator("Register");
 
                     Console.WriteLine("Create your Account");
 
+                    do
+                    {
                     Console.Write("Username");
-                    string UsernameInput = Console.ReadLine();
+                    UsernameInput = Console.ReadLine()!;
 
                     Console.Write("Email: ");
-                    string EmailInput = Console.ReadLine();
+                    EmailInput = Console.ReadLine()!;
 
                     Console.Write("Password");
-                    string PasswordInput = Console.ReadLine();
+                    PasswordInput = Console.ReadLine()!;
 
-                    Users NewUser = new Users() ;
+                    if (UsernameInput.Length >= 5 && EmailInput.Length >12 && PasswordInput.Length >7)
+                        {
+                            break;
+                        }
+
+                    }
+
+                    while (true);
+                    {
+                        Console.Write("Username: ");
+                        UsernameInput = Console.ReadLine()!;
+
+                        Console.Write("Email: ");
+                        EmailInput = Console.ReadLine()!;
+
+                        Console.Write("Password: ");
+                        PasswordInput = Console.ReadLine()!;
+                    }
+                    
+                    Users NewUser = new Users(UsernameInput, EmailInput, PasswordInput) ;
+                    AllUsers.Add(NewUser);
 
                 break;
 
                 case 2:
-                
+
+                UtilityMethods.TitleCreator("Login");
+
+                Console.WriteLine("Email: ");
+                string LoginInputEmail = Console.ReadLine();
+
+                Console.WriteLine("Password: ");
+                string LoginInputPassword = Console.ReadLine();
+
+                var FindAccount = AllUsers.FirstOrDefault(CredentialExpect => CredentialExpect.Email == LoginInputEmail &&
+                CredentialExpect.Password == LoginInputPassword);
+
+                if (FindAccount != null)
+                    {
+                        Console.WriteLine($"Welcome back, dear {FindAccount.Username}");
+                    }
+
                 break;
 
                 case 3:
-                
+
+                Console.WriteLine("See you next time!");
+
                 break;
             }
         }
