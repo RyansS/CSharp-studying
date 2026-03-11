@@ -1,4 +1,6 @@
 ﻿
+using System.Text.Json;
+
 Users.RegisterAndLogin();
 class Users
 {
@@ -18,6 +20,7 @@ class Users
     }
     public static void RegisterAndLogin ()
     {
+        string path = @"C:\Users\monte\Desktop\tghd";
         UtilityMethods.TitleCreator("Welcome to DearNote");
 
         Console.WriteLine("1- Register");
@@ -71,7 +74,14 @@ class Users
                     }
                     
                     Users NewUser = new Users(UsernameInput, EmailInput, PasswordInput) ;
+
                     AllUsers.Add(NewUser);
+
+                    
+
+                    string UserJson = JsonSerializer.Serialize<Users>(NewUser);
+
+                    File.WriteAllText(path, UserJson);
 
                 break;
 
@@ -85,8 +95,17 @@ class Users
                 Console.WriteLine("Password: ");
                 string LoginInputPassword = Console.ReadLine();
 
+                if (File.Exists(path))
+                    {
+                        string JsonFiles = File.ReadAllText(path);
+
+                        Users JsonUserFile = JsonSerializer.Deserialize<Users>(JsonFiles);
+
+                    }
+
                 var FindAccount = AllUsers.FirstOrDefault(CredentialExpect => CredentialExpect.Email == LoginInputEmail &&
                 CredentialExpect.Password == LoginInputPassword);
+
 
                 if (FindAccount != null)
                     {
